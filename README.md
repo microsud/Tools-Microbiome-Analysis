@@ -29,7 +29,7 @@ Sequencing microbial DNA from diverse environments is now more democratized than
 24.	Tax4Fun	[Predicting functional profiles from metagenomic 16S rRNA gene data](https://www.ncbi.nlm.nih.gov/pubmed/25957349)  
 25.	taxize	[Taxonomic Information from Around the Web](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3901538/)    
 
-### Very useful resources are provided by:  
+### Useful resources are provided by:  
 1. [Ben J. Callahan and Colleagues: Bioconductor Workflow for Microbiome Data Analysis: from raw reads to community analyses](https://f1000research.com/articles/5-1492/v2).   
 2. [Comeau AM and Colleagues: Microbiome Helper: a Custom and Streamlined Workflow for Microbiome Research](http://msystems.asm.org/content/2/1/e00127-16)  
 
