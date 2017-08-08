@@ -4,7 +4,7 @@ Sequencing microbial DNA from diverse environments is now more democratized than
 
 ### Tools:
 1.	Ampvis	[Tools for visualising amplicon sequencing data](http://madsalbertsen.github.io/ampvis/)  
-2.	CCREPE	[Compositionality Corrected by PErmutation and REnormalization] (http://bioconductor.org/packages/release/bioc/html/ccrepe.html)  
+2.	CCREPE	[Compositionality Corrected by PErmutation and REnormalization](http://bioconductor.org/packages/release/bioc/html/ccrepe.html)  
 3.	DADA2	[Divisive Amplicon Denoising Algorithm](https://www.nature.com/nmeth/journal/v13/n7/full/nmeth.3869.html)  
 4.	DESeq2	[Differential expression analysis for sequence count data](https://www.bioconductor.org/packages/devel/bioc/vignettes/phyloseq/inst/doc/phyloseq-mixture-models.html)  
 5.	edgeR	[empirical analysis of DGE in R](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2796818/)  
