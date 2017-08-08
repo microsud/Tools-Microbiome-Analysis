@@ -31,5 +31,5 @@ Tools:
 
 Very useful resource is provided by [Ben J. Callahan and collegues: Bioconductor Workflow for Microbiome Data Analysis: from raw reads to community analyses](https://f1000research.com/articles/5-1492/v2).   
 Note: 
-A good practise is to use Rmarkdown for documenting your results and sharing with your collaborators, supervisors and as a supplementary file accompanying your research article. For an introduction click [here](https://www.youtube.com/watch?v=cWJzjHh_3kk&t=337s)
+A good practise is to use Rmarkdown for documenting your results and sharing with your collaborators, supervisors and as a supplementary file accompanying your research article. For an introduction to [RStudio](https://www.youtube.com/watch?v=cWJzjHh_3kk&t=337s) and an 
 [RStudio Overview](https://www.youtube.com/watch?v=n3uue28FD0w)  
