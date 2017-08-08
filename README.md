@@ -35,6 +35,7 @@ A good practise is to use Rmarkdown for documenting your results and sharing wit
 [RStudio Overview](https://www.youtube.com/watch?v=n3uue28FD0w)  
 
 
-*twitter*: [gutmicrobe](https://twitter.com/gutmicrobe)  
-*googlescholar*: [Sudarshan A. Shetty](https://scholar.google.nl/citations?hl=en&user=Vahc6LUAAAAJ&view_op=list_works&sortby=pubdate)
-*ORCID ID*: [0000-0001-7280-9915](http://orcid.org/0000-0001-7280-9915)  
+[twitter](https://twitter.com/gutmicrobe)  
+[googlescholar](https://scholar.google.nl/citations?hl=en&user=Vahc6LUAAAAJ&view_op=list_works&sortby=pubdate)  
+ORCID ID: [0000-0001-7280-9915](http://orcid.org/0000-0001-7280-9915) 
+ 
