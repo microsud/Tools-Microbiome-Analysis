@@ -1,18 +1,13 @@
 theme: jekyll-theme-dinky
-author: microsud
-  name: Sudarshan A. Shetty
-  email: "sudarshanshetty9@gmail.com"
-  github: 
-    username: microsud
-  twitter: 
-    username: gutmicrobe
-  
-share-links-active:
-  twitter: true
-  facebook: true
-
-  
+title: "List of R tools for microbial census analysis"
+description: "A community resource for R packages for microbiome analysis"
+url: 'https://microsud.github.io/' # the base hostname & protocol for your site
+nav: "true"
+footer_text: 'Site modefied from © 2016 Jami Gibbs'
+twitter: 'gutmicrobe'
+github: 'microsud'
 
 
-
-
+# Admin Settings
+admin_name: 'Sudarshan_Shetty'
+admin_email: 'sudarshanshetty9@gmail.com'
