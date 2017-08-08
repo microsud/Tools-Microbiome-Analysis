@@ -2,8 +2,10 @@ theme: jekyll-theme-dinky
 author:
   name: Sudarshan A. Shetty
   email: "sudarshanshetty9@gmail.com"
-  github: microsud
-  twitter: gutmicrobe
+  github: 
+    username: microsud
+  twitter: 
+    username: gutmicrobe
   
 share-links-active:
   twitter: true
