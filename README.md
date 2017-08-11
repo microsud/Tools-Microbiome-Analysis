@@ -45,5 +45,15 @@ A good practise is to use Rmarkdown for documenting your results and sharing wit
 [RStudio Overview](https://www.youtube.com/watch?v=n3uue28FD0w)  
 
 
-#### [github](https://github.com/microsud/Tools-Microbiome-Anlaysis), [twitter](https://twitter.com/gutmicrobe), [googlescholar](https://scholar.google.nl/citations?hl=en&user=Vahc6LUAAAAJ&view_op=list_works&sortby=pubdate), [ORCID ID: 0000-0001-7280-9915](http://orcid.org/0000-0001-7280-9915)  
+#### [github](https://github.com/microsud/Tools-Microbiome-Anlaysis), [twitter](https://twitter.com/gutmicrobe), [googlescholar](https://scholar.google.nl/citations?hl=en&user=Vahc6LUAAAAJ&view_op=list_works&sortby=pubdate), [ORCID ID: 0000-0001-7280-9915](http://orcid.org/0000-0001-7280-9915)   
+
+### References:
+1. Callahan, B. J., McMurdie, P. J. & Holmes, S. P. (2017). Exact sequence variants should replace operational taxonomic units in marker gene data analysis. bioRxiv, 113597.  
+2. Callahan, B. J., McMurdie, P. J., Rosen, M. J., Han, A. W., Johnson, A. J. A. & Holmes, S. P. (2016). DADA2: high-resolution sample inference from Illumina amplicon data. Nature methods 13, 581-583.  
+3. Caporaso, J. G., Kuczynski, J., Stombaugh, J., Bittinger, K., Bushman, F. D., Costello, E. K., Fierer, N., Peña, A. G., Goodrich, J. K. & Gordon, J. I. (2010). QIIME allows analysis of high-throughput community sequencing data. Nature methods 7, 335-336.  
+4. Schloss, P. D., Westcott, S. L., Ryabin, T., Hall, J. R., Hartmann, M., Hollister, E. B., Lesniewski, R. A., Oakley, B. B., Parks, D. H. & Robinson, C. J. (2009). Introducing mothur: open-source, platform-independent, community-supported software for describing and comparing microbial communities. Applied and environmental microbiology 75, 7537-7541.  
+Team, R. C. (2000). R language definition. Vienna, Austria: R foundation for statistical computing.  
+
+
+
  
