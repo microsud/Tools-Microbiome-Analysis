@@ -28,6 +28,10 @@ As a beginner, the entire process from sample collection to analysis for sequenc
 23.	structSSI	[Simultaneous and Selective Inference for Grouped or Hierarchically Structured Data](https://www.jstatsoft.org/article/view/v059i13)  
 24.	Tax4Fun	[Predicting functional profiles from metagenomic 16S rRNA gene data](https://www.ncbi.nlm.nih.gov/pubmed/25957349)  
 25.	taxize	[Taxonomic Information from Around the Web](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3901538/)    
+26. labdsv	[Ordination and Multivariate Analysis for Ecology](https://cran.r-project.org/web/packages/labdsv/labdsv.pdf)  
+27. Vegan	[R package for community ecologists](https://github.com/vegandevs/vegan)  
+28.	igraph	[Network Analysis and Visualization in R](http://igraph.org/r/)
+29.	MicrobiomeHD	[A standardized database of human gut microbiome studies in health and disease *Case-Control*](http://www.biorxiv.org/content/early/2017/05/08/134031)
 
 ### Useful resources are provided by:  
 1. [Ben J. Callahan and Colleagues: Bioconductor Workflow for Microbiome Data Analysis: from raw reads to community analyses](https://f1000research.com/articles/5-1492/v2).   
