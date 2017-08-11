@@ -31,9 +31,10 @@ As a beginner, the entire process from sample collection to analysis for sequenc
 26. labdsv	[Ordination and Multivariate Analysis for Ecology](https://cran.r-project.org/web/packages/labdsv/labdsv.pdf)  
 27. Vegan	[R package for community ecologists](https://github.com/vegandevs/vegan)  
 28.	igraph	[Network Analysis and Visualization in R](http://igraph.org/r/)
-29.	MicrobiomeHD	[A standardized database of human gut microbiome studies in health and disease *Case-Control*](http://www.biorxiv.org/content/early/2017/05/08/134031)
+29.	MicrobiomeHD	[A standardized database of human gut microbiome studies in health and disease *Case-Control*](http://www.biorxiv.org/content/early/2017/05/08/134031)   
+30.	Rhea	[A pipeline with modular R scripts](https://peerj.com/articles/2836/)
 
-google doc: https://docs.google.com/spreadsheets/d/1am-UyDVBGDOgm6jVQ5FDXxmg24iriHqeBeul14HRb1g/edit?usp=sharing
+Google doc: (https://docs.google.com/spreadsheets/d/1am-UyDVBGDOgm6jVQ5FDXxmg24iriHqeBeul14HRb1g/edit?usp=sharing)
 
 ### Useful resources are provided by:  
 1. [Ben J. Callahan and Colleagues: Bioconductor Workflow for Microbiome Data Analysis: from raw reads to community analyses](https://f1000research.com/articles/5-1492/v2).   
