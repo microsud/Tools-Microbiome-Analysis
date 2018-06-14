@@ -48,7 +48,9 @@ A good practise is to use Rmarkdown for documenting your results and sharing wit
 [RStudio Overview](https://www.youtube.com/watch?v=n3uue28FD0w)  
 
 
-#### [github](https://github.com/microsud/Tools-Microbiome-Anlaysis), [twitter](https://twitter.com/gutmicrobe), [googlescholar](https://scholar.google.nl/citations?hl=en&user=Vahc6LUAAAAJ&view_op=list_works&sortby=pubdate), [ORCID ID: 0000-0001-7280-9915](http://orcid.org/0000-0001-7280-9915)   
+[github](https://github.com/microsud/Tools-Microbiome-Anlaysis)  
+[twitter](https://twitter.com/gutmicrobe), [googlescholar](https://scholar.google.nl/citations?hl=en&user=Vahc6LUAAAAJ&view_op=list_works&sortby=pubdate)  
+[ORCID ID: 0000-0001-7280-9915](http://orcid.org/0000-0001-7280-9915)   
 
 ### References:
 1. Callahan, B. J., McMurdie, P. J. & Holmes, S. P. (2017). Exact sequence variants should replace operational taxonomic units in marker gene data analysis. bioRxiv, 113597.  
