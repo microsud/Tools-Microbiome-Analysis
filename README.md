@@ -43,7 +43,7 @@ Google doc [link](https://docs.google.com/spreadsheets/d/1am-UyDVBGDOgm6jVQ5FDXx
 ### Useful resources are provided by:  
 1. [Ben J. Callahan and Colleagues: Bioconductor Workflow for Microbiome Data Analysis: from raw reads to community analyses](https://f1000research.com/articles/5-1492/v2).   
 2. [Comeau AM and Colleagues: Microbiome Helper: a Custom and Streamlined Workflow for Microbiome Research](http://msystems.asm.org/content/2/1/e00127-16)  
-3. [Shetty SA, Lahati L., et al: Tutorial from microbiome data analysis spring school 2018, Wageningen University and Research](https://mibwurrepo.github.io/Microbial-bioinformatics-introductory-course-Material-2018/introduction.html)  
+3. [Shetty SA, Lahti L., et al: Tutorial from microbiome data analysis spring school 2018, Wageningen University and Research](https://mibwurrepo.github.io/Microbial-bioinformatics-introductory-course-Material-2018/introduction.html)  
 
 Note: 
 A good practise is to use Rmarkdown for documenting your results and sharing with your collaborators and supervisors. For an introduction to [RStudio](https://www.youtube.com/watch?v=cWJzjHh_3kk&t=337s) and an 
