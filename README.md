@@ -60,7 +60,11 @@ A good practise is to use Rmarkdown for documenting your results and sharing wit
 2. Callahan, B. J., McMurdie, P. J., Rosen, M. J., Han, A. W., Johnson, A. J. A. & Holmes, S. P. (2016). DADA2: high-resolution sample inference from Illumina amplicon data. Nature methods 13, 581-583.  
 3. Caporaso, J. G., Kuczynski, J., Stombaugh, J., Bittinger, K., Bushman, F. D., Costello, E. K., Fierer, N., Peña, A. G., Goodrich, J. K. & Gordon, J. I. (2010). QIIME allows analysis of high-throughput community sequencing data. Nature methods 7, 335-336.  
 4. Schloss, P. D., Westcott, S. L., Ryabin, T., Hall, J. R., Hartmann, M., Hollister, E. B., Lesniewski, R. A., Oakley, B. B., Parks, D. H. & Robinson, C. J. (2009). Introducing mothur: open-source, platform-independent, community-supported software for describing and comparing microbial communities. Applied and environmental microbiology 75, 7537-7541.  
-Team, R. C. (2000). R language definition. Vienna, Austria: R foundation for statistical computing.  
+5. Team, R. C. (2000). R language definition. Vienna, Austria: R foundation for statistical computing.  
+
+### Was this website/resource useful for you? Then please share it with others too!  
+You can cite this resource as:  
+Shetty SA and Lahti L (2018). A list of R environment based tools for 16S rRNA gene data exploration, statistical analysis and visualization. [![DOI](https://zenodo.org/badge/99698135.svg)](https://zenodo.org/badge/latestdoi/99698135)  
 
 
 
