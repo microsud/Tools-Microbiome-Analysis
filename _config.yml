@@ -1,9 +1,9 @@
-theme: jekyll-theme-dinky
+theme: jekyll-theme-minimal
 title: "List of R tools for microbial census analysis"
 
-url: 'https://microsud.github.io/' # the base hostname & protocol for your site
 twitter: 'gutmicrobe'
-github: 'microsud'
+github:
+  repository_url: https://github.com/microsud/Tools-Microbiome-Analysis  
 
 
 # Admin Settings
