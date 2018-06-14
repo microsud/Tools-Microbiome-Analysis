@@ -1,4 +1,4 @@
-theme: jekyll-theme-dinky
+theme: jekyll-theme-minimal
 title: "List of R tools for microbial census analysis"
 show_downloads: true
 twitter: 'gutmicrobe'
