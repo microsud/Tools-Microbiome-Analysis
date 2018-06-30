@@ -36,7 +36,8 @@ As a beginner, the entire process from sample collection to analysis for sequenc
 28.	igraph	[Network Analysis and Visualization in R](http://igraph.org/r/)
 29.	MicrobiomeHD	[A standardized database of human gut microbiome studies in health and disease *Case-Control*](http://www.biorxiv.org/content/early/2017/05/08/134031)   
 30.	Rhea	[A pipeline with modular R scripts](https://peerj.com/articles/2836/)  
-31. microbiomeutilities [Extending and supporting package based on microbiome and phyloseq R package](https://microsud.github.io/microbiomeutilities/)  
+31. microbiomeutilities [Extending and supporting package based on microbiome and phyloseq R package](https://microsud.github.io/microbiomeutilities/)   
+32. breakaway [Species Richness Estimation and Modeling](https://github.com/search?q=breakaway)  
 
 Google doc [link](https://docs.google.com/spreadsheets/d/1am-UyDVBGDOgm6jVQ5FDXxmg24iriHqeBeul14HRb1g/edit?usp=sharing)
 
