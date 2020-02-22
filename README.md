@@ -56,6 +56,28 @@ As a beginner, the entire process from sample collection to analysis for sequenc
 48. MDPbiome [MDPbiome: microbiome engineering through prescriptive perturbations](https://academic.oup.com/bioinformatics/article/34/17/i838/5093255)  
 49. bootLong [The Block Bootstrap Method for Longitudinal Microbiome Data](https://pratheepaj.github.io/bootLong/)   
 50. OMiSA [Optimal Microbiome-based Survival Analysis (OMiSA)](https://github.com/hk1785/OMiSA)    
+51. DECIPHER [Using DECIPHER v2.0 to Analyze Big Biological Sequence Data in R](http://www2.decipher.codes/index.html)  
+52. DECIPHER/IIDTAXA [IDTAXA: a novel approach for accurate taxonomic classification of microbiome sequences](doi:10.1186/s40168-018-0521-5)  
+53. curatedMetagenomicData [Accessible, curated metagenomic data through ExperimentHub](https://waldronlab.io/curatedMetagenomicData/)  
+54. themetagenomics [Exploring Thematic Structure and Predicted Functionality of 16S rRNA Amplicon Data](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0219235)   
+55. MDiNE [MDiNE: a model to estimate differential co-occurrence networks in microbiome studies](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz824/5614428)  
+56. StructFDR [False Discovery Rate Control Incorporating Phylogenetic Tree Increases Detection Power in Microbiome-Wide Multiple Testing](https://academic.oup.com/bioinformatics/article/33/18/2873/3824757)   
+57. metamicrobiomeR [metamicrobiomeR: An R Package for Analysis of Microbiome Relative Abundance Data Using Zero-Inflated Beta GAMLSS and Meta-Analysis Across Studies Using Random Effects Models](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2744-2)  
+58. Pldist [Pldist: Ecological Dissimilarities for Paired and Longitudinal Microbiome Association Analysis](https://academic.oup.com/bioinformatics/article-abstract/35/19/3567/5341424?redirectedFrom=fulltext)    
+59. BDMMA [Batch Effects Correction for Microbiome Data With Dirichlet-multinomial Regression](https://academic.oup.com/bioinformatics/article-lookup/doi/10.1093/bioinformatics/bty729)  
+60. RCM [A unified framework for unconstrained and constrained ordination of microbiome read count data](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0205474)   
+61. decontam [Simple Statistical Identification and Removal of Contaminant Sequences in Marker-Gene and Metagenomics Data](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-018-0605-2)  
+62. ZIBBSeqDiscovery [A Zero-inflated Beta-binomial Model for Microbiome Data Analysis](https://onlinelibrary.wiley.com/doi/abs/10.1002/sta4.185)  
+63. massMap [A Two-Stage Microbial Association Mapping Framework With Advanced FDR Control](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-018-0517-1)  
+64. SplinectomeR [SplinectomeR Enables Group Comparisons in Longitudinal Microbiome Studies](https://www.frontiersin.org/articles/10.3389/fmicb.2018.00785/full)  
+65. DMBC [A Dirichlet-Multinomial Bayes Classifier for Disease Diagnosis With Microbial Compositions](https://msphere.asm.org/content/2/6/e00536-17)  
+66. MicrobiomeDDA [An Omnibus Test for Differential Distribution Analysis of Microbiome Sequencing Data](https://academic.oup.com/bioinformatics/article/34/4/643/4470360)  
+67. NMIT [Microbial Interdependence Association Test--a Non-parametric Microbial Interdependence Test](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5696116/#!po=75.0000)  
+68. SparseMCMM [Estimating and testing the microbial causal mediation effect with the high-dimensional and compositional microbiome data (SparseMCMM)](https://sites.google.com/site/huilinli09/software)  
+69. MTA [Microbial trend analysis (MTA) for common dynamic trend, group comparison and classification in longitudinal microbiome study](https://github.com/chanw0/MTA)  
+70. miLineage [A General Framework for Association Analysis of Microbial Communities on a Taxonomic Tree](https://medschool.vanderbilt.edu/tang-lab/software/miLineage)   
+71. zeroSum [Reference Point Insensitive Molecular Data Analysis](https://academic.oup.com/bioinformatics/article/33/2/219/2928229)  
+72. MedTest [A Distance-Based Approach for Testing the Mediation Effect of the Human Microbiome](https://academic.oup.com/bioinformatics/article/34/11/1875/4810437)      
 
  
 Google doc [link](https://docs.google.com/spreadsheets/d/1am-UyDVBGDOgm6jVQ5FDXxmg24iriHqeBeul14HRb1g/edit?usp=sharing)
@@ -88,4 +110,15 @@ Shetty, Sudarshan A., and Leo Lahti. [Microbiome data science. Journal of biosci
 [*Pre-print*](https://openresearchlabs.github.io/publications/papers/2019-Shetty-MDS.pdf)   
 Zendo: [![DOI](https://zenodo.org/badge/99698135.svg)](https://zenodo.org/badge/latestdoi/99698135)   
 
-
+### TODO 
+Any help is welcome  
+* Structure the list according to categories  
+  * General purpose    
+  * Visualization  
+  * Snapshot/cross-sectional stats  
+  * Time series/Longitudinal stats  
+  * Integrative -Omics  
+* Include metagenomics/metabolomics  
+* Include more general microbiology oriented R packages/tools  
+* List of 'good' research paper reproducible repositories   
+* and so on .....
