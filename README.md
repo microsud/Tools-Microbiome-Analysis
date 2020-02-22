@@ -1,6 +1,7 @@
 
 [![DOI](https://zenodo.org/badge/99698135.svg)](https://zenodo.org/badge/latestdoi/99698135)  
 
+This is test page! Please make changes in the readme file and create a pull request.  
 ## A list of R environment based tools for 16S rRNA gene data exploration, statistical analysis and visualization  
   
 As a beginner, the entire process from sample collection to analysis for sequencing data is a daunting task. More specifically, the downstream processing of raw reads is the most time consuming and mentally draining stage. It is vital to understand the basic concepts in microbial ecology and then to use various tools at disposal to address specific research questions. Thankfully, several young researchers supported by their experienced principal investigators/supervisors are working on creating various tools for analysis and interpretation of microbial community data. A major achievement of the scientific community is the open science initiative which has led to sharing of knowledge worldwide. For microbial community analysis, several tools have been created in R, a free to use (GNU General Public License) programming language(Team, 2000). The power of R lies in its ease of working with individuals lacking programming skills and easy sharing of analysis scripts codes and packages aiding reproducibility. Using tools such as QIIME (the newer QIIME2) (Caporaso, Kuczynski, Stombaugh et al., 2010), Mothur (Schloss, Westcott, Ryabin et al., 2009), DADA2 (Callahan, McMurdie, Rosen et al., 2016) one can get from raw reads to species × samples table (OTU or ASVs amplicon sequence variants as suggested recently (Callahan, McMurdie & Holmes, 2017)). In this post, numerous resources that can be helpful for analysis of microbiome data are listed. This list may not have all the packages as this tool development space is ever growing. Feel free to add those packages or links to web tutorials related to microbiome data, there is a [google docs excel sheet at this link for a list of tools](https://docs.google.com/spreadsheets/d/1am-UyDVBGDOgm6jVQ5FDXxmg24iriHqeBeul14HRb1g/edit?usp=sharing) which can be edited to include more tools. These are mostly for improving statistical analysis and visualisation. These tools provide convenient options for data analysis and include several steps where the user has to make decisions. The work by [McMurdie PJ, Holmes S](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003531), [Weiss S](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-017-0237-y) and [Tsilimigras M.C. and Fodor A.A](http://www.sciencedirect.com/science/article/pii/S1047279716300722) are useful resources to understand the data common to microbiome census. It can be tricky and frustrating in the beginning but patience and perseverance will be fruitful at the end (personal experience).
@@ -37,14 +38,33 @@ As a beginner, the entire process from sample collection to analysis for sequenc
 29.	MicrobiomeHD	[A standardized database of human gut microbiome studies in health and disease *Case-Control*](http://www.biorxiv.org/content/early/2017/05/08/134031)   
 30.	Rhea	[A pipeline with modular R scripts](https://peerj.com/articles/2836/)  
 31. microbiomeutilities [Extending and supporting package based on microbiome and phyloseq R package](https://microsud.github.io/microbiomeutilities/)   
-32. breakaway [Species Richness Estimation and Modeling](https://github.com/search?q=breakaway)  
+32. breakaway [Species Richness Estimation and Modeling](https://github.com/search?q=breakaway)   
+33. corncob [Modeling microbial abundances and dysbiosis with beta-binomial regression](https://arxiv.org/abs/1902.02776)   
+34. MicrobiomeR [MicrobiomeR: An R Package for Simplified and Standardized Microbiome Analysis Workflows](https://microbiomer.vallenderlab.org/)   
+35. powmic [Power assessment in microbiome case-control studies](https://github.com/lichen-lab/powmic)  
+36. yingtools2 [Tools and functions for working with clinical and microbiome data](https://github.com/ying14/yingtools2)  
+37. animalcules [R shiny app for interactive microbiome analysis](https://compbiomed.github.io/animalcules-docs/)    
+38. biome-shiny [GUI for microbiome visualization, based on the shiny package "microbiome"](https://github.com/Biodata-PT/Biome-Shiny)  
+39. MelonnPan [Model-based Genomically Informed High-dimensional Predictor of Microbial Community Metabolic Profiles](https://github.com/biobakery/melonnpan)  
+40. MaAsLin2 [MaAsLin2: Microbiome Multivariate Association with Linear Models](https://github.com/biobakery/Maaslin2)  
+41. mbtools [Collection of helpers that we use to analyze microbiome data](https://gibbons-lab.github.io/mbtools)   
+42. ANCOM [R scripts for Analysis of Composition of Microbiomes (ANCOM)](https://github.com/FrederickHuangLin/ANCOM)  
+43. MetaLonDA [METAgenomic LONgitudinal Differential Abundance method](https://github.com/aametwally/MetaLonDA)  
+44. dacomp [Testing for Differential Abundance in Compositional Counts Data, with Application to Microbiome Studies](https://github.com/barakbri/dacomp)  
+45. BEEM [BEEM: Estimating Lotka-Volterra models from time-course microbiome sequencing data](https://github.com/lch14forever/BEEM)  
+46. metamicrobiomeR [Analysis of Microbiome Relative Abundance Data using Zero Inflated Beta GAMLSS and Meta-Analysis Across Studies using Random Effects Model](https://github.com/cran/metamicrobiomeR)   
+47. GLMMMiRKAT [A distance-based kernel association test based on the generalized linear mixed model](https://github.com/hk1785/GLMM-MiRKAT)  
+48. MDPbiome [MDPbiome: microbiome engineering through prescriptive perturbations](https://academic.oup.com/bioinformatics/article/34/17/i838/5093255)  
+49. bootLong [The Block Bootstrap Method for Longitudinal Microbiome Data](https://pratheepaj.github.io/bootLong/)   
+50. OMiSA [Optimal Microbiome-based Survival Analysis (OMiSA)](https://github.com/hk1785/OMiSA)    
 
+ 
 Google doc [link](https://docs.google.com/spreadsheets/d/1am-UyDVBGDOgm6jVQ5FDXxmg24iriHqeBeul14HRb1g/edit?usp=sharing)
 
 ### Useful resources are provided by:  
 1. [Ben J. Callahan and Colleagues: Bioconductor Workflow for Microbiome Data Analysis: from raw reads to community analyses](https://f1000research.com/articles/5-1492/v2).   
 2. [Comeau AM and Colleagues: Microbiome Helper: a Custom and Streamlined Workflow for Microbiome Research](http://msystems.asm.org/content/2/1/e00127-16)  
-3. [Shetty SA, Lahti L., et al: Tutorial from microbiome data analysis spring school 2018, Wageningen University and Research](https://mibwurrepo.github.io/Microbial-bioinformatics-introductory-course-Material-2018/introduction.html)  
+3. [Shetty SA, Lahti L., et al: Tutorial from microbiome data analysis spring school 2018, Wageningen University and Research](https://mibwurrepo.github.io/Microbial-bioinformatics-introductory-course-Material-2018/introduction.html)     
 
 Note: 
 A good practise is to use Rmarkdown for documenting your results and sharing with your collaborators and supervisors. For an introduction to [RStudio](https://www.youtube.com/watch?v=cWJzjHh_3kk&t=337s) and an 
@@ -66,6 +86,5 @@ A good practise is to use Rmarkdown for documenting your results and sharing wit
 ### Was this website/resource useful for you? Then please share it with others too!  
 You can cite this resource as:  
 Shetty SA and Lahti L (2018). A list of R environment based tools for 16S rRNA gene data exploration, statistical analysis and visualization. [![DOI](https://zenodo.org/badge/99698135.svg)](https://zenodo.org/badge/latestdoi/99698135)  
-
 
 
