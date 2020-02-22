@@ -84,6 +84,8 @@ A good practise is to use Rmarkdown for documenting your results and sharing wit
 
 ### Was this website/resource useful for you? Then please share it with others too!  
 You can cite this resource as:  
-Shetty SA and Lahti L (2018). A list of R environment based tools for 16S rRNA gene data exploration, statistical analysis and visualization. [![DOI](https://zenodo.org/badge/99698135.svg)](https://zenodo.org/badge/latestdoi/99698135)  
+Shetty, Sudarshan A., and Leo Lahti. [Microbiome data science. Journal of biosciences 44, no. 5 (2019): 115](https://link.springer.com/article/10.1007%2Fs12038-019-9930-2).    
+[*Pre-print*](https://openresearchlabs.github.io/publications/papers/2019-Shetty-MDS.pdf)   
+Zendo: [![DOI](https://zenodo.org/badge/99698135.svg)](https://zenodo.org/badge/latestdoi/99698135)   
 
 
