@@ -48,7 +48,7 @@ As a beginner, the entire process from sample collection to analysis for sequenc
 38. biome-shiny [GUI for microbiome visualization, based on the shiny package "microbiome"](https://github.com/Biodata-PT/Biome-Shiny)  
 39. MelonnPan [Model-based Genomically Informed High-dimensional Predictor of Microbial Community Metabolic Profiles](https://github.com/biobakery/melonnpan)  
 40. MaAsLin2 [MaAsLin2: Microbiome Multivariate Association with Linear Models](https://github.com/biobakery/Maaslin2)  
-41. mbtools [Collection of helpers that we use to analyze microbiome data](https://gibbons-lab.github.io/mbtools)   
+41. mbtools [Collection of R tools to analyze microbiome data](https://gibbons-lab.github.io/mbtools)   
 42. ANCOM [R scripts for Analysis of Composition of Microbiomes (ANCOM)](https://github.com/FrederickHuangLin/ANCOM)  
 43. MetaLonDA [METAgenomic LONgitudinal Differential Abundance method](https://github.com/aametwally/MetaLonDA)  
 44. dacomp [Testing for Differential Abundance in Compositional Counts Data, with Application to Microbiome Studies](https://github.com/barakbri/dacomp)  
