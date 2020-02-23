@@ -136,9 +136,10 @@ Graphical Model Estimation](https://cran.r-project.org/web/packages/qgraph/qgrap
 
 ### Useful resources are provided by:  
 1. [Ben J. Callahan and Colleagues: Bioconductor Workflow for Microbiome Data Analysis: from raw reads to community analyses](https://f1000research.com/articles/5-1492/v2).   
-2. [Comeau AM and Colleagues: Microbiome Helper: a Custom and Streamlined Workflow for Microbiome Research](http://msystems.asm.org/content/2/1/e00127-16)  
-3. [Shetty SA, Lahti L., et al: Tutorial from microbiome data analysis spring school 2018, Wageningen University and Research](https://mibwurrepo.github.io/Microbial-bioinformatics-introductory-course-Material-2018/introduction.html)     
-4. [Holmes S, Huber W.: Modern statistics for modern biology. Cambridge University Press; 2018 Nov 30.](http://web.stanford.edu/class/bios221/book/)   
+2. [Comeau AM and Colleagues: Microbiome Helper: a Custom and Streamlined Workflow for Microbiome Research](http://msystems.asm.org/content/2/1/e00127-16)   
+3. Schloss, P. D: [The Riffomonas Reproducible Research Tutorial Series](http://www.riffomonas.org/reproducible_research/)  
+4. [Shetty SA, Lahti L., et al: Tutorial from microbiome data analysis spring school 2018, Wageningen University and Research](https://mibwurrepo.github.io/Microbial-bioinformatics-introductory-course-Material-2018/introduction.html)     
+5. [Holmes S, Huber W.: Modern statistics for modern biology. Cambridge University Press; 2018 Nov 30.](http://web.stanford.edu/class/bios221/book/)    
 
 Note:  
 A good practise is to use Rmarkdown for documenting your results and sharing with your collaborators and supervisors. For more information click here [RStudio](https://www.youtube.com/watch?v=cWJzjHh_3kk&t=337s) and  
