@@ -159,15 +159,8 @@ A good practise is to use Rmarkdown for documenting your results and sharing wit
 3. Caporaso, J. G., Kuczynski, J., Stombaugh, J., Bittinger, K., Bushman, F. D., Costello, E. K., Fierer, N., Peña, A. G., Goodrich, J. K. & Gordon, J. I. (2010). QIIME allows analysis of high-throughput community sequencing data. Nature methods 7, 335-336.  
 4. Schloss, P. D., Westcott, S. L., Ryabin, T., Hall, J. R., Hartmann, M., Hollister, E. B., Lesniewski, R. A., Oakley, B. B., Parks, D. H. & Robinson, C. J. (2009). Introducing mothur: open-source, platform-independent, community-supported software for describing and comparing microbial communities. Applied and environmental microbiology 75, 7537-7541.  
 5. Team, R. C. (2000). R language definition. Vienna, Austria: R foundation for statistical computing.  
--------------------------------------------------------   
 
-### Was this website/resource useful for you? Then please share it with others too!  
-You can cite this resource as:  
-Shetty, Sudarshan A., and Leo Lahti. [Microbiome data science. Journal of biosciences 44, no. 5 (2019): 115](https://link.springer.com/article/10.1007%2Fs12038-019-9930-2).    
-[*Pre-print*](https://openresearchlabs.github.io/publications/papers/2019-Shetty-MDS.pdf)   
-Zendo: [![DOI](https://zenodo.org/badge/99698135.svg)](https://zenodo.org/badge/latestdoi/99698135)   
-
--------------------------------------------------------
+-------------------------------------------------------    
 
 ### TODO 
 Any help is welcome  
@@ -180,8 +173,18 @@ Any help is welcome
 * Include metagenomics/metabolomics  
 * Include more general microbiology oriented R packages/tools  
 * List of 'good' research paper reproducible repositories   
-* and so on .....
+* and so on .....  
+
 -------------------------------------------------------   
+
+### Was this website/resource useful for you? Then please share it with others too!  
+You can cite this resource as:  
+Shetty, Sudarshan A., and Leo Lahti. [Microbiome data science. Journal of biosciences 44, no. 5 (2019): 115](https://link.springer.com/article/10.1007%2Fs12038-019-9930-2).    
+[*Pre-print*](https://openresearchlabs.github.io/publications/papers/2019-Shetty-MDS.pdf)   
+Zendo: [![DOI](https://zenodo.org/badge/99698135.svg)](https://zenodo.org/badge/latestdoi/99698135)   
+
+-------------------------------------------------------  
+
 Google doc [link](https://docs.google.com/spreadsheets/d/1am-UyDVBGDOgm6jVQ5FDXxmg24iriHqeBeul14HRb1g/edit?usp=sharing)  
 
 -------------------------------------------------------   
