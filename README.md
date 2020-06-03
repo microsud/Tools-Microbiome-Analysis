@@ -112,8 +112,8 @@ Graphical Model Estimation](https://cran.r-project.org/web/packages/qgraph/qgrap
     * Powerful package for multivvariate data analysis  
 12. ggcorrplot [Visualization of a correlation matrix using ggplot2](https://rpkgs.datanovia.com/ggcorrplot/)   
 13. tidyverse [R packages for data science](https://www.tidyverse.org/)  
-    * Universe of several useful R packages for data handling, analysis and vidualization    
-14. Extensions of ggplot [Gallary of numerous data visualistion R pacakges](https://www.ggplot2-exts.org/gallery/)  
+    * Universe of several useful R packages for data handling, analysis and visualization    
+14. Extensions of ggplot [Gallary of numerous data visualistion R pacakges](https://exts.ggplot2.tidyverse.org/gallery/)   
 
 -------------------------------------------------------   
 
