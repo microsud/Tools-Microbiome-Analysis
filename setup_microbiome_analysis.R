@@ -49,15 +49,16 @@ setup_microbiome_analysis <- function(){
                       "microbiome", 
                       "phangorn", 
                       "genefilter")
-  
+  if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+	
   # Install CRAN packages (if not already installed)
   .inst <- .packages %in% installed.packages()
   if(length(.packages[!.inst]) > 0) install.packages(.packages[!.inst])
 
   .inst <- .bioc_packages %in% installed.packages()
   if(any(!.inst)) {
-    source("http://bioconductor.org/biocLite.R")
-    biocLite(.bioc_packages[!.inst], ask = F)
+    BiocManager::install(.bioc_packages[!.inst])
   }
   
   
@@ -82,3 +83,4 @@ setup_microbiome_analysis()
 # Copy until here previous line!
 
 ####################################################END OF CODE###########################################################################
+
