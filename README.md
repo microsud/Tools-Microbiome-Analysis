@@ -1,5 +1,6 @@
 
-[![DOI](https://zenodo.org/badge/99698135.svg)](https://zenodo.org/badge/latestdoi/99698135)  
+[![DOI](https://zenodo.org/badge/99698135.svg)](https://zenodo.org/badge/latestdoi/99698135)    
+[![HitCount](http://hits.dwyl.com/microsud/Tools-Microbiome-Analysis.svg)](http://hits.dwyl.com/microsud/Tools-Microbiome-Analysis)   
 
 ## A list of R environment based tools for microbiome data exploration, statistical analysis and visualization  
   
