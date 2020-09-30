@@ -118,11 +118,12 @@ Graphical Model Estimation](https://cran.r-project.org/web/packages/qgraph/qgrap
 
 -------------------------------------------------------   
 
-### Proteomics resources<sup>*<sup>  
+### Proteomics resources    
 
-1. RforProteomics [Using R for proteomics data analysis](https://bioconductor.org/packages/release/data/experiment/vignettes/RforProteomics/inst/doc/RforProteomics.html)  
-2. RforProteomics [Visualisation of proteomics data using R and Bioconductor](https://onlinelibrary.wiley.com/doi/full/10.1002/pmic.201400392)   
-2. proteomics [proteomics: Mass spectrometry and proteomics data analysis](http://master.bioconductor.org/packages/release/workflows/vignettes/proteomics/inst/doc/proteomics.html)  
+1. <sup>*</sup>RforProteomics [Using R for proteomics data analysis](https://bioconductor.org/packages/release/data/experiment/vignettes/RforProteomics/inst/doc/RforProteomics.html)  
+2. <sup>*</sup>RforProteomics [Visualisation of proteomics data using R and Bioconductor](https://onlinelibrary.wiley.com/doi/full/10.1002/pmic.201400392)   
+3. <sup>*</sup>proteomics [proteomics: Mass spectrometry and proteomics data analysis](http://master.bioconductor.org/packages/release/workflows/vignettes/proteomics/inst/doc/proteomics.html)    
+4. [Introduction to analysing microbial proteomics data in R](https://microsud.github.io/Bacterial-Proteomics-in-R/tutorial_main_doc.html)   
 
 -------------------------------------------------------   
 
