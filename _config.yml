@@ -9,3 +9,9 @@ github:
 # Admin Settings
 admin_name: 'Sudarshan_Shetty'
 admin_email: 'sudarshanshetty9@gmail.com'
+
+# Site Author
+author:
+  name             : "Sudarshan A. Shetty"  
+  
+
