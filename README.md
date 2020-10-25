@@ -8,39 +8,57 @@ As a beginner, the entire process from sample collection to analysis for sequenc
 
 -------------------------------------------------------   
 
-### Tools:
+### Tools:  
+
 > A   
+
 Adaptive gPCA [A method for structured dimensionality reduction](https://arxiv.org/abs/1702.00501)     
 Ampvis2 [Tools for visualising amplicon sequencing data](https://madsalbertsen.github.io/ampvis2/)   
 ANCOM [R scripts for Analysis of Composition of Microbiomes (ANCOM)](https://github.com/FrederickHuangLin/ANCOM)   
 animalcules [R shiny app for interactive microbiome analysis](https://compbiomed.github.io/animalcules-docs/)   
-> B   
+
+> B    
+
 BDMMA [Batch Effects Correction for Microbiome Data With Dirichlet-multinomial Regression](https://academic.oup.com/bioinformatics/article-
 BEEM [BEEM: Estimating Lotka-Volterra models from time-course microbiome sequencing data](https://github.com/lch14forever/BEEM)   
 biome-shiny [GUI for microbiome visualization, based on the shiny package "microbiome"](https://github.com/Biodata-PT/Biome-Shiny)   
 bootLong [The Block Bootstrap Method for Longitudinal Microbiome Data](https://pratheepaj.github.io/bootLong/)   
 breakaway [Species Richness Estimation and Modeling](https://github.com/search?q=breakaway)   
+
 > C   
+
 CCREPE [Compositionality Corrected by PErmutation and REnormalization](http://bioconductor.org/packages/release/bioc/html/ccrepe.html)   
 corncob [Modeling microbial abundances and dysbiosis with beta-binomial regression](https://arxiv.org/abs/1902.02776)  
-curatedMetagenomicData [Accessible, curated metagenomic data through ExperimentHub](https://waldronlab.io/curatedMetagenomicData/)   
+curatedMetagenomicData [Accessible, curated metagenomic data through ExperimentHub](https://waldronlab.io/curatedMetagenomicData/)    
+
 > D     
+
 dacomp [Testing for Differential Abundance in Compositional Counts Data, with Application to Microbiome Studies](https://github.com/barakbri/dacomp)   
 DADA2 [Divisive Amplicon Denoising Algorithm](https://www.nature.com/nmeth/journal/v13/n7/full/nmeth.3869.html)    
 DECIPHER [Using DECIPHER v2.0 to Analyze Big Biological Sequence Data in R](http://www2.decipher.codes/index.html)   
 DECIPHER/IIDTAXA [IDTAXA: a novel approach for accurate taxonomic classification of microbiome sequences](doi:10.1186/s40168-018-0521-5)   
 decontam [Simple Statistical Identification and Removal of Contaminant Sequences in Marker-Gene and Metagenomics Data](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-018-0605-2)   
 DESeq2 [Differential expression analysis for sequence count data](https://www.bioconductor.org/packages/devel/bioc/vignettes/phyloseq/inst/doc/phyloseq-mixture-models.html)   
-DMBC [A Dirichlet-Multinomial Bayes Classifier for Disease Diagnosis With Microbial Compositions](https://msphere.asm.org/content/2/6/e00536-17)   
+DMBC [A Dirichlet-Multinomial Bayes Classifier for Disease Diagnosis With Microbial Compositions](https://msphere.asm.org/content/2/6/e00536-17)    
+
 > E   
+
 edgeR [empirical analysis of DGE in R](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2796818/)    
+
 > G     
+
 GLMMMiRKAT [A distance-based kernel association test based on the generalized linear mixed model](https://github.com/hk1785/GLMM-MiRKAT)   
+
 > I   
-igraph [Network Analysis and Visualization in R](http://igraph.org/r/)  
-> L   
+
+igraph [Network Analysis and Visualization in R](http://igraph.org/r/)    
+
+> L    
+
 labdsv [Ordination and Multivariate Analysis for Ecology](https://cran.r-project.org/web/packages/labdsv/labdsv.pdf)  
-> M  
+
+> M   
+
 MaAsLin2 [MaAsLin2: Microbiome Multivariate Association with Linear Models](https://github.com/biobakery/Maaslin2)   
 mare [Microbiota Analysis in R Easily](https://github.com/katrikorpela/mare)   
 massMap [A Two-Stage Microbial Association Mapping Framework With Advanced FDR Control](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-018-0517-1)  
@@ -66,27 +84,39 @@ mixDIABLO [Data Integration Analysis for Biomarker discovery using Latent variab
 mixMC [Multivariate Statistical Framework to Gain Insight into Microbial Communities](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0160169)   
 MMinte [Methodology for the large-scale assessment of microbial metabolic interactions (MMinte) from 16S rDNA data](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1230-3)   
 MTA [Microbial trend analysis (MTA) for common dynamic trend, group comparison and classification in longitudinal microbiome study](https://github.com/chanw0/MTA)    
+
 > N    
+ 
 NMIT [Microbial Interdependence Association Test--a Non-parametric Microbial Interdependence Test](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5696116/#!po=75.0000)   
-> O   
+
+> O    
+
 OMiSA [Optimal Microbiome-based Survival Analysis (OMiSA)](https://github.com/hk1785/OMiSA)   
+
 > P   
+
 pathostat [Statistical Microbiome Analysis on metagenomics results from sequencing data samples](https://bioconductor.org/packages/release/bioc/html/PathoStat.html)   
 phylofactor [Phylogenetic factorization of compositional data](https://peerj.com/articles/2969/)   
 phylogeo [Geographic analysis and visualization of microbiome data](https://www.ncbi.nlm.nih.gov/pubmed/25913208)   
 Phyloseq [Import, share, and analyze microbiome census data using R](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0061217)   
 Pldist [Pldist: Ecological Dissimilarities for Paired and Longitudinal Microbiome Association Analysis](https://academic.oup.com/bioinformatics/article-abstract/35/19/3567/5341424?redirectedFrom=fulltext)   
 powmic [Power assessment in microbiome case-control studies](https://github.com/lichen-lab/powmic)   
+
 > Q   
+
 qgraph [Graph Plotting Methods, Psychometric Data Visualization and Graphical Model Estimation](https://cran.r-project.org/web/packages/qgraph/qgraph.pdf)   
 qiime2R [Importing QIIME2 artifacts and associated data into R sessions](https://github.com/jbisanz/qiime2R)   
 qiimer [R tools compliment qiime](https://github.com/kylebittinger/qiimer)    
-> R   
+
+> R    
+
 RAM [R for Amplicon-Sequencing-Based Microbial-Ecology](https://cran.r-project.org/web/packages/RAM/RAM.pdf)   
 RCM [A unified framework for unconstrained and constrained ordination of microbiome read count data](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0205474)   
 RevEcoR [Reverse Ecology analysis in R](https://github.com/yiluheihei/RevEcoR)   
 Rhea [A pipeline with modular R scripts](https://peerj.com/articles/2836/)   
+
 > S   
+
 ShinyPhyloseq [Web-tool with user interface for Phyloseq](http://joey711.github.io/shiny-phyloseq/)   
 SigTree [Identify and Visualize Significantly Responsive Branches in a Phylogenetic Tree](http://www.sciencedirect.com/science/article/pii/S2001037017300132)    
 SparseMCMM [Estimating and testing the microbial causal mediation effect with the high-dimensional and compositional microbiome data (SparseMCMM)](https://sites.google.com/site/huilinli09/software)   
@@ -94,19 +124,26 @@ SPIEC-EASI [Sparse and Compositionally Robust Inference of Microbial Ecological 
 SplinectomeR [SplinectomeR Enables Group Comparisons in Longitudinal Microbiome Studies](https://www.frontiersin.org/articles/10.3389/fmicb.2018.00785/full)   
 StructFDR [False Discovery Rate Control Incorporating Phylogenetic Tree Increases Detection Power in Microbiome-Wide Multiple Testing](https://academic.oup.com/bioinformatics/article/33/18/2873/3824757)   
 structSSI [Simultaneous and Selective Inference for Grouped or Hierarchically Structured Data](https://www.jstatsoft.org/article/view/v059i13)   
-> T  
+
+> T   
+
 Tax4Fun [Predicting functional profiles from metagenomic 16S rRNA gene data](https://www.ncbi.nlm.nih.gov/pubmed/25957349)    
 taxize [Taxonomic Information from Around the Web](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3901538/)    
 TreeSummarizedExperiment [An extension class of SummarizedExperiment to allow hierarchical structure on the row or column dimension](https://github.com/fionarhuang/TreeSummarizedExperiment)   
 themetagenomics [Exploring Thematic Structure and Predicted Functionality of 16S rRNA Amplicon Data](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0219235)   
+
 > V   
+
 vegan  [R package for community ecologists](https://github.com/vegandevs/vegan)   
+
 > Y   
+
 yingtools2 [Tools and functions for working with clinical and microbiome data](https://github.com/ying14/yingtools2)   
->Z  
+
+>Z   
+
 zeroSum [Reference Point Insensitive Molecular Data Analysis](https://academic.oup.com/bioinformatics/article/33/2/219/2928229)   
 ZIBBSeqDiscovery [A Zero-inflated Beta-binomial Model for Microbiome Data Analysis](https://onlinelibrary.wiley.com/doi/abs/10.1002/sta4.185)   
-
 
 -------------------------------------------------------   
 
