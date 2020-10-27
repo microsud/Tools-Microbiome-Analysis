@@ -18,7 +18,7 @@ animalcules [R shiny app for interactive microbiome analysis](https://compbiomed
 
 > B    
 
-BDMMA [Batch Effects Correction for Microbiome Data With Dirichlet-multinomial Regression](https://academic.oup.com/bioinformatics/article-
+BDMMA [Batch Effects Correction for Microbiome Data With Dirichlet-multinomial Regression](https://academic.oup.com/bioinformatics/article-abstract/35/5/807/5078473)   
 BEEM [BEEM: Estimating Lotka-Volterra models from time-course microbiome sequencing data](https://github.com/lch14forever/BEEM)   
 biome-shiny [GUI for microbiome visualization, based on the shiny package "microbiome"](https://github.com/Biodata-PT/Biome-Shiny)   
 bootLong [The Block Bootstrap Method for Longitudinal Microbiome Data](https://pratheepaj.github.io/bootLong/)   
@@ -63,8 +63,11 @@ mare [Microbiota Analysis in R Easily](https://github.com/katrikorpela/mare)
 massMap [A Two-Stage Microbial Association Mapping Framework With Advanced FDR Control](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-018-0517-1)  
 mbtools [Collection of R tools to analyze microbiome data](https://gibbons-lab.github.io/mbtools)   
 MDiNE [MDiNE: a model to estimate differential co-occurrence networks in microbiome studies](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz824/5614428)   
-MDPbiome [MDPbiome: microbiome engineering through prescriptive perturbations](https://academic.oup.com/bioinformatics/article/34/17/i838/5093255)   
-MedTest [A Distance-Based Approach for Testing the Mediation Effect of the Human Microbiome](https://academic.oup.com/bioinformatics/article/34/11/1875/4810437)   
+MDPbiome [MDPbiome: microbiome engineering through prescriptive perturbations](https://academic.oup.com/bioinformatics/article/34/17/i838/5093255)    
+microDecon [An R package for removing contamination from metabarcoding (e.g., microbiome) datasets post-sequencing](https://github.com/donaldtmcknight/microDecon)  
+microbiotaPair [An R Package for Simplified Microbiome Analysis Workflows on Intervention Study](https://github.com/rusher321/microbiotaPair)    
+MedTest [A Distance-Based Approach for Testing the Mediation Effect of the Human Microbiome](https://academic.oup.com/bioinformatics/article/34/11/1875/4810437)    
+MegaR [An Interactive R Package for Metagenomic Sample Classification and Disease Prediction using Microbiota and Machine Learning](https://github.com/BioHPC/MegaR)     
 MelonnPan [Model-based Genomically Informed High-dimensional Predictor of Microbial Community Metabolic Profiles](https://github.com/biobakery/melonnpan)  
 Metacoder [An R package for visualization and manipulation of community taxonomic diversity data](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005404)   
 metagenomeSeq [Differential abundance analysis for microbial marker-gene surveys](http://www.nature.com/nmeth/journal/v10/n12/full/nmeth.2658.html)   
@@ -116,7 +119,8 @@ Rhea [A pipeline with modular R scripts](https://peerj.com/articles/2836/)
 
 > S   
 
-ShinyPhyloseq [Web-tool with user interface for Phyloseq](http://joey711.github.io/shiny-phyloseq/)   
+ShinyPhyloseq [Web-tool with user interface for Phyloseq](http://joey711.github.io/shiny-phyloseq/)     
+SIAMCAT [Statistical Inference of Associations between Microbial Communities And host phenoTypes](https://bioconductor.org/packages/release/bioc/html/SIAMCAT.html)   
 SigTree [Identify and Visualize Significantly Responsive Branches in a Phylogenetic Tree](http://www.sciencedirect.com/science/article/pii/S2001037017300132)    
 SparseMCMM [Estimating and testing the microbial causal mediation effect with the high-dimensional and compositional microbiome data (SparseMCMM)](https://sites.google.com/site/huilinli09/software)   
 SPIEC-EASI [Sparse and Compositionally Robust Inference of Microbial Ecological Networks](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004226)   
@@ -139,7 +143,7 @@ vegan  [R package for community ecologists](https://github.com/vegandevs/vegan)
 
 yingtools2 [Tools and functions for working with clinical and microbiome data](https://github.com/ying14/yingtools2)   
 
->Z   
+> Z    
 
 zeroSum [Reference Point Insensitive Molecular Data Analysis](https://academic.oup.com/bioinformatics/article/33/2/219/2928229)   
 ZIBBSeqDiscovery [A Zero-inflated Beta-binomial Model for Microbiome Data Analysis](https://onlinelibrary.wiley.com/doi/abs/10.1002/sta4.185)   
@@ -158,23 +162,24 @@ ZIBBSeqDiscovery [A Zero-inflated Beta-binomial Model for Microbiome Data Analys
 4. ggridges [Ridgeline plots in ggplot2](https://wilkelab.org/ggridges)   
 5. ggtext [Improved text rendering support for ggplot2](https://wilkelab.org/ggtext/)   
     * More power in controlling annotations in plots (e.g. italicize taxa names in plots)  
-6. patchwork [The Composer of ggplots](https://patchwork.data-imaginist.com)  
-    * Combining multiple plots made easy   
-7. ggpubr [Extension of ggplot2 based data visualization](http://www.sthda.com/english/articles/24-ggpubr-publication-ready-plots/)  
+6. ggpubr [Extension of ggplot2 based data visualization](http://www.sthda.com/english/articles/24-ggpubr-publication-ready-plots/)  
     * Publication ready plots   
-8. ggraph [Grammar of Graph Graphics](https://ggraph.data-imaginist.com)   
+7. ggraph [Grammar of Graph Graphics](https://ggraph.data-imaginist.com)   
     * Network graphs using ggplot2    
-9. gganimate [A Grammar of Animated Graphics](https://gganimate.com)  
+8. gganimate [A Grammar of Animated Graphics](https://gganimate.com)  
     * Animate ggplot2 (Useful for presenting time-series dynamics of microbial communities)  
-10. ggforce [Accelerating ggplot2](https://ggforce.data-imaginist.com)  
+9. ggforce [Accelerating ggplot2](https://ggforce.data-imaginist.com)  
     * Zoom specific regions of the plots   
-11. factoextra [Extract and Visualize the Results of Multivariate Data Analyses](https://rpkgs.datanovia.com/factoextra/index.html)  
+10. factoextra [Extract and Visualize the Results of Multivariate Data Analyses](https://rpkgs.datanovia.com/factoextra/index.html)  
     * Powerful package for multivvariate data analysis  
-12. ggcorrplot [Visualization of a correlation matrix using ggplot2](https://rpkgs.datanovia.com/ggcorrplot/)   
-13. tidyverse [R packages for data science](https://www.tidyverse.org/)  
+11. ggcorrplot [Visualization of a correlation matrix using ggplot2](https://rpkgs.datanovia.com/ggcorrplot/)   
+12. tidyverse [R packages for data science](https://www.tidyverse.org/)  
     * Universe of several useful R packages for data handling, analysis and visualization    
-14. Extensions of ggplot [Gallary of numerous data visualistion R pacakges](https://exts.ggplot2.tidyverse.org/gallery/)   
-15. ggtree [Visualization and annotation of phylogenetic trees (in R) ](https://github.com/YuLab-SMU/ggtree)   
+13. Extensions of ggplot [Gallary of numerous data visualistion R pacakges](https://exts.ggplot2.tidyverse.org/gallery/)   
+14. ggtree [Visualization and annotation of phylogenetic trees (in R) ](https://github.com/YuLab-SMU/ggtree)   
+15. patchwork [The Composer of ggplots](https://patchwork.data-imaginist.com)  
+    * Combining multiple plots made easy    
+16. pheatmap [Pretty Heatmaps](https://cran.r-project.org/web/packages/pheatmap/pheatmap.pdf)    
 
 -------------------------------------------------------   
 
@@ -202,6 +207,7 @@ ZIBBSeqDiscovery [A Zero-inflated Beta-binomial Model for Microbiome Data Analys
 3. Schloss, P. D: [The Riffomonas Reproducible Research Tutorial Series](http://www.riffomonas.org/reproducible_research/)  
 4. [Shetty SA, Lahti L., et al: Tutorial from microbiome data analysis spring school 2018, Wageningen University and Research](https://mibwurrepo.github.io/Microbial-bioinformatics-introductory-course-Material-2018/introduction.html)     
 5. [Holmes S, Huber W.: Modern statistics for modern biology. Cambridge University Press; 2018 Nov 30.](http://web.stanford.edu/class/bios221/book/)    
+6. [Xu S, Yu G.: Workshop of microbiome dataset analysis using MicrobiotaProcess](https://yulab-smu.top/MicrobiotaProcessWorkshop/articles/MicrobiotaProcessWorkshop.html)   
 
 Note:  
 A good practise is to use Rmarkdown for documenting your results and sharing with your collaborators and supervisors. For more information click here [RStudio](https://www.youtube.com/watch?v=cWJzjHh_3kk&t=337s) and  
@@ -221,7 +227,9 @@ A good practise is to use Rmarkdown for documenting your results and sharing wit
 2. Callahan, B. J., McMurdie, P. J., Rosen, M. J., Han, A. W., Johnson, A. J. A. & Holmes, S. P. (2016). DADA2: high-resolution sample inference from Illumina amplicon data. Nature methods 13, 581-583.  
 3. Caporaso, J. G., Kuczynski, J., Stombaugh, J., Bittinger, K., Bushman, F. D., Costello, E. K., Fierer, N., Peña, A. G., Goodrich, J. K. & Gordon, J. I. (2010). QIIME allows analysis of high-throughput community sequencing data. Nature methods 7, 335-336.  
 4. Schloss, P. D., Westcott, S. L., Ryabin, T., Hall, J. R., Hartmann, M., Hollister, E. B., Lesniewski, R. A., Oakley, B. B., Parks, D. H. & Robinson, C. J. (2009). Introducing mothur: open-source, platform-independent, community-supported software for describing and comparing microbial communities. Applied and environmental microbiology 75, 7537-7541.  
-5. Team, R. C. (2000). R language definition. Vienna, Austria: R foundation for statistical computing.  
+5. Team, R. C. (2000). R language definition. Vienna, Austria: R foundation for statistical computing.   
+6. Salter SJ, Cox MJ, Turek EM, Calus ST, Cookson WO, Moffatt MF, Turner P, Parkhill J, Loman NJ, Walker AW. Reagent and laboratory contamination can critically impact sequence-based microbiome analyses. BMC biology. 2014 Dec 1;12(1):87.    
+7. Karstens L, Asquith M, Davin S, Fair D, Gregory WT, Wolfe AJ, Braun J, McWeeney S. Controlling for contaminants in low-biomass 16S rRNA gene sequencing experiments. MSystems. 2019 Aug 27;4(4).   
 
 -------------------------------------------------------    
 
