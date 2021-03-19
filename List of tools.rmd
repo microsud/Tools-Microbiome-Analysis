@@ -280,4 +280,15 @@ Zendo: [![DOI](https://zenodo.org/badge/99698135.svg)](https://zenodo.org/badge/
 We are working on an open source project developing R/Bioc methods, benchmarking data, and educational material for microbiome research based on the `SummarizedExperiment` class and its derivatives.  
 More information please check our website [R/Bioc microbiome ecosystem with SummarizedExperiment](https://microbiome.github.io/)   
 
+-------------------------------------------------------    
+
+### Acknowledgements      
+
+* The Academy of Finland (Grants 295741; 307127)     
+* The SIAM Gravitation Grant 024.002.002   
+* UNLOCK project of the Netherlands Organization for Scientific Research (NWO)   
+* University of Turku, Department of Mathematics and Statistics   
+* Molecular Ecology group, Laboratory of Microbiology, Wageningen University, The Netherlands   
+* Medische Microbiologie en Infectiepreventie, University Medical Center Groningen, The Netherlands   
+
 -------------------------------------------------------   
