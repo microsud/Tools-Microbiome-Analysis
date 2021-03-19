@@ -3,11 +3,11 @@
 
 ## A list of R environment based tools for microbiome data exploration, statistical analysis and visualization  
   
-As a beginner, the entire process from sample collection to analysis for sequencing data is a daunting task. More specifically, the downstream processing of raw reads is the most time consuming and mentally draining stage. It is vital to understand the basic concepts in microbial ecology and then to use various tools at disposal to address specific research questions. Thankfully, several young researchers supported by their experienced principal investigators/supervisors are working on creating various tools for analysis and interpretation of microbial community data. A major achievement of the scientific community is the open science initiative which has led to sharing of knowledge worldwide. For microbial community analysis, several tools have been created in R, a free to use (GNU General Public License) programming language(Team, 2000). The power of R lies in its ease of working with individuals lacking programming skills and easy sharing of analysis scripts codes and packages aiding reproducibility. Using tools such as QIIME (the newer QIIME2) (Caporaso, Kuczynski, Stombaugh et al., 2010), Mothur (Schloss, Westcott, Ryabin et al., 2009), DADA2 (Callahan, McMurdie, Rosen et al., 2016) one can get from raw reads to species × samples table (OTU or ASVs amplicon sequence variants as suggested recently (Callahan, McMurdie & Holmes, 2017)). In this post, numerous resources that can be helpful for analysis of microbiome data are listed. This list may not have all the packages as this tool development space is ever growing. Feel free to add those packages or links to web tutorials related to microbiome data, there is a [google docs excel sheet at this link for a list of tools](https://docs.google.com/spreadsheets/d/1am-UyDVBGDOgm6jVQ5FDXxmg24iriHqeBeul14HRb1g/edit?usp=sharing) which can be edited to include more tools. These are mostly for improving statistical analysis and visualisation. These tools provide convenient options for data analysis and include several steps where the user has to make decisions. The work by [McMurdie PJ, Holmes S](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003531), [Weiss S](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-017-0237-y) and [Tsilimigras M.C. and Fodor A.A](http://www.sciencedirect.com/science/article/pii/S1047279716300722) are useful resources to understand the data common to microbiome census. It can be tricky and frustrating in the beginning but patience and perseverance will be fruitful at the end (personal experience).
+As a beginner, the entire process from sample collection to analysis for sequencing data is a daunting task. More specifically, the downstream processing of raw reads is the most time consuming and mentally draining stage. It is vital to understand the basic concepts in microbial ecology and then to use various tools at disposal to address specific research questions. Thankfully, several young researchers supported by their experienced principal investigators/supervisors are working on creating various tools for analysis and interpretation of microbial community data. A major achievement of the scientific community is the open science initiative which has led to sharing of knowledge worldwide. For microbial community analysis, several tools have been created in R, a free to use (GNU General Public License) programming language(Team, 2000). The power of R lies in its ease of working with individuals lacking programming skills and easy sharing of analysis scripts codes and packages aiding reproducibility. Using tools such as QIIME (the newer QIIME2) (Caporaso, Kuczynski, Stombaugh et al., 2010), Mothur (Schloss, Westcott, Ryabin et al., 2009), DADA2 (Callahan, McMurdie, Rosen et al., 2016) one can get from raw reads to species × samples table (OTU or ASVs amplicon sequence variants as suggested recently (Callahan, McMurdie & Holmes, 2017)). In this post, numerous resources that can be helpful for analysis of microbiome data are listed. This list may not have all the packages as this tool development space is ever growing. Feel free to add those packages or links to web tutorials related to microbiome data. These are mostly for improving statistical analysis and visualization. These tools provide convenient options for data analysis and include several steps where the user has to make decisions. The work by [McMurdie PJ, Holmes S](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003531), [Weiss S](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-017-0237-y) and [Tsilimigras M.C. and Fodor A.A](http://www.sciencedirect.com/science/article/pii/S1047279716300722) are useful resources to understand the data common to microbiome census. It can be tricky and frustrating in the beginning but patience and perseverance will be fruitful at the end (personal experience).
 
 -------------------------------------------------------   
 
-### Tools:  
+### Tools     
 
 > A   
 
@@ -86,10 +86,15 @@ mixDIABLO [Data Integration Analysis for Biomarker discovery using Latent variab
 mixMC [Multivariate Statistical Framework to Gain Insight into Microbial Communities](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0160169)   
 MMinte [Methodology for the large-scale assessment of microbial metabolic interactions (MMinte) from 16S rDNA data](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1230-3)   
 MTA [Microbial trend analysis (MTA) for common dynamic trend, group comparison and classification in longitudinal microbiome study](https://github.com/chanw0/MTA)    
+MicrobiomeExplor [An R package for the analysis and visualization of microbial communities](https://doi.org/10.1093/bioinformatics/btaa838)   
+MicroBVS [Dirichlet-tree multinomial regression models with Bayesian variable selection - an R package](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03640-0)    
+MicroNiche [An R package for assessing microbial niche breadth and overlap from amplicon sequencing data](https://academic.oup.com/femsec/article-abstract/96/8/fiaa131/5863182?redirectedFrom=fulltext)   
 
 > N    
  
-NMIT [Microbial Interdependence Association Test--a Non-parametric Microbial Interdependence Test](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5696116/#!po=75.0000)   
+NMIT [Microbial Interdependence Association Test--a Non-parametric Microbial Interdependence Test](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5696116/#!po=75.0000)    
+NetCoMi [Network construction and comparison for microbiome data in R](https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbaa290/6017455)   
+NBZIMM [Negative binomial and zero-inflated mixed models, with application to microbiome/metagenomics data analysis](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03803-z)    
 
 > O    
 
@@ -119,6 +124,7 @@ Rhea [A pipeline with modular R scripts](https://peerj.com/articles/2836/)
 
 > S   
 
+selbal [Balances: a New Perspective for Microbiome Analysis](https://msystems.asm.org/content/3/4/e00053-18)  
 ShinyPhyloseq [Web-tool with user interface for Phyloseq](http://joey711.github.io/shiny-phyloseq/)     
 SIAMCAT [Statistical Inference of Associations between Microbial Communities And host phenoTypes](https://bioconductor.org/packages/release/bioc/html/SIAMCAT.html)   
 SigTree [Identify and Visualize Significantly Responsive Branches in a Phylogenetic Tree](http://www.sciencedirect.com/science/article/pii/S2001037017300132)    
@@ -133,7 +139,8 @@ structSSI [Simultaneous and Selective Inference for Grouped or Hierarchically St
 Tax4Fun [Predicting functional profiles from metagenomic 16S rRNA gene data](https://www.ncbi.nlm.nih.gov/pubmed/25957349)    
 taxize [Taxonomic Information from Around the Web](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3901538/)    
 TreeSummarizedExperiment [An extension class of SummarizedExperiment to allow hierarchical structure on the row or column dimension](https://github.com/fionarhuang/TreeSummarizedExperiment)   
-themetagenomics [Exploring Thematic Structure and Predicted Functionality of 16S rRNA Amplicon Data](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0219235)   
+themetagenomics [Exploring Thematic Structure and Predicted Functionality of 16S rRNA Amplicon Data](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0219235)    
+tidyMicro [A pipeline for microbiome data analysis and visualization using the tidyverse in R](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-03967-2)  
 
 > V   
 
@@ -148,7 +155,16 @@ yingtools2 [Tools and functions for working with clinical and microbiome data](h
 zeroSum [Reference Point Insensitive Molecular Data Analysis](https://academic.oup.com/bioinformatics/article/33/2/219/2928229)   
 ZIBBSeqDiscovery [A Zero-inflated Beta-binomial Model for Microbiome Data Analysis](https://onlinelibrary.wiley.com/doi/abs/10.1002/sta4.185)   
 
--------------------------------------------------------   
+-------------------------------------------------------    
+
+### Microbiome data sets  
+
+1. HMP16SData [Efficient Access to the Human Microbiome Project through Bioconductor](https://bioconductor.org/packages/release/data/experiment/html/HMP16SData.html)   
+2. HMP2Data [16s rRNA sequencing data from the Human Microbiome Project 2](https://bioconductor.org/packages/release/data/experiment/html/HMP2Data.html)  
+3. microbiomeDataSets [Experiment Hub based microbiome datasets](https://bioconductor.org/packages/devel/data/experiment/html/microbiomeDataSets.html)   
+4. curatedMetagenomicData [Accessible, curated metagenomic data through ExperimentHub](https://bioconductor.org/packages/release/data/experiment/html/curatedMetagenomicData.html)   
+
+-------------------------------------------------------    
 
 ### Other tools    
 1. ggplot2 [An implementation of the Grammar of Graphics in R](https://ggplot2.tidyverse.org/)  
@@ -208,6 +224,7 @@ ZIBBSeqDiscovery [A Zero-inflated Beta-binomial Model for Microbiome Data Analys
 4. [Shetty SA, Lahti L., et al: Tutorial from microbiome data analysis spring school 2018, Wageningen University and Research](https://mibwurrepo.github.io/Microbial-bioinformatics-introductory-course-Material-2018/introduction.html)     
 5. [Holmes S, Huber W.: Modern statistics for modern biology. Cambridge University Press; 2018 Nov 30.](http://web.stanford.edu/class/bios221/book/)    
 6. [Xu S, Yu G.: Workshop of microbiome dataset analysis using MicrobiotaProcess](https://yulab-smu.top/MicrobiotaProcessWorkshop/articles/MicrobiotaProcessWorkshop.html)   
+7. [Antoni Susin, Yiwen Wang, Kim-Anh Lê Cao, M.Luz Calle.: Variable selection in microbiome compositional data analysis: tutorial](https://malucalle.github.io/Microbiome-Variable-Selection/)    
 
 Note:  
 A good practise is to use Rmarkdown for documenting your results and sharing with your collaborators and supervisors. For more information click here [RStudio](https://www.youtube.com/watch?v=cWJzjHh_3kk&t=337s) and  
@@ -222,7 +239,7 @@ A good practise is to use Rmarkdown for documenting your results and sharing wit
 
 -------------------------------------------------------   
 
-### References:
+### References:  
 1. Callahan, B. J., McMurdie, P. J. & Holmes, S. P. (2017). Exact sequence variants should replace operational taxonomic units in marker gene data analysis. bioRxiv, 113597.  
 2. Callahan, B. J., McMurdie, P. J., Rosen, M. J., Han, A. W., Johnson, A. J. A. & Holmes, S. P. (2016). DADA2: high-resolution sample inference from Illumina amplicon data. Nature methods 13, 581-583.  
 3. Caporaso, J. G., Kuczynski, J., Stombaugh, J., Bittinger, K., Bushman, F. D., Costello, E. K., Fierer, N., Peña, A. G., Goodrich, J. K. & Gordon, J. I. (2010). QIIME allows analysis of high-throughput community sequencing data. Nature methods 7, 335-336.  
@@ -233,16 +250,19 @@ A good practise is to use Rmarkdown for documenting your results and sharing wit
 
 -------------------------------------------------------    
 
-### TODO 
-Any help is welcome  
-* Structure the list according to categories  
-  * General purpose    
-  * Visualization  
-  * Snapshot/cross-sectional stats  
-  * Time series/Longitudinal stats  
-  * Integrative -Omics  
+### TODO   
+Any help is welcome   
+
+* Structure the list according to categories   
+    * General purpose    
+    * Visualization  
+    * Snapshot/cross-sectional stats  
+    * Time series/Longitudinal stats   
+    * Integrative -Omics   
 * Include metagenomics/metabolomics  
+
 * Include more general microbiology oriented R packages/tools  
+
 * and so on .....  
 
 -------------------------------------------------------   
@@ -251,10 +271,13 @@ Any help is welcome
 You can cite this resource as:  
 Shetty, Sudarshan A., and Leo Lahti. [Microbiome data science. Journal of biosciences 44, no. 5 (2019): 115](https://link.springer.com/article/10.1007%2Fs12038-019-9930-2).    
 [*Pre-print*](https://openresearchlabs.github.io/publications/papers/2019-Shetty-MDS.pdf)   
-Zendo: [![DOI](https://zenodo.org/badge/99698135.svg)](https://zenodo.org/badge/latestdoi/99698135)   
+Zendo: [![DOI](https://zenodo.org/badge/99698135.svg)](https://zenodo.org/badge/latestdoi/99698135)    
 
--------------------------------------------------------  
 
-Google doc [link](https://docs.google.com/spreadsheets/d/1am-UyDVBGDOgm6jVQ5FDXxmg24iriHqeBeul14HRb1g/edit?usp=sharing)  
+-------------------------------------------------------    
+
+### Do you want to join us and contribute to the open source microbiome community?   
+We are working on an open source project developing R/Bioc methods, benchmarking data, and educational material for microbiome research based on the `SummarizedExperiment` class and its derivatives.  
+More information please check our website [R/Bioc microbiome ecosystem with SummarizedExperiment](https://microbiome.github.io/)   
 
 -------------------------------------------------------   
