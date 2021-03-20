@@ -283,7 +283,7 @@ More information please check our website [R/Bioc microbiome ecosystem with Summ
 
 -------------------------------------------------------    
 
-### Acknowledgements      
+### Acknowledgments        
 
 * The Academy of Finland (Grants 295741; 307127)     
 * The SIAM Gravitation Grant 024.002.002   
@@ -296,7 +296,7 @@ More information please check our website [R/Bioc microbiome ecosystem with Summ
 
 ### Updates that are added  
 
-* Updated on `r format(Sys.time(), '%d %B, %Y')` [See Changes log](CHANGES.html)   
+* Updated on [See Changes log](CHANGES.html)   
   
 
 -------------------------------------------------------   
