@@ -1,0 +1,21 @@
+name: "Sudarshan A. Shetty"
+output_dir: "."
+navbar:
+  title: "Tools for Microbiome Analysis"
+  left:
+    - icon: fa-home fa-lg
+      href: https://microbiome.github.io/
+
+  right:
+    - icon: ai-google-scholar ai-lg
+      href: https://scholar.google.nl/citations?hl=en&user=Vahc6LUAAAAJ&view_op=list_works&sortby=pubdate
+    - icon: fab fa-github fa-lg
+      href: https://github.com/microsud
+    - icon: fab fa-twitter fa-lg
+      href: https://twitter.com/gutmicrobe
+    - icon: fab fa-linkedin fa-lg
+      href: www.linkedin.com/in/sudarshan-shetty-57345822
+output:
+  html_document:
+    theme: paper
+    css: 'styles.css'
