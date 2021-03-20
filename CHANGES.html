@@ -11,7 +11,7 @@
 
 
 
-<title>README.utf8</title>
+<title>CHANGES.utf8</title>
 
 <script>/*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */
 !function(a,b){"object"==typeof module&&"object"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error("jQuery requires a window with a document");return b(a)}:b(a)}("undefined"!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l="1.11.3",m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:"",length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0>a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0>a?b:0);return this.pushStack(c>=0&&b>c?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for("boolean"==typeof g&&(j=g,g=arguments[h]||{},h++),"object"==typeof g||m.isFunction(g)||(g={}),h===i&&(g=this,h--);i>h;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&&(j&&c&&(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&&m.isArray(a)?a:[]):f=a&&m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&&(g[d]=c));return g},m.extend({expando:"jQuery"+(l+Math.random()).replace(/\D/g,""),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return"function"===m.type(a)},isArray:Array.isArray||function(a){return"array"===m.type(a)},isWindow:function(a){return null!=a&&a==a.window},isNumeric:function(a){return!m.isArray(a)&&a-parseFloat(a)+1>=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||"object"!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&&!j.call(a,"constructor")&&!j.call(a.constructor.prototype,"isPrototypeOf"))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.call(a,b);for(b in a);return void 0===b||j.call(a,b)},type:function(a){return null==a?a+"":"object"==typeof a||"function"==typeof a?h[i.call(a)]||"object":typeof a},globalEval:function(b){b&&m.trim(b)&&(a.execScript||function(b){a.eval.call(a,b)})(b)},camelCase:function(a){return a.replace(o,"ms-").replace(p,q)},nodeName:function(a,b){return a.nodeName&&a.nodeName.toLowerCase()===b.toLowerCase()},each:function(a,b,c){var d,e=0,f=a.length,g=r(a);if(c){if(g){for(;f>e;e++)if(d=b.apply(a[e],c),d===!1)break}else for(e in a)if(d=b.apply(a[e],c),d===!1)break}else if(g){for(;f>e;e++)if(d=b.call(a[e],e,a[e]),d===!1)break}else for(e in a)if(d=b.call(a[e],e,a[e]),d===!1)break;return a},trim:function(a){return null==a?"":(a+"").replace(n,"")},makeArray:function(a,b){var c=b||[];return null!=a&&(r(Object(a))?m.merge(c,"string"==typeof a?[a]:a):f.call(c,a)),c},inArray:function(a,b,c){var d;if(b){if(g)return g.call(b,a,c);for(d=b.length,c=c?0>c?Math.max(0,d+c):c:0;d>c;c++)if(c in b&&b[c]===a)return c}return-1},merge:function(a,b){var c=+b.length,d=0,e=a.length;while(c>d)a[e++]=b[d++];if(c!==c)while(void 0!==b[d])a[e++]=b[d++];return a.length=e,a},grep:function(a,b,c){for(var d,e=[],f=0,g=a.length,h=!c;g>f;f++)d=!b(a[f],f),d!==h&&e.push(a[f]);return e},map:function(a,b,c){var d,f=0,g=a.length,h=r(a),i=[];if(h)for(;g>f;f++)d=b(a[f],f,c),null!=d&&i.push(d);else for(f in a)d=b(a[f],f,c),null!=d&&i.push(d);return e.apply([],i)},guid:1,proxy:function(a,b){var c,e,f;return"string"==typeof b&&(f=a[b],b=a,a=f),m.isFunction(a)?(c=d.call(arguments,2),e=function(){return a.apply(b||this,c.concat(d.call(arguments)))},e.guid=a.guid=a.guid||m.guid++,e):void 0},now:function(){return+new Date},support:k}),m.each("Boolean Number String Function Array Date RegExp Object Error".split(" "),function(a,b){h["[object "+b+"]"]=b.toLowerCase()});function r(a){var b="length"in a&&a.length,c=m.type(a);return"function"===c||m.isWindow(a)?!1:1===a.nodeType&&b?!0:"array"===c||0===b||"number"==typeof b&&b>0&&b-1 in a}var s=function(a){var b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u="sizzle"+1*new Date,v=a.document,w=0,x=0,y=ha(),z=ha(),A=ha(),B=function(a,b){return a===b&&(l=!0),0},C=1<<31,D={}.hasOwnProperty,E=[],F=E.pop,G=E.push,H=E.push,I=E.slice,J=function(a,b){for(var c=0,d=a.length;d>c;c++)if(a[c]===b)return c;return-1},K="checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",L="[\\x20\\t\\r\\n\\f]",M="(?:\\\\.|[\\w-]|[^\\x00-\\xa0])+",N=M.replace("w","w#"),O="\\["+L+"*("+M+")(?:"+L+"*([*^$|!~]?=)"+L+"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|("+N+"))|)"+L+"*\\]",P=":("+M+")(?:\\((('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|((?:\\\\.|[^\\\\()[\\]]|"+O+")*)|.*)\\)|)",Q=new RegExp(L+"+","g"),R=new RegExp("^"+L+"+|((?:^|[^\\\\])(?:\\\\.)*)"+L+"+$","g"),S=new RegExp("^"+L+"*,"+L+"*"),T=new RegExp("^"+L+"*([>+~]|"+L+")"+L+"*"),U=new RegExp("="+L+"*([^\\]'\"]*?)"+L+"*\\]","g"),V=new RegExp(P),W=new RegExp("^"+N+"$"),X={ID:new RegExp("^#("+M+")"),CLASS:new RegExp("^\\.("+M+")"),TAG:new RegExp("^("+M.replace("w","w*")+")"),ATTR:new RegExp("^"+O),PSEUDO:new RegExp("^"+P),CHILD:new RegExp("^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\("+L+"*(even|odd|(([+-]|)(\\d*)n|)"+L+"*(?:([+-]|)"+L+"*(\\d+)|))"+L+"*\\)|)","i"),bool:new RegExp("^(?:"+K+")$","i"),needsContext:new RegExp("^"+L+"*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\("+L+"*((?:-\\d)?\\d*)"+L+"*\\)|)(?=[^-]|$)","i")},Y=/^(?:input|select|textarea|button)$/i,Z=/^h\d$/i,$=/^[^{]+\{\s*\[native \w/,_=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,aa=/[+~]/,ba=/'|\\/g,ca=new RegExp("\\\\([\\da-f]{1,6}"+L+"?|("+L+")|.)","ig"),da=function(a,b,c){var d="0x"+b-65536;return d!==d||c?b:0>d?String.fromCharCode(d+65536):String.fromCharCode(d>>10|55296,1023&d|56320)},ea=function(){m()};try{H.apply(E=I.call(v.childNodes),v.childNodes),E[v.childNodes.length].nodeType}catch(fa){H={apply:E.length?function(a,b){G.apply(a,I.call(b))}:function(a,b){var c=a.length,d=0;while(a[c++]=b[d++]);a.length=c-1}}}function ga(a,b,d,e){var f,h,j,k,l,o,r,s,w,x;if((b?b.ownerDocument||b:v)!==n&&m(b),b=b||n,d=d||[],k=b.nodeType,"string"!=typeof a||!a||1!==k&&9!==k&&11!==k)return d;if(!e&&p){if(11!==k&&(f=_.exec(a)))if(j=f[1]){if(9===k){if(h=b.getElementById(j),!h||!h.parentNode)return d;if(h.id===j)return d.push(h),d}else if(b.ownerDocument&&(h=b.ownerDocument.getElementById(j))&&t(b,h)&&h.id===j)return d.push(h),d}else{if(f[2])return H.apply(d,b.getElementsByTagName(a)),d;if((j=f[3])&&c.getElementsByClassName)return H.apply(d,b.getElementsByClassName(j)),d}if(c.qsa&&(!q||!q.test(a))){if(s=r=u,w=b,x=1!==k&&a,1===k&&"object"!==b.nodeName.toLowerCase()){o=g(a),(r=b.getAttribute("id"))?s=r.replace(ba,"\\$&"):b.setAttribute("id",s),s="[id='"+s+"'] ",l=o.length;while(l--)o[l]=s+ra(o[l]);w=aa.test(a)&&pa(b.parentNode)||b,x=o.join(",")}if(x)try{return H.apply(d,w.querySelectorAll(x)),d}catch(y){}finally{r||b.removeAttribute("id")}}}return i(a.replace(R,"$1"),b,d,e)}function ha(){var a=[];function b(c,e){return a.push(c+" ")>d.cacheLength&&delete b[a.shift()],b[c+" "]=e}return b}function ia(a){return a[u]=!0,a}function ja(a){var b=n.createElement("div");try{return!!a(b)}catch(c){return!1}finally{b.parentNode&&b.parentNode.removeChild(b),b=null}}function ka(a,b){var c=a.split("|"),e=a.length;while(e--)d.attrHandle[c[e]]=b}function la(a,b){var c=b&&a,d=c&&1===a.nodeType&&1===b.nodeType&&(~b.sourceIndex||C)-(~a.sourceIndex||C);if(d)return d;if(c)while(c=c.nextSibling)if(c===b)return-1;return a?1:-1}function ma(a){return function(b){var c=b.nodeName.toLowerCase();return"input"===c&&b.type===a}}function na(a){return function(b){var c=b.nodeName.toLowerCase();return("input"===c||"button"===c)&&b.type===a}}function oa(a){return ia(function(b){return b=+b,ia(function(c,d){var e,f=a([],c.length,b),g=f.length;while(g--)c[e=f[g]]&&(c[e]=!(d[e]=c[e]))})})}function pa(a){return a&&"undefined"!=typeof a.getElementsByTagName&&a}c=ga.support={},f=ga.isXML=function(a){var b=a&&(a.ownerDocument||a).documentElement;return b?"HTML"!==b.nodeName:!1},m=ga.setDocument=function(a){var b,e,g=a?a.ownerDocument||a:v;return g!==n&&9===g.nodeType&&g.documentElement?(n=g,o=g.documentElement,e=g.defaultView,e&&e!==e.top&&(e.addEventListener?e.addEventListener("unload",ea,!1):e.attachEvent&&e.attachEvent("onunload",ea)),p=!f(g),c.attributes=ja(function(a){return a.className="i",!a.getAttribute("className")}),c.getElementsByTagName=ja(function(a){return a.appendChild(g.createComment("")),!a.getElementsByTagName("*").length}),c.getElementsByClassName=$.test(g.getElementsByClassName),c.getById=ja(function(a){return o.appendChild(a).id=u,!g.getElementsByName||!g.getElementsByName(u).length}),c.getById?(d.find.ID=function(a,b){if("undefined"!=typeof b.getElementById&&p){var c=b.getElementById(a);return c&&c.parentNode?[c]:[]}},d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){return a.getAttribute("id")===b}}):(delete d.find.ID,d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){var c="undefined"!=typeof a.getAttributeNode&&a.getAttributeNode("id");return c&&c.value===b}}),d.find.TAG=c.getElementsByTagName?function(a,b){return"undefined"!=typeof b.getElementsByTagName?b.getElementsByTagName(a):c.qsa?b.querySelectorAll(a):void 0}:function(a,b){var c,d=[],e=0,f=b.getElementsByTagName(a);if("*"===a){while(c=f[e++])1===c.nodeType&&d.push(c);return d}return f},d.find.CLASS=c.getElementsByClassName&&function(a,b){return p?b.getElementsByClassName(a):void 0},r=[],q=[],(c.qsa=$.test(g.querySelectorAll))&&(ja(function(a){o.appendChild(a).innerHTML="<a id='"+u+"'></a><select id='"+u+"-\f]' msallowcapture=''><option selected=''></option></select>",a.querySelectorAll("[msallowcapture^='']").length&&q.push("[*^$]="+L+"*(?:''|\"\")"),a.querySelectorAll("[selected]").length||q.push("\\["+L+"*(?:value|"+K+")"),a.querySelectorAll("[id~="+u+"-]").length||q.push("~="),a.querySelectorAll(":checked").length||q.push(":checked"),a.querySelectorAll("a#"+u+"+*").length||q.push(".#.+[+~]")}),ja(function(a){var b=g.createElement("input");b.setAttribute("type","hidden"),a.appendChild(b).setAttribute("name","D"),a.querySelectorAll("[name=d]").length&&q.push("name"+L+"*[*^$|!~]?="),a.querySelectorAll(":enabled").length||q.push(":enabled",":disabled"),a.querySelectorAll("*,:x"),q.push(",.*:")})),(c.matchesSelector=$.test(s=o.matches||o.webkitMatchesSelector||o.mozMatchesSelector||o.oMatchesSelector||o.msMatchesSelector))&&ja(function(a){c.disconnectedMatch=s.call(a,"div"),s.call(a,"[s!='']:x"),r.push("!=",P)}),q=q.length&&new RegExp(q.join("|")),r=r.length&&new RegExp(r.join("|")),b=$.test(o.compareDocumentPosition),t=b||$.test(o.contains)?function(a,b){var c=9===a.nodeType?a.documentElement:a,d=b&&b.parentNode;return a===d||!(!d||1!==d.nodeType||!(c.contains?c.contains(d):a.compareDocumentPosition&&16&a.compareDocumentPosition(d)))}:function(a,b){if(b)while(b=b.parentNode)if(b===a)return!0;return!1},B=b?function(a,b){if(a===b)return l=!0,0;var d=!a.compareDocumentPosition-!b.compareDocumentPosition;return d?d:(d=(a.ownerDocument||a)===(b.ownerDocument||b)?a.compareDocumentPosition(b):1,1&d||!c.sortDetached&&b.compareDocumentPosition(a)===d?a===g||a.ownerDocument===v&&t(v,a)?-1:b===g||b.ownerDocument===v&&t(v,b)?1:k?J(k,a)-J(k,b):0:4&d?-1:1)}:function(a,b){if(a===b)return l=!0,0;var c,d=0,e=a.parentNode,f=b.parentNode,h=[a],i=[b];if(!e||!f)return a===g?-1:b===g?1:e?-1:f?1:k?J(k,a)-J(k,b):0;if(e===f)return la(a,b);c=a;while(c=c.parentNode)h.unshift(c);c=b;while(c=c.parentNode)i.unshift(c);while(h[d]===i[d])d++;return d?la(h[d],i[d]):h[d]===v?-1:i[d]===v?1:0},g):n},ga.matches=function(a,b){return ga(a,null,null,b)},ga.matchesSelector=function(a,b){if((a.ownerDocument||a)!==n&&m(a),b=b.replace(U,"='$1']"),!(!c.matchesSelector||!p||r&&r.test(b)||q&&q.test(b)))try{var d=s.call(a,b);if(d||c.disconnectedMatch||a.document&&11!==a.document.nodeType)return d}catch(e){}return ga(b,n,null,[a]).length>0},ga.contains=function(a,b){return(a.ownerDocument||a)!==n&&m(a),t(a,b)},ga.attr=function(a,b){(a.ownerDocument||a)!==n&&m(a);var e=d.attrHandle[b.toLowerCase()],f=e&&D.call(d.attrHandle,b.toLowerCase())?e(a,b,!p):void 0;return void 0!==f?f:c.attributes||!p?a.getAttribute(b):(f=a.getAttributeNode(b))&&f.specified?f.value:null},ga.error=function(a){throw new Error("Syntax error, unrecognized expression: "+a)},ga.uniqueSort=function(a){var b,d=[],e=0,f=0;if(l=!c.detectDuplicates,k=!c.sortStable&&a.slice(0),a.sort(B),l){while(b=a[f++])b===a[f]&&(e=d.push(f));while(e--)a.splice(d[e],1)}return k=null,a},e=ga.getText=function(a){var b,c="",d=0,f=a.nodeType;if(f){if(1===f||9===f||11===f){if("string"==typeof a.textContent)return a.textContent;for(a=a.firstChild;a;a=a.nextSibling)c+=e(a)}else if(3===f||4===f)return a.nodeValue}else while(b=a[d++])c+=e(b);return c},d=ga.selectors={cacheLength:50,createPseudo:ia,match:X,attrHandle:{},find:{},relative:{">":{dir:"parentNode",first:!0}," ":{dir:"parentNode"},"+":{dir:"previousSibling",first:!0},"~":{dir:"previousSibling"}},preFilter:{ATTR:function(a){return a[1]=a[1].replace(ca,da),a[3]=(a[3]||a[4]||a[5]||"").replace(ca,da),"~="===a[2]&&(a[3]=" "+a[3]+" "),a.slice(0,4)},CHILD:function(a){return a[1]=a[1].toLowerCase(),"nth"===a[1].slice(0,3)?(a[3]||ga.error(a[0]),a[4]=+(a[4]?a[5]+(a[6]||1):2*("even"===a[3]||"odd"===a[3])),a[5]=+(a[7]+a[8]||"odd"===a[3])):a[3]&&ga.error(a[0]),a},PSEUDO:function(a){var b,c=!a[6]&&a[2];return X.CHILD.test(a[0])?null:(a[3]?a[2]=a[4]||a[5]||"":c&&V.test(c)&&(b=g(c,!0))&&(b=c.indexOf(")",c.length-b)-c.length)&&(a[0]=a[0].slice(0,b),a[2]=c.slice(0,b)),a.slice(0,3))}},filter:{TAG:function(a){var b=a.replace(ca,da).toLowerCase();return"*"===a?function(){return!0}:function(a){return a.nodeName&&a.nodeName.toLowerCase()===b}},CLASS:function(a){var b=y[a+" "];return b||(b=new RegExp("(^|"+L+")"+a+"("+L+"|$)"))&&y(a,function(a){return b.test("string"==typeof a.className&&a.className||"undefined"!=typeof a.getAttribute&&a.getAttribute("class")||"")})},ATTR:function(a,b,c){return function(d){var e=ga.attr(d,a);return null==e?"!="===b:b?(e+="","="===b?e===c:"!="===b?e!==c:"^="===b?c&&0===e.indexOf(c):"*="===b?c&&e.indexOf(c)>-1:"$="===b?c&&e.slice(-c.length)===c:"~="===b?(" "+e.replace(Q," ")+" ").indexOf(c)>-1:"|="===b?e===c||e.slice(0,c.length+1)===c+"-":!1):!0}},CHILD:function(a,b,c,d,e){var f="nth"!==a.slice(0,3),g="last"!==a.slice(-4),h="of-type"===b;return 1===d&&0===e?function(a){return!!a.parentNode}:function(b,c,i){var j,k,l,m,n,o,p=f!==g?"nextSibling":"previousSibling",q=b.parentNode,r=h&&b.nodeName.toLowerCase(),s=!i&&!h;if(q){if(f){while(p){l=b;while(l=l[p])if(h?l.nodeName.toLowerCase()===r:1===l.nodeType)return!1;o=p="only"===a&&!o&&"nextSibling"}return!0}if(o=[g?q.firstChild:q.lastChild],g&&s){k=q[u]||(q[u]={}),j=k[a]||[],n=j[0]===w&&j[1],m=j[0]===w&&j[2],l=n&&q.childNodes[n];while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if(1===l.nodeType&&++m&&l===b){k[a]=[w,n,m];break}}else if(s&&(j=(b[u]||(b[u]={}))[a])&&j[0]===w)m=j[1];else while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if((h?l.nodeName.toLowerCase()===r:1===l.nodeType)&&++m&&(s&&((l[u]||(l[u]={}))[a]=[w,m]),l===b))break;return m-=e,m===d||m%d===0&&m/d>=0}}},PSEUDO:function(a,b){var c,e=d.pseudos[a]||d.setFilters[a.toLowerCase()]||ga.error("unsupported pseudo: "+a);return e[u]?e(b):e.length>1?(c=[a,a,"",b],d.setFilters.hasOwnProperty(a.toLowerCase())?ia(function(a,c){var d,f=e(a,b),g=f.length;while(g--)d=J(a,f[g]),a[d]=!(c[d]=f[g])}):function(a){return e(a,0,c)}):e}},pseudos:{not:ia(function(a){var b=[],c=[],d=h(a.replace(R,"$1"));return d[u]?ia(function(a,b,c,e){var f,g=d(a,null,e,[]),h=a.length;while(h--)(f=g[h])&&(a[h]=!(b[h]=f))}):function(a,e,f){return b[0]=a,d(b,null,f,c),b[0]=null,!c.pop()}}),has:ia(function(a){return function(b){return ga(a,b).length>0}}),contains:ia(function(a){return a=a.replace(ca,da),function(b){return(b.textContent||b.innerText||e(b)).indexOf(a)>-1}}),lang:ia(function(a){return W.test(a||"")||ga.error("unsupported lang: "+a),a=a.replace(ca,da).toLowerCase(),function(b){var c;do if(c=p?b.lang:b.getAttribute("xml:lang")||b.getAttribute("lang"))return c=c.toLowerCase(),c===a||0===c.indexOf(a+"-");while((b=b.parentNode)&&1===b.nodeType);return!1}}),target:function(b){var c=a.location&&a.location.hash;return c&&c.slice(1)===b.id},root:function(a){return a===o},focus:function(a){return a===n.activeElement&&(!n.hasFocus||n.hasFocus())&&!!(a.type||a.href||~a.tabIndex)},enabled:function(a){return a.disabled===!1},disabled:function(a){return a.disabled===!0},checked:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&!!a.checked||"option"===b&&!!a.selected},selected:function(a){return a.parentNode&&a.parentNode.selectedIndex,a.selected===!0},empty:function(a){for(a=a.firstChild;a;a=a.nextSibling)if(a.nodeType<6)return!1;return!0},parent:function(a){return!d.pseudos.empty(a)},header:function(a){return Z.test(a.nodeName)},input:function(a){return Y.test(a.nodeName)},button:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&"button"===a.type||"button"===b},text:function(a){var b;return"input"===a.nodeName.toLowerCase()&&"text"===a.type&&(null==(b=a.getAttribute("type"))||"text"===b.toLowerCase())},first:oa(function(){return[0]}),last:oa(function(a,b){return[b-1]}),eq:oa(function(a,b,c){return[0>c?c+b:c]}),even:oa(function(a,b){for(var c=0;b>c;c+=2)a.push(c);return a}),odd:oa(function(a,b){for(var c=1;b>c;c+=2)a.push(c);return a}),lt:oa(function(a,b,c){for(var d=0>c?c+b:c;--d>=0;)a.push(d);return a}),gt:oa(function(a,b,c){for(var d=0>c?c+b:c;++d<b;)a.push(d);return a})}},d.pseudos.nth=d.pseudos.eq;for(b in{radio:!0,checkbox:!0,file:!0,password:!0,image:!0})d.pseudos[b]=ma(b);for(b in{submit:!0,reset:!0})d.pseudos[b]=na(b);function qa(){}qa.prototype=d.filters=d.pseudos,d.setFilters=new qa,g=ga.tokenize=function(a,b){var c,e,f,g,h,i,j,k=z[a+" "];if(k)return b?0:k.slice(0);h=a,i=[],j=d.preFilter;while(h){(!c||(e=S.exec(h)))&&(e&&(h=h.slice(e[0].length)||h),i.push(f=[])),c=!1,(e=T.exec(h))&&(c=e.shift(),f.push({value:c,type:e[0].replace(R," ")}),h=h.slice(c.length));for(g in d.filter)!(e=X[g].exec(h))||j[g]&&!(e=j[g](e))||(c=e.shift(),f.push({value:c,type:g,matches:e}),h=h.slice(c.length));if(!c)break}return b?h.length:h?ga.error(a):z(a,i).slice(0)};function ra(a){for(var b=0,c=a.length,d="";c>b;b++)d+=a[b].value;return d}function sa(a,b,c){var d=b.dir,e=c&&"parentNode"===d,f=x++;return b.first?function(b,c,f){while(b=b[d])if(1===b.nodeType||e)return a(b,c,f)}:function(b,c,g){var h,i,j=[w,f];if(g){while(b=b[d])if((1===b.nodeType||e)&&a(b,c,g))return!0}else while(b=b[d])if(1===b.nodeType||e){if(i=b[u]||(b[u]={}),(h=i[d])&&h[0]===w&&h[1]===f)return j[2]=h[2];if(i[d]=j,j[2]=a(b,c,g))return!0}}}function ta(a){return a.length>1?function(b,c,d){var e=a.length;while(e--)if(!a[e](b,c,d))return!1;return!0}:a[0]}function ua(a,b,c){for(var d=0,e=b.length;e>d;d++)ga(a,b[d],c);return c}function va(a,b,c,d,e){for(var f,g=[],h=0,i=a.length,j=null!=b;i>h;h++)(f=a[h])&&(!c||c(f,d,e))&&(g.push(f),j&&b.push(h));return g}function wa(a,b,c,d,e,f){return d&&!d[u]&&(d=wa(d)),e&&!e[u]&&(e=wa(e,f)),ia(function(f,g,h,i){var j,k,l,m=[],n=[],o=g.length,p=f||ua(b||"*",h.nodeType?[h]:h,[]),q=!a||!f&&b?p:va(p,m,a,h,i),r=c?e||(f?a:o||d)?[]:g:q;if(c&&c(q,r,h,i),d){j=va(r,n),d(j,[],h,i),k=j.length;while(k--)(l=j[k])&&(r[n[k]]=!(q[n[k]]=l))}if(f){if(e||a){if(e){j=[],k=r.length;while(k--)(l=r[k])&&j.push(q[k]=l);e(null,r=[],j,i)}k=r.length;while(k--)(l=r[k])&&(j=e?J(f,l):m[k])>-1&&(f[j]=!(g[j]=l))}}else r=va(r===g?r.splice(o,r.length):r),e?e(null,g,r,i):H.apply(g,r)})}function xa(a){for(var b,c,e,f=a.length,g=d.relative[a[0].type],h=g||d.relative[" "],i=g?1:0,k=sa(function(a){return a===b},h,!0),l=sa(function(a){return J(b,a)>-1},h,!0),m=[function(a,c,d){var e=!g&&(d||c!==j)||((b=c).nodeType?k(a,c,d):l(a,c,d));return b=null,e}];f>i;i++)if(c=d.relative[a[i].type])m=[sa(ta(m),c)];else{if(c=d.filter[a[i].type].apply(null,a[i].matches),c[u]){for(e=++i;f>e;e++)if(d.relative[a[e].type])break;return wa(i>1&&ta(m),i>1&&ra(a.slice(0,i-1).concat({value:" "===a[i-2].type?"*":""})).replace(R,"$1"),c,e>i&&xa(a.slice(i,e)),f>e&&xa(a=a.slice(e)),f>e&&ra(a))}m.push(c)}return ta(m)}function ya(a,b){var c=b.length>0,e=a.length>0,f=function(f,g,h,i,k){var l,m,o,p=0,q="0",r=f&&[],s=[],t=j,u=f||e&&d.find.TAG("*",k),v=w+=null==t?1:Math.random()||.1,x=u.length;for(k&&(j=g!==n&&g);q!==x&&null!=(l=u[q]);q++){if(e&&l){m=0;while(o=a[m++])if(o(l,g,h)){i.push(l);break}k&&(w=v)}c&&((l=!o&&l)&&p--,f&&r.push(l))}if(p+=q,c&&q!==p){m=0;while(o=b[m++])o(r,s,g,h);if(f){if(p>0)while(q--)r[q]||s[q]||(s[q]=F.call(i));s=va(s)}H.apply(i,s),k&&!f&&s.length>0&&p+b.length>1&&ga.uniqueSort(i)}return k&&(w=v,j=t),r};return c?ia(f):f}return h=ga.compile=function(a,b){var c,d=[],e=[],f=A[a+" "];if(!f){b||(b=g(a)),c=b.length;while(c--)f=xa(b[c]),f[u]?d.push(f):e.push(f);f=A(a,ya(e,d)),f.selector=a}return f},i=ga.select=function(a,b,e,f){var i,j,k,l,m,n="function"==typeof a&&a,o=!f&&g(a=n.selector||a);if(e=e||[],1===o.length){if(j=o[0]=o[0].slice(0),j.length>2&&"ID"===(k=j[0]).type&&c.getById&&9===b.nodeType&&p&&d.relative[j[1].type]){if(b=(d.find.ID(k.matches[0].replace(ca,da),b)||[])[0],!b)return e;n&&(b=b.parentNode),a=a.slice(j.shift().value.length)}i=X.needsContext.test(a)?0:j.length;while(i--){if(k=j[i],d.relative[l=k.type])break;if((m=d.find[l])&&(f=m(k.matches[0].replace(ca,da),aa.test(j[0].type)&&pa(b.parentNode)||b))){if(j.splice(i,1),a=f.length&&ra(j),!a)return H.apply(e,f),e;break}}}return(n||h(a,o))(f,b,!p,e,aa.test(a)&&pa(b.parentNode)||b),e},c.sortStable=u.split("").sort(B).join("")===u,c.detectDuplicates=!!l,m(),c.sortDetached=ja(function(a){return 1&a.compareDocumentPosition(n.createElement("div"))}),ja(function(a){return a.innerHTML="<a href='#'></a>","#"===a.firstChild.getAttribute("href")})||ka("type|href|height|width",function(a,b,c){return c?void 0:a.getAttribute(b,"type"===b.toLowerCase()?1:2)}),c.attributes&&ja(function(a){return a.innerHTML="<input/>",a.firstChild.setAttribute("value",""),""===a.firstChild.getAttribute("value")})||ka("value",function(a,b,c){return c||"input"!==a.nodeName.toLowerCase()?void 0:a.defaultValue}),ja(function(a){return null==a.getAttribute("disabled")})||ka(K,function(a,b,c){var d;return c?void 0:a[b]===!0?b.toLowerCase():(d=a.getAttributeNode(b))&&d.specified?d.value:null}),ga}(a);m.find=s,m.expr=s.selectors,m.expr[":"]=m.expr.pseudos,m.unique=s.uniqueSort,m.text=s.getText,m.isXMLDoc=s.isXML,m.contains=s.contains;var t=m.expr.match.needsContext,u=/^<(\w+)\s*\/?>(?:<\/\1>|)$/,v=/^.[^:#\[\.,]*$/;function w(a,b,c){if(m.isFunction(b))return m.grep(a,function(a,d){return!!b.call(a,d,a)!==c});if(b.nodeType)return m.grep(a,function(a){return a===b!==c});if("string"==typeof b){if(v.test(b))return m.filter(b,a,c);b=m.filter(b,a)}return m.grep(a,function(a){return m.inArray(a,b)>=0!==c})}m.filter=function(a,b,c){var d=b[0];return c&&(a=":not("+a+")"),1===b.length&&1===d.nodeType?m.find.matchesSelector(d,a)?[d]:[]:m.find.matches(a,m.grep(b,function(a){return 1===a.nodeType}))},m.fn.extend({find:function(a){var b,c=[],d=this,e=d.length;if("string"!=typeof a)return this.pushStack(m(a).filter(function(){for(b=0;e>b;b++)if(m.contains(d[b],this))return!0}));for(b=0;e>b;b++)m.find(a,d[b],c);return c=this.pushStack(e>1?m.unique(c):c),c.selector=this.selector?this.selector+" "+a:a,c},filter:function(a){return this.pushStack(w(this,a||[],!1))},not:function(a){return this.pushStack(w(this,a||[],!0))},is:function(a){return!!w(this,"string"==typeof a&&t.test(a)?m(a):a||[],!1).length}});var x,y=a.document,z=/^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/,A=m.fn.init=function(a,b){var c,d;if(!a)return this;if("string"==typeof a){if(c="<"===a.charAt(0)&&">"===a.charAt(a.length-1)&&a.length>=3?[null,a,null]:z.exec(a),!c||!c[1]&&b)return!b||b.jquery?(b||x).find(a):this.constructor(b).find(a);if(c[1]){if(b=b instanceof m?b[0]:b,m.merge(this,m.parseHTML(c[1],b&&b.nodeType?b.ownerDocument||b:y,!0)),u.test(c[1])&&m.isPlainObject(b))for(c in b)m.isFunction(this[c])?this[c](b[c]):this.attr(c,b[c]);return this}if(d=y.getElementById(c[2]),d&&d.parentNode){if(d.id!==c[2])return x.find(a);this.length=1,this[0]=d}return this.context=y,this.selector=a,this}return a.nodeType?(this.context=this[0]=a,this.length=1,this):m.isFunction(a)?"undefined"!=typeof x.ready?x.ready(a):a(m):(void 0!==a.selector&&(this.selector=a.selector,this.context=a.context),m.makeArray(a,this))};A.prototype=m.fn,x=m(y);var B=/^(?:parents|prev(?:Until|All))/,C={children:!0,contents:!0,next:!0,prev:!0};m.extend({dir:function(a,b,c){var d=[],e=a[b];while(e&&9!==e.nodeType&&(void 0===c||1!==e.nodeType||!m(e).is(c)))1===e.nodeType&&d.push(e),e=e[b];return d},sibling:function(a,b){for(var c=[];a;a=a.nextSibling)1===a.nodeType&&a!==b&&c.push(a);return c}}),m.fn.extend({has:function(a){var b,c=m(a,this),d=c.length;return this.filter(function(){for(b=0;d>b;b++)if(m.contains(this,c[b]))return!0})},closest:function(a,b){for(var c,d=0,e=this.length,f=[],g=t.test(a)||"string"!=typeof a?m(a,b||this.context):0;e>d;d++)for(c=this[d];c&&c!==b;c=c.parentNode)if(c.nodeType<11&&(g?g.index(c)>-1:1===c.nodeType&&m.find.matchesSelector(c,a))){f.push(c);break}return this.pushStack(f.length>1?m.unique(f):f)},index:function(a){return a?"string"==typeof a?m.inArray(this[0],m(a)):m.inArray(a.jquery?a[0]:a,this):this[0]&&this[0].parentNode?this.first().prevAll().length:-1},add:function(a,b){return this.pushStack(m.unique(m.merge(this.get(),m(a,b))))},addBack:function(a){return this.add(null==a?this.prevObject:this.prevObject.filter(a))}});function D(a,b){do a=a[b];while(a&&1!==a.nodeType);return a}m.each({parent:function(a){var b=a.parentNode;return b&&11!==b.nodeType?b:null},parents:function(a){return m.dir(a,"parentNode")},parentsUntil:function(a,b,c){return m.dir(a,"parentNode",c)},next:function(a){return D(a,"nextSibling")},prev:function(a){return D(a,"previousSibling")},nextAll:function(a){return m.dir(a,"nextSibling")},prevAll:function(a){return m.dir(a,"previousSibling")},nextUntil:function(a,b,c){return m.dir(a,"nextSibling",c)},prevUntil:function(a,b,c){return m.dir(a,"previousSibling",c)},siblings:function(a){return m.sibling((a.parentNode||{}).firstChild,a)},children:function(a){return m.sibling(a.firstChild)},contents:function(a){return m.nodeName(a,"iframe")?a.contentDocument||a.contentWindow.document:m.merge([],a.childNodes)}},function(a,b){m.fn[a]=function(c,d){var e=m.map(this,b,c);return"Until"!==a.slice(-5)&&(d=c),d&&"string"==typeof d&&(e=m.filter(d,e)),this.length>1&&(C[a]||(e=m.unique(e)),B.test(a)&&(e=e.reverse())),this.pushStack(e)}});var E=/\S+/g,F={};function G(a){var b=F[a]={};return m.each(a.match(E)||[],function(a,c){b[c]=!0}),b}m.Callbacks=function(a){a="string"==typeof a?F[a]||G(a):m.extend({},a);var b,c,d,e,f,g,h=[],i=!a.once&&[],j=function(l){for(c=a.memory&&l,d=!0,f=g||0,g=0,e=h.length,b=!0;h&&e>f;f++)if(h[f].apply(l[0],l[1])===!1&&a.stopOnFalse){c=!1;break}b=!1,h&&(i?i.length&&j(i.shift()):c?h=[]:k.disable())},k={add:function(){if(h){var d=h.length;!function f(b){m.each(b,function(b,c){var d=m.type(c);"function"===d?a.unique&&k.has(c)||h.push(c):c&&c.length&&"string"!==d&&f(c)})}(arguments),b?e=h.length:c&&(g=d,j(c))}return this},remove:function(){return h&&m.each(arguments,function(a,c){var d;while((d=m.inArray(c,h,d))>-1)h.splice(d,1),b&&(e>=d&&e--,f>=d&&f--)}),this},has:function(a){return a?m.inArray(a,h)>-1:!(!h||!h.length)},empty:function(){return h=[],e=0,this},disable:function(){return h=i=c=void 0,this},disabled:function(){return!h},lock:function(){return i=void 0,c||k.disable(),this},locked:function(){return!i},fireWith:function(a,c){return!h||d&&!i||(c=c||[],c=[a,c.slice?c.slice():c],b?i.push(c):j(c)),this},fire:function(){return k.fireWith(this,arguments),this},fired:function(){return!!d}};return k},m.extend({Deferred:function(a){var b=[["resolve","done",m.Callbacks("once memory"),"resolved"],["reject","fail",m.Callbacks("once memory"),"rejected"],["notify","progress",m.Callbacks("memory")]],c="pending",d={state:function(){return c},always:function(){return e.done(arguments).fail(arguments),this},then:function(){var a=arguments;return m.Deferred(function(c){m.each(b,function(b,f){var g=m.isFunction(a[b])&&a[b];e[f[1]](function(){var a=g&&g.apply(this,arguments);a&&m.isFunction(a.promise)?a.promise().done(c.resolve).fail(c.reject).progress(c.notify):c[f[0]+"With"](this===d?c.promise():this,g?[a]:arguments)})}),a=null}).promise()},promise:function(a){return null!=a?m.extend(a,d):d}},e={};return d.pipe=d.then,m.each(b,function(a,f){var g=f[2],h=f[3];d[f[1]]=g.add,h&&g.add(function(){c=h},b[1^a][2].disable,b[2][2].lock),e[f[0]]=function(){return e[f[0]+"With"](this===e?d:this,arguments),this},e[f[0]+"With"]=g.fireWith}),d.promise(e),a&&a.call(e,e),e},when:function(a){var b=0,c=d.call(arguments),e=c.length,f=1!==e||a&&m.isFunction(a.promise)?e:0,g=1===f?a:m.Deferred(),h=function(a,b,c){return function(e){b[a]=this,c[a]=arguments.length>1?d.call(arguments):e,c===i?g.notifyWith(b,c):--f||g.resolveWith(b,c)}},i,j,k;if(e>1)for(i=new Array(e),j=new Array(e),k=new Array(e);e>b;b++)c[b]&&m.isFunction(c[b].promise)?c[b].promise().done(h(b,k,c)).fail(g.reject).progress(h(b,j,i)):--f;return f||g.resolveWith(k,c),g.promise()}});var H;m.fn.ready=function(a){return m.ready.promise().done(a),this},m.extend({isReady:!1,readyWait:1,holdReady:function(a){a?m.readyWait++:m.ready(!0)},ready:function(a){if(a===!0?!--m.readyWait:!m.isReady){if(!y.body)return setTimeout(m.ready);m.isReady=!0,a!==!0&&--m.readyWait>0||(H.resolveWith(y,[m]),m.fn.triggerHandler&&(m(y).triggerHandler("ready"),m(y).off("ready")))}}});function I(){y.addEventListener?(y.removeEventListener("DOMContentLoaded",J,!1),a.removeEventListener("load",J,!1)):(y.detachEvent("onreadystatechange",J),a.detachEvent("onload",J))}function J(){(y.addEventListener||"load"===event.type||"complete"===y.readyState)&&(I(),m.ready())}m.ready.promise=function(b){if(!H)if(H=m.Deferred(),"complete"===y.readyState)setTimeout(m.ready);else if(y.addEventListener)y.addEventListener("DOMContentLoaded",J,!1),a.addEventListener("load",J,!1);else{y.attachEvent("onreadystatechange",J),a.attachEvent("onload",J);var c=!1;try{c=null==a.frameElement&&y.documentElement}catch(d){}c&&c.doScroll&&!function e(){if(!m.isReady){try{c.doScroll("left")}catch(a){return setTimeout(e,50)}I(),m.ready()}}()}return H.promise(b)};var K="undefined",L;for(L in m(k))break;k.ownLast="0"!==L,k.inlineBlockNeedsLayout=!1,m(function(){var a,b,c,d;c=y.getElementsByTagName("body")[0],c&&c.style&&(b=y.createElement("div"),d=y.createElement("div"),d.style.cssText="position:absolute;border:0;width:0;height:0;top:0;left:-9999px",c.appendChild(d).appendChild(b),typeof b.style.zoom!==K&&(b.style.cssText="display:inline;margin:0;border:0;padding:1px;width:1px;zoom:1",k.inlineBlockNeedsLayout=a=3===b.offsetWidth,a&&(c.style.zoom=1)),c.removeChild(d))}),function(){var a=y.createElement("div");if(null==k.deleteExpando){k.deleteExpando=!0;try{delete a.test}catch(b){k.deleteExpando=!1}}a=null}(),m.acceptData=function(a){var b=m.noData[(a.nodeName+" ").toLowerCase()],c=+a.nodeType||1;return 1!==c&&9!==c?!1:!b||b!==!0&&a.getAttribute("classid")===b};var M=/^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,N=/([A-Z])/g;function O(a,b,c){if(void 0===c&&1===a.nodeType){var d="data-"+b.replace(N,"-$1").toLowerCase();if(c=a.getAttribute(d),"string"==typeof c){try{c="true"===c?!0:"false"===c?!1:"null"===c?null:+c+""===c?+c:M.test(c)?m.parseJSON(c):c}catch(e){}m.data(a,b,c)}else c=void 0}return c}function P(a){var b;for(b in a)if(("data"!==b||!m.isEmptyObject(a[b]))&&"toJSON"!==b)return!1;
@@ -374,378 +374,49 @@ summary {
 </div>
 
 
-<p><a href="https://zenodo.org/badge/latestdoi/99698135"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICAgd2lkdGg9IjE4NiIgaGVpZ2h0PSIyMCI+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJiIiB4Mj0iMCIgeTI9IjEwMCUiPgogICAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNiYmIiIHN0b3Atb3BhY2l0eT0iLjEiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii4xIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8bWFzayBpZD0iYSIgd2lkdGg9IjE4NiIgaGVpZ2h0PSIyMCI+CiAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxODYiIGhlaWdodD0iMjAiIHJ4PSIzIgogICAgICAgICAgICBmaWxsPSIjZmZmIi8+CiAgICAgICAgPC9tYXNrPgogICAgICAgIDxnIG1hc2s9InVybCgjYSkiPgogICAgICAgICAgICA8cGF0aCBmaWxsPSIjNTU1IiBkPSJNMCAwaDMxdjIwSDB6IiAvPgogICAgICAgICAgICA8cGF0aCBmaWxsPSIjMDA3ZWM2IgogICAgICAgICAgICBkPSJNMzEgMGgxNTV2MjBIMzF6IgogICAgICAgICAgICAvPgogICAgICAgICAgICA8cGF0aCBmaWxsPSJ1cmwoI2IpIiBkPSJNMCAwaDE4NnYyMEgweiIgLz4KICAgICAgICA8L2c+CiAgICAgICAgPGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkRlamFWdSBTYW5zLAogICAgICAgIFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICAgICAgICA8dGV4dCB4PSIxNiIgeT0iMTUiIGZpbGw9IiMwMTAxMDEiCiAgICAgICAgICAgIGZpbGwtb3BhY2l0eT0iLjMiPgogICAgICAgICAgICAgICAgRE9JCiAgICAgICAgICAgIDwvdGV4dD4KICAgICAgICAgICAgPHRleHQgeD0iMTYiIHk9IjE0Ij4KICAgICAgICAgICAgICAgIERPSQogICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgIDx0ZXh0IHg9IjEwOCIKICAgICAgICAgICAgeT0iMTUiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiPgogICAgICAgICAgICAgICAgMTAuNTI4MS96ZW5vZG8uMTI1Njg3OQogICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgIDx0ZXh0IHg9IjEwOCIgeT0iMTQiPgogICAgICAgICAgICAgICAgMTAuNTI4MS96ZW5vZG8uMTI1Njg3OQogICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgPC9nPgogICAgPC9zdmc+" alt="DOI" /></a></p>
-<div id="a-list-of-r-environment-based-tools-for-microbiome-data-exploration-statistical-analysis-and-visualization" class="section level2">
-<h2>A list of R environment based tools for microbiome data exploration, statistical analysis and visualization</h2>
-<p>As a beginner, the entire process from sample collection to analysis for sequencing data is a daunting task. More specifically, the downstream processing of raw reads is the most time consuming and mentally draining stage. It is vital to understand the basic concepts in microbial ecology and then to use various tools at disposal to address specific research questions. Thankfully, several young researchers supported by their experienced principal investigators/supervisors are working on creating various tools for analysis and interpretation of microbial community data. A major achievement of the scientific community is the open science initiative which has led to sharing of knowledge worldwide. For microbial community analysis, several tools have been created in R, a free to use (GNU General Public License) programming language(Team, 2000). The power of R lies in its ease of working with individuals lacking programming skills and easy sharing of analysis scripts codes and packages aiding reproducibility. Using tools such as QIIME (the newer QIIME2) (Caporaso, Kuczynski, Stombaugh et al., 2010), Mothur (Schloss, Westcott, Ryabin et al., 2009), DADA2 (Callahan, McMurdie, Rosen et al., 2016) one can get from raw reads to species × samples table (OTU or ASVs amplicon sequence variants as suggested recently (Callahan, McMurdie &amp; Holmes, 2017)). In this post, numerous resources that can be helpful for analysis of microbiome data are listed. This list may not have all the packages as this tool development space is ever growing. Feel free to add those packages or links to web tutorials related to microbiome data. These are mostly for improving statistical analysis and visualization. These tools provide convenient options for data analysis and include several steps where the user has to make decisions. The work by <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003531">McMurdie PJ, Holmes S</a>, <a href="https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-017-0237-y">Weiss S</a> and <a href="http://www.sciencedirect.com/science/article/pii/S1047279716300722">Tsilimigras M.C. and Fodor A.A</a> are useful resources to understand the data common to microbiome census. It can be tricky and frustrating in the beginning but patience and perseverance will be fruitful at the end (personal experience).</p>
-<hr />
-<div id="tools" class="section level3">
-<h3>Tools</h3>
-<blockquote>
-<p>A</p>
-</blockquote>
-<p>Adaptive gPCA <a href="https://arxiv.org/abs/1702.00501">A method for structured dimensionality reduction</a><br />
-Ampvis2 <a href="https://madsalbertsen.github.io/ampvis2/">Tools for visualising amplicon sequencing data</a><br />
-ANCOM <a href="https://github.com/FrederickHuangLin/ANCOM">R scripts for Analysis of Composition of Microbiomes (ANCOM)</a><br />
-animalcules <a href="https://compbiomed.github.io/animalcules-docs/">R shiny app for interactive microbiome analysis</a></p>
-<blockquote>
-<p>B</p>
-</blockquote>
-<p>BDMMA <a href="https://academic.oup.com/bioinformatics/article-abstract/35/5/807/5078473">Batch Effects Correction for Microbiome Data With Dirichlet-multinomial Regression</a><br />
-BEEM <a href="https://github.com/lch14forever/BEEM">BEEM: Estimating Lotka-Volterra models from time-course microbiome sequencing data</a><br />
-biome-shiny <a href="https://github.com/Biodata-PT/Biome-Shiny">GUI for microbiome visualization, based on the shiny package “microbiome”</a><br />
-bootLong <a href="https://pratheepaj.github.io/bootLong/">The Block Bootstrap Method for Longitudinal Microbiome Data</a><br />
-breakaway <a href="https://github.com/search?q=breakaway">Species Richness Estimation and Modeling</a></p>
-<blockquote>
-<p>C</p>
-</blockquote>
-<p>CCREPE <a href="http://bioconductor.org/packages/release/bioc/html/ccrepe.html">Compositionality Corrected by PErmutation and REnormalization</a><br />
-corncob <a href="https://arxiv.org/abs/1902.02776">Modeling microbial abundances and dysbiosis with beta-binomial regression</a><br />
-curatedMetagenomicData <a href="https://waldronlab.io/curatedMetagenomicData/">Accessible, curated metagenomic data through ExperimentHub</a></p>
-<blockquote>
-<p>D</p>
-</blockquote>
-<p>dacomp <a href="https://github.com/barakbri/dacomp">Testing for Differential Abundance in Compositional Counts Data, with Application to Microbiome Studies</a><br />
-DADA2 <a href="https://www.nature.com/nmeth/journal/v13/n7/full/nmeth.3869.html">Divisive Amplicon Denoising Algorithm</a><br />
-DECIPHER <a href="http://www2.decipher.codes/index.html">Using DECIPHER v2.0 to Analyze Big Biological Sequence Data in R</a><br />
-DECIPHER/IIDTAXA <a href="doi:10.1186/s40168-018-0521-5">IDTAXA: a novel approach for accurate taxonomic classification of microbiome sequences</a><br />
-decontam <a href="https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-018-0605-2">Simple Statistical Identification and Removal of Contaminant Sequences in Marker-Gene and Metagenomics Data</a><br />
-DESeq2 <a href="https://www.bioconductor.org/packages/devel/bioc/vignettes/phyloseq/inst/doc/phyloseq-mixture-models.html">Differential expression analysis for sequence count data</a><br />
-DMBC <a href="https://msphere.asm.org/content/2/6/e00536-17">A Dirichlet-Multinomial Bayes Classifier for Disease Diagnosis With Microbial Compositions</a></p>
-<blockquote>
-<p>E</p>
-</blockquote>
-<p>edgeR <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2796818/">empirical analysis of DGE in R</a></p>
-<blockquote>
-<p>G</p>
-</blockquote>
-<p>GLMMMiRKAT <a href="https://github.com/hk1785/GLMM-MiRKAT">A distance-based kernel association test based on the generalized linear mixed model</a></p>
-<blockquote>
-<p>I</p>
-</blockquote>
-<p>igraph <a href="http://igraph.org/r/">Network Analysis and Visualization in R</a></p>
-<blockquote>
-<p>L</p>
-</blockquote>
-<p>labdsv <a href="https://cran.r-project.org/web/packages/labdsv/labdsv.pdf">Ordination and Multivariate Analysis for Ecology</a></p>
-<blockquote>
-<p>M</p>
-</blockquote>
-<p>MaAsLin2 <a href="https://github.com/biobakery/Maaslin2">MaAsLin2: Microbiome Multivariate Association with Linear Models</a><br />
-mare <a href="https://github.com/katrikorpela/mare">Microbiota Analysis in R Easily</a><br />
-massMap <a href="https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-018-0517-1">A Two-Stage Microbial Association Mapping Framework With Advanced FDR Control</a><br />
-mbtools <a href="https://gibbons-lab.github.io/mbtools">Collection of R tools to analyze microbiome data</a><br />
-MDiNE <a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz824/5614428">MDiNE: a model to estimate differential co-occurrence networks in microbiome studies</a><br />
-MDPbiome <a href="https://academic.oup.com/bioinformatics/article/34/17/i838/5093255">MDPbiome: microbiome engineering through prescriptive perturbations</a><br />
-microDecon <a href="https://github.com/donaldtmcknight/microDecon">An R package for removing contamination from metabarcoding (e.g., microbiome) datasets post-sequencing</a><br />
-microbiotaPair <a href="https://github.com/rusher321/microbiotaPair">An R Package for Simplified Microbiome Analysis Workflows on Intervention Study</a><br />
-MedTest <a href="https://academic.oup.com/bioinformatics/article/34/11/1875/4810437">A Distance-Based Approach for Testing the Mediation Effect of the Human Microbiome</a><br />
-MegaR <a href="https://github.com/BioHPC/MegaR">An Interactive R Package for Metagenomic Sample Classification and Disease Prediction using Microbiota and Machine Learning</a><br />
-MelonnPan <a href="https://github.com/biobakery/melonnpan">Model-based Genomically Informed High-dimensional Predictor of Microbial Community Metabolic Profiles</a><br />
-Metacoder <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005404">An R package for visualization and manipulation of community taxonomic diversity data</a><br />
-metagenomeSeq <a href="http://www.nature.com/nmeth/journal/v10/n12/full/nmeth.2658.html">Differential abundance analysis for microbial marker-gene surveys</a><br />
-MetaLonDA <a href="https://github.com/aametwally/MetaLonDA">METAgenomic LONgitudinal Differential Abundance method</a><br />
-metamicrobiomeR <a href="https://github.com/cran/metamicrobiomeR">Analysis of Microbiome Relative Abundance Data using Zero Inflated Beta GAMLSS and Meta-Analysis Across Studies using Random Effects Model</a><br />
-microbiome R package <a href="https://github.com/microbiome/microbiome">Tools for microbiome analysis in R</a><br />
-MicrobiomeDDA <a href="https://academic.oup.com/bioinformatics/article/34/4/643/4470360">An Omnibus Test for Differential Distribution Analysis of Microbiome Sequencing Data</a><br />
-MicrobiomeHD <a href="http://www.biorxiv.org/content/early/2017/05/08/134031">A standardized database of human gut microbiome studies in health and disease <em>Case-Control</em></a><br />
-microbiomeMarker <a href="https://github.com/yiluheihei/microbiomeMarker">R package for microbiome biomarker discovery</a><br />
-MicrobiomeR <a href="https://microbiomer.vallenderlab.org/">MicrobiomeR: An R Package for Simplified and Standardized Microbiome Analysis Workflows</a><br />
-microbiomeutilities <a href="https://microsud.github.io/microbiomeutilities/">Extending and supporting package based on microbiome and phyloseq R package</a><br />
-MicrobiotaProcess <a href="https://github.com/YuLab-SMU/MicrobiotaProcess">MicrobiotaProcess: an R package for analysis, visualization and biomarker discovery of microbiome</a><br />
-miLineage <a href="https://medschool.vanderbilt.edu/tang-lab/software/miLineage">A General Framework for Association Analysis of Microbial Communities on a Taxonomic Tree</a><br />
-MINT <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1553-8">Multivariate INTegrative method</a><br />
-mixDIABLO <a href="http://mixomics.org/mixdiablo/">Data Integration Analysis for Biomarker discovery using Latent variable approaches for ‘Omics studies</a><br />
-mixMC <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0160169">Multivariate Statistical Framework to Gain Insight into Microbial Communities</a><br />
-MMinte <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1230-3">Methodology for the large-scale assessment of microbial metabolic interactions (MMinte) from 16S rDNA data</a><br />
-MTA <a href="https://github.com/chanw0/MTA">Microbial trend analysis (MTA) for common dynamic trend, group comparison and classification in longitudinal microbiome study</a><br />
-MicrobiomeExplor <a href="https://doi.org/10.1093/bioinformatics/btaa838">An R package for the analysis and visualization of microbial communities</a><br />
-MicroBVS <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03640-0">Dirichlet-tree multinomial regression models with Bayesian variable selection - an R package</a><br />
-MicroNiche <a href="https://academic.oup.com/femsec/article-abstract/96/8/fiaa131/5863182?redirectedFrom=fulltext">An R package for assessing microbial niche breadth and overlap from amplicon sequencing data</a></p>
-<blockquote>
-<p>N</p>
-</blockquote>
-<p>NMIT <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5696116/#!po=75.0000">Microbial Interdependence Association Test–a Non-parametric Microbial Interdependence Test</a><br />
-NetCoMi <a href="https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbaa290/6017455">Network construction and comparison for microbiome data in R</a><br />
-NBZIMM <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03803-z">Negative binomial and zero-inflated mixed models, with application to microbiome/metagenomics data analysis</a></p>
-<blockquote>
-<p>O</p>
-</blockquote>
-<p>OMiSA <a href="https://github.com/hk1785/OMiSA">Optimal Microbiome-based Survival Analysis (OMiSA)</a></p>
-<blockquote>
-<p>P</p>
-</blockquote>
-<p>pathostat <a href="https://bioconductor.org/packages/release/bioc/html/PathoStat.html">Statistical Microbiome Analysis on metagenomics results from sequencing data samples</a><br />
-phylofactor <a href="https://peerj.com/articles/2969/">Phylogenetic factorization of compositional data</a><br />
-phylogeo <a href="https://www.ncbi.nlm.nih.gov/pubmed/25913208">Geographic analysis and visualization of microbiome data</a><br />
-Phyloseq <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0061217">Import, share, and analyze microbiome census data using R</a><br />
-Pldist <a href="https://academic.oup.com/bioinformatics/article-abstract/35/19/3567/5341424?redirectedFrom=fulltext">Pldist: Ecological Dissimilarities for Paired and Longitudinal Microbiome Association Analysis</a><br />
-powmic <a href="https://github.com/lichen-lab/powmic">Power assessment in microbiome case-control studies</a></p>
-<blockquote>
-<p>Q</p>
-</blockquote>
-<p>qgraph <a href="https://cran.r-project.org/web/packages/qgraph/qgraph.pdf">Graph Plotting Methods, Psychometric Data Visualization and Graphical Model Estimation</a><br />
-qiime2R <a href="https://github.com/jbisanz/qiime2R">Importing QIIME2 artifacts and associated data into R sessions</a><br />
-qiimer <a href="https://github.com/kylebittinger/qiimer">R tools compliment qiime</a></p>
-<blockquote>
-<p>R</p>
-</blockquote>
-<p>RAM <a href="https://cran.r-project.org/web/packages/RAM/RAM.pdf">R for Amplicon-Sequencing-Based Microbial-Ecology</a><br />
-RCM <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0205474">A unified framework for unconstrained and constrained ordination of microbiome read count data</a><br />
-RevEcoR <a href="https://github.com/yiluheihei/RevEcoR">Reverse Ecology analysis in R</a><br />
-Rhea <a href="https://peerj.com/articles/2836/">A pipeline with modular R scripts</a></p>
-<blockquote>
-<p>S</p>
-</blockquote>
-<p>selbal <a href="https://msystems.asm.org/content/3/4/e00053-18">Balances: a New Perspective for Microbiome Analysis</a><br />
-ShinyPhyloseq <a href="http://joey711.github.io/shiny-phyloseq/">Web-tool with user interface for Phyloseq</a><br />
-SIAMCAT <a href="https://bioconductor.org/packages/release/bioc/html/SIAMCAT.html">Statistical Inference of Associations between Microbial Communities And host phenoTypes</a><br />
-SigTree <a href="http://www.sciencedirect.com/science/article/pii/S2001037017300132">Identify and Visualize Significantly Responsive Branches in a Phylogenetic Tree</a><br />
-SparseMCMM <a href="https://sites.google.com/site/huilinli09/software">Estimating and testing the microbial causal mediation effect with the high-dimensional and compositional microbiome data (SparseMCMM)</a><br />
-SPIEC-EASI <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004226">Sparse and Compositionally Robust Inference of Microbial Ecological Networks</a><br />
-SplinectomeR <a href="https://www.frontiersin.org/articles/10.3389/fmicb.2018.00785/full">SplinectomeR Enables Group Comparisons in Longitudinal Microbiome Studies</a><br />
-StructFDR <a href="https://academic.oup.com/bioinformatics/article/33/18/2873/3824757">False Discovery Rate Control Incorporating Phylogenetic Tree Increases Detection Power in Microbiome-Wide Multiple Testing</a><br />
-structSSI <a href="https://www.jstatsoft.org/article/view/v059i13">Simultaneous and Selective Inference for Grouped or Hierarchically Structured Data</a></p>
-<blockquote>
-<p>T</p>
-</blockquote>
-<p>Tax4Fun <a href="https://www.ncbi.nlm.nih.gov/pubmed/25957349">Predicting functional profiles from metagenomic 16S rRNA gene data</a><br />
-taxize <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3901538/">Taxonomic Information from Around the Web</a><br />
-TreeSummarizedExperiment <a href="https://github.com/fionarhuang/TreeSummarizedExperiment">An extension class of SummarizedExperiment to allow hierarchical structure on the row or column dimension</a><br />
-themetagenomics <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0219235">Exploring Thematic Structure and Predicted Functionality of 16S rRNA Amplicon Data</a><br />
-tidyMicro <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-03967-2">A pipeline for microbiome data analysis and visualization using the tidyverse in R</a></p>
-<blockquote>
-<p>V</p>
-</blockquote>
-<p>vegan <a href="https://github.com/vegandevs/vegan">R package for community ecologists</a></p>
-<blockquote>
-<p>Y</p>
-</blockquote>
-<p>yingtools2 <a href="https://github.com/ying14/yingtools2">Tools and functions for working with clinical and microbiome data</a></p>
-<blockquote>
-<p>Z</p>
-</blockquote>
-<p>zeroSum <a href="https://academic.oup.com/bioinformatics/article/33/2/219/2928229">Reference Point Insensitive Molecular Data Analysis</a><br />
-ZIBBSeqDiscovery <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/sta4.185">A Zero-inflated Beta-binomial Model for Microbiome Data Analysis</a></p>
-<hr />
-</div>
-<div id="microbiome-data-sets" class="section level3">
-<h3>Microbiome data sets</h3>
-<ol style="list-style-type: decimal">
+<div id="list-of-r-tools-for-microbiome-data-analysis" class="section level1">
+<h1>List of R tools for microbiome data analysis</h1>
+<div id="change-log-20-march-2021" class="section level2">
+<h2>Change log 20 March, 2021</h2>
+<ul>
+<li>Tools
+<ul>
+<li>MicrobiomeExplor <a href="https://doi.org/10.1093/bioinformatics/btaa838">An R package for the analysis and visualization of microbial communities</a><br />
+</li>
+<li>MicroBVS <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03640-0">Dirichlet-tree multinomial regression models with Bayesian variable selection - an R package</a><br />
+</li>
+<li>MicroNiche <a href="https://academic.oup.com/femsec/article-abstract/96/8/fiaa131/5863182?redirectedFrom=fulltext">An R package for assessing microbial niche breadth and overlap from amplicon sequencing data</a><br />
+</li>
+<li>NMIT <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5696116/#!po=75.0000">Microbial Interdependence Association Test–a Non-parametric Microbial Interdependence Test</a><br />
+</li>
+<li>NetCoMi <a href="https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbaa290/6017455">Network construction and comparison for microbiome data in R</a></li>
+<li>NBZIMM <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03803-z">Negative binomial and zero-inflated mixed models, with application to microbiome/metagenomics data analysis</a><br />
+</li>
+<li>selbal <a href="https://msystems.asm.org/content/3/4/e00053-18">Balances: a New Perspective for Microbiome Analysis</a><br />
+</li>
+<li>tidyMicro <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-03967-2">A pipeline for microbiome data analysis and visualization using the tidyverse in R</a></li>
+</ul></li>
+<li>Microbiome data sets
+<ul>
 <li>HMP16SData <a href="https://bioconductor.org/packages/release/data/experiment/html/HMP16SData.html">Efficient Access to the Human Microbiome Project through Bioconductor</a><br />
 </li>
-<li>HMP2Data <a href="https://bioconductor.org/packages/release/data/experiment/html/HMP2Data.html">16s rRNA sequencing data from the Human Microbiome Project 2</a><br />
-</li>
-<li>microbiomeDataSets <a href="https://bioconductor.org/packages/devel/data/experiment/html/microbiomeDataSets.html">Experiment Hub based microbiome datasets</a><br />
+<li>HMP2Data <a href="https://bioconductor.org/packages/release/data/experiment/html/HMP2Data.html">16s rRNA sequencing data from the Human Microbiome Project 2</a> *microbiomeDataSets <a href="https://bioconductor.org/packages/devel/data/experiment/html/microbiomeDataSets.html">Experiment Hub based microbiome datasets</a><br />
 </li>
 <li>curatedMetagenomicData <a href="https://bioconductor.org/packages/release/data/experiment/html/curatedMetagenomicData.html">Accessible, curated metagenomic data through ExperimentHub</a></li>
-</ol>
-<hr />
-</div>
-<div id="other-tools" class="section level3">
-<h3>Other tools</h3>
-<ol style="list-style-type: decimal">
-<li>ggplot2 <a href="https://ggplot2.tidyverse.org/">An implementation of the Grammar of Graphics in R</a>
-<ul>
-<li>Widely used package for data visualization<br />
-</li>
 </ul></li>
-<li>ggvegan <a href="https://github.com/gavinsimpson/ggvegan">ggplot-based versions of the plots produced by the vegan package</a>
+<li>Other tools
 <ul>
-<li>Convert base plots of vegan to ggplot.<br />
-</li>
-</ul></li>
-<li>ggord <a href="https://fawda123.github.io/ggord/">A simple package for creating ordination plots with ggplot2</a>
-<ul>
-<li>Alternative to ggvegan<br />
-</li>
-</ul></li>
-<li>cowplot <a href="https://wilkelab.org/cowplot/">cowplot: Streamlined Plot Theme and Plot Annotations for ggplot2</a>
-<ul>
-<li>Widely used package for combining multiple plots<br />
-</li>
-</ul></li>
-<li>ggridges <a href="https://wilkelab.org/ggridges">Ridgeline plots in ggplot2</a><br />
-</li>
-<li>ggtext <a href="https://wilkelab.org/ggtext/">Improved text rendering support for ggplot2</a>
-<ul>
-<li>More power in controlling annotations in plots (e.g. italicize taxa names in plots)<br />
-</li>
-</ul></li>
-<li>ggpubr <a href="http://www.sthda.com/english/articles/24-ggpubr-publication-ready-plots/">Extension of ggplot2 based data visualization</a>
-<ul>
-<li>Publication ready plots<br />
-</li>
-</ul></li>
-<li>ggraph <a href="https://ggraph.data-imaginist.com">Grammar of Graph Graphics</a>
-<ul>
-<li>Network graphs using ggplot2<br />
-</li>
-</ul></li>
-<li>gganimate <a href="https://gganimate.com">A Grammar of Animated Graphics</a>
-<ul>
-<li>Animate ggplot2 (Useful for presenting time-series dynamics of microbial communities)<br />
-</li>
-</ul></li>
-<li>ggforce <a href="https://ggforce.data-imaginist.com">Accelerating ggplot2</a>
-<ul>
-<li>Zoom specific regions of the plots<br />
-</li>
-</ul></li>
-<li>factoextra <a href="https://rpkgs.datanovia.com/factoextra/index.html">Extract and Visualize the Results of Multivariate Data Analyses</a>
-<ul>
-<li>Powerful package for multivvariate data analysis<br />
-</li>
-</ul></li>
-<li>ggcorrplot <a href="https://rpkgs.datanovia.com/ggcorrplot/">Visualization of a correlation matrix using ggplot2</a><br />
-</li>
-<li>tidyverse <a href="https://www.tidyverse.org/">R packages for data science</a>
-<ul>
-<li>Universe of several useful R packages for data handling, analysis and visualization<br />
-</li>
-</ul></li>
-<li>Extensions of ggplot <a href="https://exts.ggplot2.tidyverse.org/gallery/">Gallary of numerous data visualistion R pacakges</a><br />
-</li>
-<li>ggtree <a href="https://github.com/YuLab-SMU/ggtree">Visualization and annotation of phylogenetic trees (in R)</a><br />
-</li>
-<li>patchwork <a href="https://patchwork.data-imaginist.com">The Composer of ggplots</a>
-<ul>
-<li>Combining multiple plots made easy<br />
-</li>
-</ul></li>
-<li>pheatmap <a href="https://cran.r-project.org/web/packages/pheatmap/pheatmap.pdf">Pretty Heatmaps</a></li>
-</ol>
-<hr />
-</div>
-<div id="proteomics-resources" class="section level3">
-<h3>Proteomics resources</h3>
-<ol style="list-style-type: decimal">
-<li><sup>*</sup>RforProteomics <a href="https://bioconductor.org/packages/release/data/experiment/vignettes/RforProteomics/inst/doc/RforProteomics.html">Using R for proteomics data analysis</a><br />
-</li>
-<li><sup>*</sup>RforProteomics <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/pmic.201400392">Visualisation of proteomics data using R and Bioconductor</a><br />
-</li>
-<li><sup>*</sup>proteomics <a href="http://master.bioconductor.org/packages/release/workflows/vignettes/proteomics/inst/doc/proteomics.html">proteomics: Mass spectrometry and proteomics data analysis</a><br />
-</li>
-<li><a href="https://microsud.github.io/Bacterial-Proteomics-in-R/tutorial_main_doc.html">Introduction to analysing microbial proteomics data in R</a></li>
-</ol>
-<hr />
-</div>
-<div id="rnaseq-resources" class="section level3">
-<h3>RNAseq resources<sup>*<sup></h3>
-<ol style="list-style-type: decimal">
-<li>RNA-seq analysis in R <a href="https://rstudio-pubs-static.s3.amazonaws.com/462299_a9bc385f89b94b0aa95de0f3b7040b04.html">Workflow by Shulin Cao</a><br />
-</li>
-<li>RNA-seq workflow <a href="https://www.bioconductor.org/packages/devel/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html">RNA-seq workflow: gene-level exploratory analysis and differential expression</a></li>
-</ol>
-<p>*Note: These are not focused towards microbiome data. These are listed as a reference point for beginners. If you have or know of workflows tools specific for microbiome data please let us know and we can add them here!</p>
-<hr />
-</div>
-<div id="useful-resources-are-provided-by" class="section level3">
-<h3>Useful resources are provided by:</h3>
-<ol style="list-style-type: decimal">
-<li><a href="https://f1000research.com/articles/5-1492/v2">Ben J. Callahan and Colleagues: Bioconductor Workflow for Microbiome Data Analysis: from raw reads to community analyses</a>.<br />
-</li>
-<li><a href="http://msystems.asm.org/content/2/1/e00127-16">Comeau AM and Colleagues: Microbiome Helper: a Custom and Streamlined Workflow for Microbiome Research</a><br />
-</li>
-<li>Schloss, P. D: <a href="http://www.riffomonas.org/reproducible_research/">The Riffomonas Reproducible Research Tutorial Series</a><br />
-</li>
-<li><a href="https://mibwurrepo.github.io/Microbial-bioinformatics-introductory-course-Material-2018/introduction.html">Shetty SA, Lahti L., et al: Tutorial from microbiome data analysis spring school 2018, Wageningen University and Research</a><br />
-</li>
-<li><a href="http://web.stanford.edu/class/bios221/book/">Holmes S, Huber W.: Modern statistics for modern biology. Cambridge University Press; 2018 Nov 30.</a><br />
-</li>
-<li><a href="https://yulab-smu.top/MicrobiotaProcessWorkshop/articles/MicrobiotaProcessWorkshop.html">Xu S, Yu G.: Workshop of microbiome dataset analysis using MicrobiotaProcess</a><br />
-</li>
 <li><a href="https://malucalle.github.io/Microbiome-Variable-Selection/">Antoni Susin, Yiwen Wang, Kim-Anh Lê Cao, M.Luz Calle.: Variable selection in microbiome compositional data analysis: tutorial</a></li>
-</ol>
-<p>Note:<br />
-A good practise is to use Rmarkdown for documenting your results and sharing with your collaborators and supervisors. For more information click here <a href="https://www.youtube.com/watch?v=cWJzjHh_3kk&amp;t=337s">RStudio</a> and<br />
-<a href="https://www.youtube.com/watch?v=n3uue28FD0w">RStudio Overview</a></p>
-<hr />
-<p><a href="https://github.com/microsud/Tools-Microbiome-Anlaysis">View this webiste repository on GitHub</a><br />
-<a href="https://twitter.com/gutmicrobe">Follow me on Twitter</a><br />
-<a href="https://scholar.google.nl/citations?hl=en&amp;user=Vahc6LUAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">googlescholar</a><br />
-<a href="http://orcid.org/0000-0001-7280-9915">ORCID ID: 0000-0001-7280-9915</a></p>
-<hr />
-</div>
-<div id="references" class="section level3">
-<h3>References:</h3>
-<ol style="list-style-type: decimal">
-<li>Callahan, B. J., McMurdie, P. J. &amp; Holmes, S. P. (2017). Exact sequence variants should replace operational taxonomic units in marker gene data analysis. bioRxiv, 113597.<br />
-</li>
-<li>Callahan, B. J., McMurdie, P. J., Rosen, M. J., Han, A. W., Johnson, A. J. A. &amp; Holmes, S. P. (2016). DADA2: high-resolution sample inference from Illumina amplicon data. Nature methods 13, 581-583.<br />
-</li>
-<li>Caporaso, J. G., Kuczynski, J., Stombaugh, J., Bittinger, K., Bushman, F. D., Costello, E. K., Fierer, N., Peña, A. G., Goodrich, J. K. &amp; Gordon, J. I. (2010). QIIME allows analysis of high-throughput community sequencing data. Nature methods 7, 335-336.<br />
-</li>
-<li>Schloss, P. D., Westcott, S. L., Ryabin, T., Hall, J. R., Hartmann, M., Hollister, E. B., Lesniewski, R. A., Oakley, B. B., Parks, D. H. &amp; Robinson, C. J. (2009). Introducing mothur: open-source, platform-independent, community-supported software for describing and comparing microbial communities. Applied and environmental microbiology 75, 7537-7541.<br />
-</li>
-<li>Team, R. C. (2000). R language definition. Vienna, Austria: R foundation for statistical computing.<br />
-</li>
-<li>Salter SJ, Cox MJ, Turek EM, Calus ST, Cookson WO, Moffatt MF, Turner P, Parkhill J, Loman NJ, Walker AW. Reagent and laboratory contamination can critically impact sequence-based microbiome analyses. BMC biology. 2014 Dec 1;12(1):87.<br />
-</li>
-<li>Karstens L, Asquith M, Davin S, Fair D, Gregory WT, Wolfe AJ, Braun J, McWeeney S. Controlling for contaminants in low-biomass 16S rRNA gene sequencing experiments. MSystems. 2019 Aug 27;4(4).</li>
-</ol>
-<hr />
-</div>
-<div id="todo" class="section level3">
-<h3>TODO</h3>
-<p>Any help is welcome</p>
-<ul>
-<li><p>Structure the list according to categories</p>
-<ul>
-<li>General purpose<br />
-</li>
-<li>Visualization<br />
-</li>
-<li>Snapshot/cross-sectional stats<br />
-</li>
-<li>Time series/Longitudinal stats<br />
-</li>
-<li>Integrative -Omics<br />
-</li>
 </ul></li>
-<li><p>Include metagenomics/metabolomics</p></li>
-<li><p>Include more general microbiology oriented R packages/tools</p></li>
-<li><p>and so on …..</p></li>
+<li>Reformatted the code for website<br />
+</li>
+<li>Added Changes log<br />
+</li>
+<li>Added Acknowledgments</li>
 </ul>
-<hr />
-</div>
-<div id="was-this-websiteresource-useful-for-you-then-please-share-it-with-others-too" class="section level3">
-<h3>Was this website/resource useful for you? Then please share it with others too!</h3>
-<p>You can cite this resource as:<br />
-Shetty, Sudarshan A., and Leo Lahti. <a href="https://link.springer.com/article/10.1007%2Fs12038-019-9930-2">Microbiome data science. Journal of biosciences 44, no. 5 (2019): 115</a>.<br />
+<p>Shetty, Sudarshan A., and Leo Lahti. <a href="https://link.springer.com/article/10.1007%2Fs12038-019-9930-2">Microbiome data science. Journal of biosciences 44, no. 5 (2019): 115</a>.<br />
 <a href="https://openresearchlabs.github.io/publications/papers/2019-Shetty-MDS.pdf"><em>Pre-print</em></a><br />
 Zendo: <a href="https://zenodo.org/badge/latestdoi/99698135"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICAgd2lkdGg9IjE4NiIgaGVpZ2h0PSIyMCI+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJiIiB4Mj0iMCIgeTI9IjEwMCUiPgogICAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNiYmIiIHN0b3Atb3BhY2l0eT0iLjEiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii4xIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8bWFzayBpZD0iYSIgd2lkdGg9IjE4NiIgaGVpZ2h0PSIyMCI+CiAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxODYiIGhlaWdodD0iMjAiIHJ4PSIzIgogICAgICAgICAgICBmaWxsPSIjZmZmIi8+CiAgICAgICAgPC9tYXNrPgogICAgICAgIDxnIG1hc2s9InVybCgjYSkiPgogICAgICAgICAgICA8cGF0aCBmaWxsPSIjNTU1IiBkPSJNMCAwaDMxdjIwSDB6IiAvPgogICAgICAgICAgICA8cGF0aCBmaWxsPSIjMDA3ZWM2IgogICAgICAgICAgICBkPSJNMzEgMGgxNTV2MjBIMzF6IgogICAgICAgICAgICAvPgogICAgICAgICAgICA8cGF0aCBmaWxsPSJ1cmwoI2IpIiBkPSJNMCAwaDE4NnYyMEgweiIgLz4KICAgICAgICA8L2c+CiAgICAgICAgPGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkRlamFWdSBTYW5zLAogICAgICAgIFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICAgICAgICA8dGV4dCB4PSIxNiIgeT0iMTUiIGZpbGw9IiMwMTAxMDEiCiAgICAgICAgICAgIGZpbGwtb3BhY2l0eT0iLjMiPgogICAgICAgICAgICAgICAgRE9JCiAgICAgICAgICAgIDwvdGV4dD4KICAgICAgICAgICAgPHRleHQgeD0iMTYiIHk9IjE0Ij4KICAgICAgICAgICAgICAgIERPSQogICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgIDx0ZXh0IHg9IjEwOCIKICAgICAgICAgICAgeT0iMTUiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiPgogICAgICAgICAgICAgICAgMTAuNTI4MS96ZW5vZG8uMTI1Njg3OQogICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgIDx0ZXh0IHg9IjEwOCIgeT0iMTQiPgogICAgICAgICAgICAgICAgMTAuNTI4MS96ZW5vZG8uMTI1Njg3OQogICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgPC9nPgogICAgPC9zdmc+" alt="DOI" /></a></p>
-<hr />
-</div>
-<div id="do-you-want-to-join-us-and-contribute-to-the-open-source-microbiome-community" class="section level3">
-<h3>Do you want to join us and contribute to the open source microbiome community?</h3>
-<p>We are working on an open source project developing R/Bioc methods, benchmarking data, and educational material for microbiome research based on the <code>SummarizedExperiment</code> class and its derivatives.<br />
-More information please check our website <a href="https://microbiome.github.io/">R/Bioc microbiome ecosystem with SummarizedExperiment</a></p>
-<hr />
-</div>
-<div id="acknowledgments" class="section level3">
-<h3>Acknowledgments</h3>
-<ul>
-<li>The Academy of Finland (Grants 295741; 307127)<br />
-</li>
-<li>The SIAM Gravitation Grant 024.002.002<br />
-</li>
-<li>UNLOCK project of the Netherlands Organization for Scientific Research (NWO)<br />
-</li>
-<li>University of Turku, Department of Mathematics and Statistics<br />
-</li>
-<li>Molecular Ecology group, Laboratory of Microbiology, Wageningen University, The Netherlands<br />
-</li>
-<li>Medische Microbiologie en Infectiepreventie, University Medical Center Groningen, The Netherlands</li>
-</ul>
-<hr />
-</div>
-<div id="updates-that-are-added" class="section level3">
-<h3>Updates that are added</h3>
-<ul>
-<li>Updated on 20 March, 2021 <a href="CHANGES.html">See Changes log</a></li>
-</ul>
-<hr />
 </div>
 </div>
 

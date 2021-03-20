@@ -1,0 +1,44 @@
+
+# List of R tools for microbiome data analysis  
+
+## Change log `r format(Sys.time(), '%d %B, %Y')`   
+
+* Tools    
+    * MicrobiomeExplor [An R package for the analysis and visualization of microbial communities](https://doi.org/10.1093/bioinformatics/btaa838)   
+    * MicroBVS [Dirichlet-tree multinomial regression models with Bayesian variable selection - an R package](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03640-0)    
+    * MicroNiche [An R package for assessing microbial niche breadth and overlap from amplicon sequencing data](https://academic.oup.com/femsec/article-abstract/96/8/fiaa131/5863182?redirectedFrom=fulltext)  
+    * NMIT [Microbial Interdependence Association Test--a Non-parametric Microbial Interdependence Test](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5696116/#!po=75.0000)    
+    * NetCoMi [Network construction and comparison for microbiome data in R](https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbaa290/6017455)
+    * NBZIMM [Negative binomial and zero-inflated mixed models, with application to microbiome/metagenomics data analysis](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03803-z)    
+    * selbal [Balances: a New Perspective for Microbiome Analysis](https://msystems.asm.org/content/3/4/e00053-18)  
+    * tidyMicro [A pipeline for microbiome data analysis and visualization using the tidyverse in R](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-03967-2)   
+    
+    
+* Microbiome data sets  
+    * HMP16SData [Efficient Access to the Human Microbiome Project through Bioconductor](https://bioconductor.org/packages/release/data/experiment/html/HMP16SData.html)   
+    * HMP2Data [16s rRNA sequencing data from the Human Microbiome Project 2](https://bioconductor.org/packages/release/data/experiment/html/HMP2Data.html)     *microbiomeDataSets [Experiment Hub based microbiome datasets](https://bioconductor.org/packages/devel/data/experiment/html/microbiomeDataSets.html)   
+    * curatedMetagenomicData [Accessible, curated metagenomic data through ExperimentHub](https://bioconductor.org/packages/release/data/experiment/html/curatedMetagenomicData.html)    
+    
+    
+* Other tools
+    * [Antoni Susin, Yiwen Wang, Kim-Anh Lê Cao, M.Luz Calle.: Variable selection in microbiome compositional data analysis: tutorial](https://malucalle.github.io/Microbiome-Variable-Selection/)  
+    
+* Reformatted the code for website  
+* Added Changes log  
+* Added Acknowledgments   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+Shetty, Sudarshan A., and Leo Lahti. [Microbiome data science. Journal of biosciences 44, no. 5 (2019): 115](https://link.springer.com/article/10.1007%2Fs12038-019-9930-2).    
+[*Pre-print*](https://openresearchlabs.github.io/publications/papers/2019-Shetty-MDS.pdf)   
+Zendo: [![DOI](https://zenodo.org/badge/99698135.svg)](https://zenodo.org/badge/latestdoi/99698135)    

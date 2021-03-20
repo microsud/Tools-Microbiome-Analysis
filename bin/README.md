@@ -230,6 +230,7 @@ Note:
 A good practise is to use Rmarkdown for documenting your results and sharing with your collaborators and supervisors. For more information click here [RStudio](https://www.youtube.com/watch?v=cWJzjHh_3kk&t=337s) and  
 [RStudio Overview](https://www.youtube.com/watch?v=n3uue28FD0w)  
 
+
 -------------------------------------------------------   
 
 [View this webiste repository on GitHub](https://github.com/microsud/Tools-Microbiome-Anlaysis)  
@@ -291,4 +292,12 @@ More information please check our website [R/Bioc microbiome ecosystem with Summ
 * Molecular Ecology group, Laboratory of Microbiology, Wageningen University, The Netherlands   
 * Medische Microbiologie en Infectiepreventie, University Medical Center Groningen, The Netherlands   
 
+-------------------------------------------------------     
+
+### Updates that are added  
+
+* Updated on `r format(Sys.time(), '%d %B, %Y')` [See Changes log](CHANGES.html)   
+  
+
 -------------------------------------------------------   
+
