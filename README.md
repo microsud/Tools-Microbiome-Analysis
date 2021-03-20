@@ -294,9 +294,9 @@ More information please check our website [R/Bioc microbiome ecosystem with Summ
 
 -------------------------------------------------------     
 
-### Updates that are added  
+### Updates   
 
-* Updated on [See Changes log](CHANGES.html)   
+* Updates that are added [See Changes log](CHANGES.html)   
   
 
 -------------------------------------------------------   
