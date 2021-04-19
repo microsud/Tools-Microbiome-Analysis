@@ -94,6 +94,7 @@ MTA [Microbial trend analysis (MTA) for common dynamic trend, group comparison a
 MicrobiomeExplor [An R package for the analysis and visualization of microbial communities](https://doi.org/10.1093/bioinformatics/btaa838)   
 MicroBVS [Dirichlet-tree multinomial regression models with Bayesian variable selection - an R package](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03640-0)    
 MicroNiche [An R package for assessing microbial niche breadth and overlap from amplicon sequencing data](https://academic.oup.com/femsec/article-abstract/96/8/fiaa131/5863182?redirectedFrom=fulltext)   
+microViz [An R package for for analysis and visualization of microbiome sequencing data](https://david-barnett.github.io/microViz/)
 
 > N    
  
