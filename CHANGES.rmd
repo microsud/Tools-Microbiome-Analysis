@@ -9,6 +9,15 @@ output: html_document
 ## Change log `r format(Sys.time(), '%d %B, %Y')`   
 
 * Tools    
+    * ANCOM-BC added next to ANCOM    
+    * ALDEx2 [Analysis Of Differential Abundance Taking Sample Variation Into Account](https://bioconductor.org/packages/release/bioc/html/ALDEx2.html)    
+    * CoDaSeq [Functions for compositional analysis of high throughput sequencing](https://github.com/ggloor/CoDaSeq)     
+    * DivNet [An R package to estimate diversity when taxa in the community cooccur via a ecological network](https://github.com/adw96/DivNet)  
+    
+
+## Change log `r format(Sys.time(), '%d %B, %Y')`   
+
+* Tools    
     * MicrobiomeExplor [An R package for the analysis and visualization of microbial communities](https://doi.org/10.1093/bioinformatics/btaa838)   
     * MicroBVS [Dirichlet-tree multinomial regression models with Bayesian variable selection - an R package](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03640-0)    
     * MicroNiche [An R package for assessing microbial niche breadth and overlap from amplicon sequencing data](https://academic.oup.com/femsec/article-abstract/96/8/fiaa131/5863182?redirectedFrom=fulltext)  

@@ -18,8 +18,10 @@ As a beginner, the entire process from sample collection to analysis for sequenc
 
 Adaptive gPCA [A method for structured dimensionality reduction](https://arxiv.org/abs/1702.00501)     
 Ampvis2 [Tools for visualising amplicon sequencing data](https://madsalbertsen.github.io/ampvis2/)   
-ANCOM [R package for Analysis of Composition of Microbiomes (ANCOM-BC)](https://github.com/FrederickHuangLin/ANCOMBC)   
+ANCOM/ANCOM-BC [R package for Analysis of Composition of Microbiomes (ANCOM-BC)](https://github.com/FrederickHuangLin/ANCOMBC)   
 animalcules [R shiny app for interactive microbiome analysis](https://compbiomed.github.io/animalcules-docs/)   
+ALDEx2 [Analysis Of Differential Abundance Taking Sample Variation Into Account](https://bioconductor.org/packages/release/bioc/html/ALDEx2.html)  
+
 
 > B    
 
@@ -34,6 +36,8 @@ breakaway [Species Richness Estimation and Modeling](https://github.com/search?q
 CCREPE [Compositionality Corrected by PErmutation and REnormalization](http://bioconductor.org/packages/release/bioc/html/ccrepe.html)   
 corncob [Modeling microbial abundances and dysbiosis with beta-binomial regression](https://arxiv.org/abs/1902.02776)  
 curatedMetagenomicData [Accessible, curated metagenomic data through ExperimentHub](https://waldronlab.io/curatedMetagenomicData/)    
+CoDaSeq [Functions for compositional analysis of high throughput sequencing](https://github.com/ggloor/CoDaSeq)     
+
 
 > D     
 
@@ -43,6 +47,7 @@ DECIPHER [Using DECIPHER v2.0 to Analyze Big Biological Sequence Data in R](http
 DECIPHER/IIDTAXA [IDTAXA: a novel approach for accurate taxonomic classification of microbiome sequences](doi:10.1186/s40168-018-0521-5)   
 decontam [Simple Statistical Identification and Removal of Contaminant Sequences in Marker-Gene and Metagenomics Data](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-018-0605-2)   
 DESeq2 [Differential expression analysis for sequence count data](https://www.bioconductor.org/packages/devel/bioc/vignettes/phyloseq/inst/doc/phyloseq-mixture-models.html)   
+DivNet [An R package to estimate diversity when taxa in the community cooccur via a ecological network](https://github.com/adw96/DivNet)  
 DMBC [A Dirichlet-Multinomial Bayes Classifier for Disease Diagnosis With Microbial Compositions](https://msphere.asm.org/content/2/6/e00536-17)    
 
 > E   
