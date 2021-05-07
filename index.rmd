@@ -18,7 +18,7 @@ As a beginner, the entire process from sample collection to analysis for sequenc
 
 Adaptive gPCA [A method for structured dimensionality reduction](https://arxiv.org/abs/1702.00501)     
 Ampvis2 [Tools for visualising amplicon sequencing data](https://madsalbertsen.github.io/ampvis2/)   
-ANCOM [R scripts for Analysis of Composition of Microbiomes (ANCOM)](https://github.com/FrederickHuangLin/ANCOM)   
+ANCOM [R package for Analysis of Composition of Microbiomes (ANCOM-BC)](https://github.com/FrederickHuangLin/ANCOMBC)   
 animalcules [R shiny app for interactive microbiome analysis](https://compbiomed.github.io/animalcules-docs/)   
 
 > B    
@@ -108,7 +108,7 @@ OMiSA [Optimal Microbiome-based Survival Analysis (OMiSA)](https://github.com/hk
 
 > P   
 
-pathostat [Statistical Microbiome Analysis on metagenomics results from sequencing data samples](https://bioconductor.org/packages/release/bioc/html/PathoStat.html)   
+pathostat [Statistical Microbiome Analysis on metagenomics results from sequencing data samples](https://bioconductor.org/packages/release/bioc/html/PathoStat.html) - [support deprecated](https://github.com/mani2012/PathoStat/issues/48)
 phylofactor [Phylogenetic factorization of compositional data](https://peerj.com/articles/2969/)   
 phylogeo [Geographic analysis and visualization of microbiome data](https://www.ncbi.nlm.nih.gov/pubmed/25913208)   
 Phyloseq [Import, share, and analyze microbiome census data using R](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0061217)   
