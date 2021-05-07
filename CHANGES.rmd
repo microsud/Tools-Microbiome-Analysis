@@ -15,7 +15,7 @@ output: html_document
     * DivNet [An R package to estimate diversity when taxa in the community cooccur via a ecological network](https://github.com/adw96/DivNet)  
     
 
-## Change log `r format(Sys.time(), '%d %B, %Y')`   
+## Change log 20 March, 2021  
 
 * Tools    
     * MicrobiomeExplor [An R package for the analysis and visualization of microbial communities](https://doi.org/10.1093/bioinformatics/btaa838)   
