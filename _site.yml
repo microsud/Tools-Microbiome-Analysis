@@ -5,6 +5,16 @@ navbar:
   left:
     - icon: fa-home fa-lg
       href: https://microbiome.github.io/
+    - text: "Microbiome R Tools"
+      href: MicrobiomeRtools.html
+    - text: "Other Tools"
+      href: OtherTools.html
+    - text: "About Controls"
+      href: ControlsMicrobiome.html
+    - text: "Updates"
+      href: CHANGES.html
+
+
 
   right:
     - icon: ai-google-scholar ai-lg

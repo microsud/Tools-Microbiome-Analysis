@@ -1,0 +1,48 @@
+---
+title: "Controls for Microbiome Research"
+output: html_document
+---
+
+
+
+Below are resources useful for microbiome sequencing mostly 16S rRNA gene-based studies.   
+**NOTE**: The resources mentioned here are in no way comprehensive and if you know any articles/resources highlight it on the [GitHub repo](https://github.com/microsud/Tools-Microbiome-Analysis/issues).   
+
+
+>  Contamination    
+
+1. [Salter SJ, Cox MJ, Turek EM, Calus ST, Cookson WO, Moffatt MF, Turner P, Parkhill J, Loman NJ, Walker AW. Reagent and laboratory contamination can critically impact sequence-based microbiome analyses. BMC biology. 2014 Dec 1;12(1):87](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-014-0087-z).    
+2. [Karstens L, Asquith M, Davin S, Fair D, Gregory WT, Wolfe AJ, Braun J, McWeeney S. Controlling for contaminants in low-biomass 16S rRNA gene sequencing experiments. MSystems. 2019 Aug 27;4(4)](https://msystems.asm.org/content/4/4/e00290-19).   
+3. [Glassing A, Dowd SSE, Galandiuk S, Davis B, Chiodini RJ. 2016. Inherent bacterial DNA contamination of extraction and sequencing reagents may affect interpretation of microbiota in low bacterial biomass samples. Gut Pathog 8:24](doi:10.1186/s13099-016-0103-7).  
+4. [Lusk RW. 2014. Diverse and widespread contamination evident in the unmapped depths of high throughput sequencing data. PLoS One 9:e110808](doi:10.1371/journal.pone.0110808).    
+5. [Jervis-Bardy J, Leong LEX, Marri S, Smith RJ, Choo JM, Smith-Vaughan HC, Nosworthy E, Morris PS, O’Leary S, Rogers GB, Marsh RL. 2015. Deriving accurate microbiota profiles from human samples with low bacterial content through post-sequencing processing of Illumina MiSeq data. Microbiome 3:19](doi:10.1186/s40168-015-0083-8).   
+6. [Glassing A, Dowd SSE, Galandiuk S, Davis B, Chiodini RJ. 2016. Inherent bacterial DNA contamination of extraction and sequencing reagents may affect interpretation of microbiota in low bacterial biomass samples. Gut Pathog 8:24](doi:10.1186/s13099-016-0103-7).  
+7. [Weiss S, Amir A, Hyde ER, Metcalf JL, Song SJ, Knight R. 2014. Tracking down the sources of experimental contamination in microbiome studies. Genome Biol 15:564](doi:10.1186/s13059-014-0564-2).   
+8. [Caruso V, Song X, Asquith M, Karstens L. 2019. Performance of microbiome sequence inference methods in environments with varying biomass. mSystems 4:e00163-18](doi:10.1128/mSystems.00163-18).   
+9. [Claassen-Weitz, S., Gardner-Lubbe, S., Mwaikono, K.S. et al. Optimizing 16S rRNA gene profile analysis from low biomass nasopharyngeal and induced sputum specimens. BMC Microbiol 20, 113 (2020)](https://doi.org/10.1186/s12866-020-01795-7).  
+10. [Douglas, C.A., Ivey, K.L., Papanicolas, L.E. et al. DNA extraction approaches substantially influence the assessment of the human breast milk microbiome. Sci Rep 10, 123 (2020)](https://doi.org/10.1038/s41598-019-55568-y).  
+11. [Moossavi, S., Fehr, K., Khafipour, E. et al. Repeatability and reproducibility assessment in a large-scale population-based microbiota study: case study on human milk microbiota. Microbiome 9, 41 (2021)](https://doi.org/10.1186/s40168-020-00998-4).    
+
+>  Positive controls   
+
+1. [Bokulich NA, Rideout JR, Mercurio WG, Shiffer A, Wolfe B, Maurice CF, Dutton RJ, Turnbaugh PJ, Knight R, Caporaso JG. 2016. mockrobiota: a public resource for microbiome bioinformatics benchmarking. mSystems 1(5):e00062-16](doi:10.1128/mSystems.00062-16).  
+2. [Cichocki, N., Hübschmann, T., Schattenberg, F. et al. Bacterial mock communities as standards for reproducible cytometric microbiome analysis. Nat Protoc 15, 2788–2812 (2020)](https://doi.org/10.1038/s41596-020-0362-0).   
+3. [Singer, E., Andreopoulos, B., Bowers, R. et al. Next generation sequencing data of a defined microbial mock community. Sci Data 3, 160081 (2016)](https://doi.org/10.1038/sdata.2016.81).   
+4. [Yeh Y-C, Needham DM, Sieradzki ET, Fuhrman JA. 2018. Taxon disappearance from microbiome analysis reinforces the value of mock communities as a standard in every sequencing run. mSystems 3:e00023-18](https://doi.org/10.1128/mSystems.00023-18).    
+5. [Fouhy, F., Clooney, A.G., Stanton, C. et al. 16S rRNA gene sequencing of mock microbial populations- impact of DNA extraction method, primer choice and sequencing platform. BMC Microbiol 16, 123 (2016)](https://doi.org/10.1186/s12866-016-0738-z).   
+
+> Food for thought  
+
+1. [Pollock J, Glendinning L, Wisedchanwet T, Watson M. 2018. The madness of microbiome: attempting to find consensus “best practice” for 16S microbiome studies. Appl Environ Microbiol 84:e02627-17](https://doi.org/10.1128/AEM.02627-17).  
+2. [Nearing, J.T., Comeau, A.M. & Langille, M.G.I. Identifying biases and their potential solutions in human microbiome studies. Microbiome 9, 113 (2021)](https://doi.org/10.1186/s40168-021-01059-0).   
+3. [Bastian V H Hornung, Romy D Zwittink, Ed J Kuijper, Issues and current standards of controls in microbiome research, FEMS Microbiology Ecology, Volume 95, Issue 5, May 2019](https://doi.org/10.1093/femsec/fiz045)   
+
+
+
+
+
+
+
+
+
+

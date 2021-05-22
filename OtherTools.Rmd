@@ -1,0 +1,104 @@
+---
+title: "Other Tools"
+output: html_document
+---
+
+
+1. ggplot2 [An implementation of the Grammar of Graphics in R](https://ggplot2.tidyverse.org/)  
+    * Widely used package for data visualization  
+2. ggvegan [ggplot-based versions of the plots produced by the vegan package](https://github.com/gavinsimpson/ggvegan)  
+    * Convert base plots of vegan to ggplot.     
+3. ggord [A simple package for creating ordination plots with ggplot2](https://fawda123.github.io/ggord/)  
+    * Alternative to ggvegan    
+4. cowplot [cowplot: Streamlined Plot Theme and Plot Annotations for ggplot2](https://wilkelab.org/cowplot/)  
+    * Widely used package for combining multiple plots     
+4. ggridges [Ridgeline plots in ggplot2](https://wilkelab.org/ggridges)   
+5. ggtext [Improved text rendering support for ggplot2](https://wilkelab.org/ggtext/)   
+    * More power in controlling annotations in plots (e.g. italicize taxa names in plots)  
+6. ggpubr [Extension of ggplot2 based data visualization](http://www.sthda.com/english/articles/24-ggpubr-publication-ready-plots/)  
+    * Publication ready plots   
+7. ggraph [Grammar of Graph Graphics](https://ggraph.data-imaginist.com)   
+    * Network graphs using ggplot2    
+8. gganimate [A Grammar of Animated Graphics](https://gganimate.com)  
+    * Animate ggplot2 (Useful for presenting time-series dynamics of microbial communities)  
+9. ggforce [Accelerating ggplot2](https://ggforce.data-imaginist.com)  
+    * Zoom specific regions of the plots   
+10. factoextra [Extract and Visualize the Results of Multivariate Data Analyses](https://rpkgs.datanovia.com/factoextra/index.html)  
+    * Powerful package for multivvariate data analysis  
+11. ggcorrplot [Visualization of a correlation matrix using ggplot2](https://rpkgs.datanovia.com/ggcorrplot/)   
+12. tidyverse [R packages for data science](https://www.tidyverse.org/)  
+    * Universe of several useful R packages for data handling, analysis and visualization    
+13. Extensions of ggplot [Gallary of numerous data visualistion R pacakges](https://exts.ggplot2.tidyverse.org/gallery/)   
+14. ggtree [Visualization and annotation of phylogenetic trees (in R) ](https://github.com/YuLab-SMU/ggtree)   
+15. patchwork [The Composer of ggplots](https://patchwork.data-imaginist.com)  
+    * Combining multiple plots made easy    
+16. pheatmap [Pretty Heatmaps](https://cran.r-project.org/web/packages/pheatmap/pheatmap.pdf)    
+
+-------------------------------------------------------   
+
+### Proteomics resources    
+
+1. <sup>*</sup>RforProteomics [Using R for proteomics data analysis](https://bioconductor.org/packages/release/data/experiment/vignettes/RforProteomics/inst/doc/RforProteomics.html)  
+2. <sup>*</sup>RforProteomics [Visualisation of proteomics data using R and Bioconductor](https://onlinelibrary.wiley.com/doi/full/10.1002/pmic.201400392)   
+3. <sup>*</sup>proteomics [proteomics: Mass spectrometry and proteomics data analysis](http://master.bioconductor.org/packages/release/workflows/vignettes/proteomics/inst/doc/proteomics.html)    
+4. [Introduction to analysing microbial proteomics data in R](https://microsud.github.io/Bacterial-Proteomics-in-R/tutorial_main_doc.html)   
+
+-------------------------------------------------------   
+
+### RNAseq resources<sup>*<sup>    
+
+1. RNA-seq analysis in R [Workflow by Shulin Cao](https://rstudio-pubs-static.s3.amazonaws.com/462299_a9bc385f89b94b0aa95de0f3b7040b04.html)  
+2. RNA-seq workflow [RNA-seq workflow: gene-level exploratory analysis and differential expression](https://www.bioconductor.org/packages/devel/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html)   
+
+*Note: These are not focused towards microbiome data. These are listed as a reference point for beginners. If you have or know of workflows tools specific for microbiome data please let us know and we can add them here!  
+
+-------------------------------------------------------   
+
+### Useful resources are provided by:  
+1. [Ben J. Callahan and Colleagues: Bioconductor Workflow for Microbiome Data Analysis: from raw reads to community analyses](https://f1000research.com/articles/5-1492/v2).   
+2. [Comeau AM and Colleagues: Microbiome Helper: a Custom and Streamlined Workflow for Microbiome Research](http://msystems.asm.org/content/2/1/e00127-16)   
+3. Schloss, P. D: [The Riffomonas Reproducible Research Tutorial Series](http://www.riffomonas.org/reproducible_research/)  
+4. [Shetty SA, Lahti L., et al: Tutorial from microbiome data analysis spring school 2018, Wageningen University and Research](https://mibwurrepo.github.io/Microbial-bioinformatics-introductory-course-Material-2018/introduction.html)     
+5. [Holmes S, Huber W.: Modern statistics for modern biology. Cambridge University Press; 2018 Nov 30.](http://web.stanford.edu/class/bios221/book/)    
+6. [Xu S, Yu G.: Workshop of microbiome dataset analysis using MicrobiotaProcess](https://yulab-smu.top/MicrobiotaProcessWorkshop/articles/MicrobiotaProcessWorkshop.html)   
+7. [Antoni Susin, Yiwen Wang, Kim-Anh Lê Cao, M.Luz Calle.: Variable selection in microbiome compositional data analysis: tutorial](https://malucalle.github.io/Microbiome-Variable-Selection/)    
+
+Note:  
+A good practise is to use Rmarkdown for documenting your results and sharing with your collaborators and supervisors. For more information click here [RStudio](https://www.youtube.com/watch?v=cWJzjHh_3kk&t=337s) and  
+[RStudio Overview](https://www.youtube.com/watch?v=n3uue28FD0w)  
+
+
+-------------------------------------------------------   
+
+[View this webiste repository on GitHub](https://github.com/microsud/Tools-Microbiome-Anlaysis)  
+[Follow me on Twitter](https://twitter.com/gutmicrobe)  
+[googlescholar](https://scholar.google.nl/citations?hl=en&user=Vahc6LUAAAAJ&view_op=list_works&sortby=pubdate)  
+[ORCID ID: 0000-0001-7280-9915](http://orcid.org/0000-0001-7280-9915)   
+
+-------------------------------------------------------   
+
+### References:  
+1. Callahan, B. J., McMurdie, P. J. & Holmes, S. P. (2017). Exact sequence variants should replace operational taxonomic units in marker gene data analysis. bioRxiv, 113597.  
+2. Callahan, B. J., McMurdie, P. J., Rosen, M. J., Han, A. W., Johnson, A. J. A. & Holmes, S. P. (2016). DADA2: high-resolution sample inference from Illumina amplicon data. Nature methods 13, 581-583.  
+3. Caporaso, J. G., Kuczynski, J., Stombaugh, J., Bittinger, K., Bushman, F. D., Costello, E. K., Fierer, N., Peña, A. G., Goodrich, J. K. & Gordon, J. I. (2010). QIIME allows analysis of high-throughput community sequencing data. Nature methods 7, 335-336.  
+4. Schloss, P. D., Westcott, S. L., Ryabin, T., Hall, J. R., Hartmann, M., Hollister, E. B., Lesniewski, R. A., Oakley, B. B., Parks, D. H. & Robinson, C. J. (2009). Introducing mothur: open-source, platform-independent, community-supported software for describing and comparing microbial communities. Applied and environmental microbiology 75, 7537-7541.  
+5. Team, R. C. (2000). R language definition. Vienna, Austria: R foundation for statistical computing.   
+
+-------------------------------------------------------    
+
+### TODO   
+Any help is welcome   
+
+* Structure the list according to categories   
+    * General purpose    
+    * Visualization  
+    * Snapshot/cross-sectional stats  
+    * Time series/Longitudinal stats   
+    * Integrative -Omics   
+* Include metagenomics/metabolomics  
+
+* Include more general microbiology oriented R packages/tools  
+
+* and so on .....  
+
+-------------------------------------------------------   

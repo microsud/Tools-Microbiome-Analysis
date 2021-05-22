@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>R tools for microbiome research</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Tools for Microbiome Analysis</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="https://microbiome.github.io/">
+    <span class="fas fa-home fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="MicrobiomeRtools.html">Microbiome R Tools</a>
+</li>
+<li>
+  <a href="OtherTools.html">Other Tools</a>
+</li>
+<li>
+  <a href="ControlsMicrobiome.html">About Controls</a>
+</li>
+<li>
+  <a href="CHANGES.html">Updates</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://scholar.google.nl/citations?hl=en&amp;user=Vahc6LUAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">
+    <span class="ai ai-google-scholar ai-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/microsud">
+    <span class="fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/gutmicrobe">
+    <span class="fab fa-twitter fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="www.linkedin.com/in/sudarshan-shetty-57345822">
+    <span class="fab fa-linkedin fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">R tools for microbiome research</h1>
+
+</div>
+
+
+<blockquote>
+<p>A</p>
+</blockquote>
+<p>Adaptive gPCA <a href="https://arxiv.org/abs/1702.00501">A method for structured dimensionality reduction</a><br />
+Ampvis2 <a href="https://madsalbertsen.github.io/ampvis2/">Tools for visualising amplicon sequencing data</a><br />
+ANCOM/ANCOM-BC <a href="https://github.com/FrederickHuangLin/ANCOMBC">R package for Analysis of Composition of Microbiomes (ANCOM-BC)</a><br />
+animalcules <a href="https://compbiomed.github.io/animalcules-docs/">R shiny app for interactive microbiome analysis</a><br />
+ALDEx2 <a href="https://bioconductor.org/packages/release/bioc/html/ALDEx2.html">Analysis Of Differential Abundance Taking Sample Variation Into Account</a></p>
+<blockquote>
+<p>B</p>
+</blockquote>
+<p>BDMMA <a href="https://academic.oup.com/bioinformatics/article-abstract/35/5/807/5078473">Batch Effects Correction for Microbiome Data With Dirichlet-multinomial Regression</a><br />
+BEEM <a href="https://github.com/lch14forever/BEEM">BEEM: Estimating Lotka-Volterra models from time-course microbiome sequencing data</a><br />
+biome-shiny <a href="https://github.com/Biodata-PT/Biome-Shiny">GUI for microbiome visualization, based on the shiny package “microbiome”</a><br />
+bootLong <a href="https://pratheepaj.github.io/bootLong/">The Block Bootstrap Method for Longitudinal Microbiome Data</a><br />
+breakaway <a href="https://github.com/search?q=breakaway">Species Richness Estimation and Modeling</a></p>
+<blockquote>
+<p>C</p>
+</blockquote>
+<p>CCREPE <a href="http://bioconductor.org/packages/release/bioc/html/ccrepe.html">Compositionality Corrected by PErmutation and REnormalization</a><br />
+corncob <a href="https://arxiv.org/abs/1902.02776">Modeling microbial abundances and dysbiosis with beta-binomial regression</a><br />
+curatedMetagenomicData <a href="https://waldronlab.io/curatedMetagenomicData/">Accessible, curated metagenomic data through ExperimentHub</a><br />
+CoDaSeq <a href="https://github.com/ggloor/CoDaSeq">Functions for compositional analysis of high throughput sequencing</a></p>
+<blockquote>
+<p>D</p>
+</blockquote>
+<p>dacomp <a href="https://github.com/barakbri/dacomp">Testing for Differential Abundance in Compositional Counts Data, with Application to Microbiome Studies</a><br />
+DADA2 <a href="https://www.nature.com/nmeth/journal/v13/n7/full/nmeth.3869.html">Divisive Amplicon Denoising Algorithm</a><br />
+DECIPHER <a href="http://www2.decipher.codes/index.html">Using DECIPHER v2.0 to Analyze Big Biological Sequence Data in R</a><br />
+DECIPHER/IIDTAXA <a href="doi:10.1186/s40168-018-0521-5">IDTAXA: a novel approach for accurate taxonomic classification of microbiome sequences</a><br />
+decontam <a href="https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-018-0605-2">Simple Statistical Identification and Removal of Contaminant Sequences in Marker-Gene and Metagenomics Data</a><br />
+DESeq2 <a href="https://www.bioconductor.org/packages/devel/bioc/vignettes/phyloseq/inst/doc/phyloseq-mixture-models.html">Differential expression analysis for sequence count data</a><br />
+DivNet <a href="https://github.com/adw96/DivNet">An R package to estimate diversity when taxa in the community cooccur via a ecological network</a><br />
+DMBC <a href="https://msphere.asm.org/content/2/6/e00536-17">A Dirichlet-Multinomial Bayes Classifier for Disease Diagnosis With Microbial Compositions</a></p>
+<blockquote>
+<p>E</p>
+</blockquote>
+<p>edgeR <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2796818/">empirical analysis of DGE in R</a></p>
+<blockquote>
+<p>G</p>
+</blockquote>
+<p>GLMMMiRKAT <a href="https://github.com/hk1785/GLMM-MiRKAT">A distance-based kernel association test based on the generalized linear mixed model</a></p>
+<blockquote>
+<p>I</p>
+</blockquote>
+<p>igraph <a href="http://igraph.org/r/">Network Analysis and Visualization in R</a></p>
+<blockquote>
+<p>L</p>
+</blockquote>
+<p>labdsv <a href="https://cran.r-project.org/web/packages/labdsv/labdsv.pdf">Ordination and Multivariate Analysis for Ecology</a></p>
+<blockquote>
+<p>M</p>
+</blockquote>
+<p>MaAsLin2 <a href="https://github.com/biobakery/Maaslin2">MaAsLin2: Microbiome Multivariate Association with Linear Models</a><br />
+mare <a href="https://github.com/katrikorpela/mare">Microbiota Analysis in R Easily</a><br />
+massMap <a href="https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-018-0517-1">A Two-Stage Microbial Association Mapping Framework With Advanced FDR Control</a><br />
+mbtools <a href="https://gibbons-lab.github.io/mbtools">Collection of R tools to analyze microbiome data</a><br />
+MDiNE <a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz824/5614428">MDiNE: a model to estimate differential co-occurrence networks in microbiome studies</a><br />
+MDPbiome <a href="https://academic.oup.com/bioinformatics/article/34/17/i838/5093255">MDPbiome: microbiome engineering through prescriptive perturbations</a><br />
+microDecon <a href="https://github.com/donaldtmcknight/microDecon">An R package for removing contamination from metabarcoding (e.g., microbiome) datasets post-sequencing</a><br />
+microbiotaPair <a href="https://github.com/rusher321/microbiotaPair">An R Package for Simplified Microbiome Analysis Workflows on Intervention Study</a><br />
+MedTest <a href="https://academic.oup.com/bioinformatics/article/34/11/1875/4810437">A Distance-Based Approach for Testing the Mediation Effect of the Human Microbiome</a><br />
+MegaR <a href="https://github.com/BioHPC/MegaR">An Interactive R Package for Metagenomic Sample Classification and Disease Prediction using Microbiota and Machine Learning</a><br />
+MelonnPan <a href="https://github.com/biobakery/melonnpan">Model-based Genomically Informed High-dimensional Predictor of Microbial Community Metabolic Profiles</a><br />
+Metacoder <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005404">An R package for visualization and manipulation of community taxonomic diversity data</a><br />
+metagenomeSeq <a href="http://www.nature.com/nmeth/journal/v10/n12/full/nmeth.2658.html">Differential abundance analysis for microbial marker-gene surveys</a><br />
+MetaLonDA <a href="https://github.com/aametwally/MetaLonDA">METAgenomic LONgitudinal Differential Abundance method</a><br />
+metamicrobiomeR <a href="https://github.com/cran/metamicrobiomeR">Analysis of Microbiome Relative Abundance Data using Zero Inflated Beta GAMLSS and Meta-Analysis Across Studies using Random Effects Model</a><br />
+metaSPARSim <a href="https://gitlab.com/sysbiobig/metasparsim">An R tool for 16S rRNA-gene sequencing count data simulation</a><br />
+microbiome R package <a href="https://github.com/microbiome/microbiome">Tools for microbiome analysis in R</a><br />
+MicrobiomeDDA <a href="https://academic.oup.com/bioinformatics/article/34/4/643/4470360">An Omnibus Test for Differential Distribution Analysis of Microbiome Sequencing Data</a><br />
+MicrobiomeHD <a href="http://www.biorxiv.org/content/early/2017/05/08/134031">A standardized database of human gut microbiome studies in health and disease <em>Case-Control</em></a><br />
+microbiomeMarker <a href="https://github.com/yiluheihei/microbiomeMarker">R package for microbiome biomarker discovery</a><br />
+MicrobiomeR <a href="https://microbiomer.vallenderlab.org/">MicrobiomeR: An R Package for Simplified and Standardized Microbiome Analysis Workflows</a><br />
+microbiomeutilities <a href="https://microsud.github.io/microbiomeutilities/">Extending and supporting package based on microbiome and phyloseq R package</a><br />
+MicrobiotaProcess <a href="https://github.com/YuLab-SMU/MicrobiotaProcess">MicrobiotaProcess: an R package for analysis, visualization and biomarker discovery of microbiome</a><br />
+miLineage <a href="https://medschool.vanderbilt.edu/tang-lab/software/miLineage">A General Framework for Association Analysis of Microbial Communities on a Taxonomic Tree</a><br />
+MINT <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1553-8">Multivariate INTegrative method</a><br />
+mixDIABLO <a href="http://mixomics.org/mixdiablo/">Data Integration Analysis for Biomarker discovery using Latent variable approaches for ‘Omics studies</a><br />
+mixMC <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0160169">Multivariate Statistical Framework to Gain Insight into Microbial Communities</a><br />
+MMinte <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1230-3">Methodology for the large-scale assessment of microbial metabolic interactions (MMinte) from 16S rDNA data</a><br />
+MTA <a href="https://github.com/chanw0/MTA">Microbial trend analysis (MTA) for common dynamic trend, group comparison and classification in longitudinal microbiome study</a><br />
+MicrobiomeExplor <a href="https://doi.org/10.1093/bioinformatics/btaa838">An R package for the analysis and visualization of microbial communities</a><br />
+MicroBVS <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03640-0">Dirichlet-tree multinomial regression models with Bayesian variable selection - an R package</a><br />
+MicroNiche <a href="https://academic.oup.com/femsec/article-abstract/96/8/fiaa131/5863182?redirectedFrom=fulltext">An R package for assessing microbial niche breadth and overlap from amplicon sequencing data</a><br />
+microViz <a href="https://david-barnett.github.io/microViz/">An R package for for analysis and visualization of microbiome sequencing data</a></p>
+<blockquote>
+<p>N</p>
+</blockquote>
+<p>NMIT <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5696116/#!po=75.0000">Microbial Interdependence Association Test–a Non-parametric Microbial Interdependence Test</a><br />
+NetCoMi <a href="https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbaa290/6017455">Network construction and comparison for microbiome data in R</a><br />
+NBZIMM <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03803-z">Negative binomial and zero-inflated mixed models, with application to microbiome/metagenomics data analysis</a></p>
+<blockquote>
+<p>O</p>
+</blockquote>
+<p>OMiSA <a href="https://github.com/hk1785/OMiSA">Optimal Microbiome-based Survival Analysis (OMiSA)</a></p>
+<blockquote>
+<p>P</p>
+</blockquote>
+<p>pathostat <a href="https://bioconductor.org/packages/release/bioc/html/PathoStat.html">Statistical Microbiome Analysis on metagenomics results from sequencing data samples</a> - <a href="https://github.com/mani2012/PathoStat/issues/48">support deprecated</a> phylofactor <a href="https://peerj.com/articles/2969/">Phylogenetic factorization of compositional data</a><br />
+phylogeo <a href="https://www.ncbi.nlm.nih.gov/pubmed/25913208">Geographic analysis and visualization of microbiome data</a><br />
+Phyloseq <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0061217">Import, share, and analyze microbiome census data using R</a><br />
+Pldist <a href="https://academic.oup.com/bioinformatics/article-abstract/35/19/3567/5341424?redirectedFrom=fulltext">Pldist: Ecological Dissimilarities for Paired and Longitudinal Microbiome Association Analysis</a><br />
+powmic <a href="https://github.com/lichen-lab/powmic">Power assessment in microbiome case-control studies</a></p>
+<blockquote>
+<p>Q</p>
+</blockquote>
+<p>qgraph <a href="https://cran.r-project.org/web/packages/qgraph/qgraph.pdf">Graph Plotting Methods, Psychometric Data Visualization and Graphical Model Estimation</a><br />
+qiime2R <a href="https://github.com/jbisanz/qiime2R">Importing QIIME2 artifacts and associated data into R sessions</a><br />
+qiimer <a href="https://github.com/kylebittinger/qiimer">R tools compliment qiime</a></p>
+<blockquote>
+<p>R</p>
+</blockquote>
+<p>RAM <a href="https://cran.r-project.org/web/packages/RAM/RAM.pdf">R for Amplicon-Sequencing-Based Microbial-Ecology</a><br />
+RCM <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0205474">A unified framework for unconstrained and constrained ordination of microbiome read count data</a><br />
+RevEcoR <a href="https://github.com/yiluheihei/RevEcoR">Reverse Ecology analysis in R</a><br />
+Rhea <a href="https://peerj.com/articles/2836/">A pipeline with modular R scripts</a></p>
+<blockquote>
+<p>S</p>
+</blockquote>
+<p>selbal <a href="https://msystems.asm.org/content/3/4/e00053-18">Balances: a New Perspective for Microbiome Analysis</a><br />
+ShinyPhyloseq <a href="http://joey711.github.io/shiny-phyloseq/">Web-tool with user interface for Phyloseq</a><br />
+SIAMCAT <a href="https://bioconductor.org/packages/release/bioc/html/SIAMCAT.html">Statistical Inference of Associations between Microbial Communities And host phenoTypes</a><br />
+SigTree <a href="http://www.sciencedirect.com/science/article/pii/S2001037017300132">Identify and Visualize Significantly Responsive Branches in a Phylogenetic Tree</a><br />
+SparseMCMM <a href="https://sites.google.com/site/huilinli09/software">Estimating and testing the microbial causal mediation effect with the high-dimensional and compositional microbiome data (SparseMCMM)</a><br />
+SPIEC-EASI <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004226">Sparse and Compositionally Robust Inference of Microbial Ecological Networks</a><br />
+SplinectomeR <a href="https://www.frontiersin.org/articles/10.3389/fmicb.2018.00785/full">SplinectomeR Enables Group Comparisons in Longitudinal Microbiome Studies</a><br />
+StructFDR <a href="https://academic.oup.com/bioinformatics/article/33/18/2873/3824757">False Discovery Rate Control Incorporating Phylogenetic Tree Increases Detection Power in Microbiome-Wide Multiple Testing</a><br />
+structSSI <a href="https://www.jstatsoft.org/article/view/v059i13">Simultaneous and Selective Inference for Grouped or Hierarchically Structured Data</a></p>
+<blockquote>
+<p>T</p>
+</blockquote>
+<p>Tax4Fun <a href="https://www.ncbi.nlm.nih.gov/pubmed/25957349">Predicting functional profiles from metagenomic 16S rRNA gene data</a><br />
+taxize <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3901538/">Taxonomic Information from Around the Web</a><br />
+TreeSummarizedExperiment <a href="https://github.com/fionarhuang/TreeSummarizedExperiment">An extension class of SummarizedExperiment to allow hierarchical structure on the row or column dimension</a><br />
+themetagenomics <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0219235">Exploring Thematic Structure and Predicted Functionality of 16S rRNA Amplicon Data</a><br />
+tidyMicro <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-03967-2">A pipeline for microbiome data analysis and visualization using the tidyverse in R</a></p>
+<blockquote>
+<p>V</p>
+</blockquote>
+<p>vegan <a href="https://github.com/vegandevs/vegan">R package for community ecologists</a></p>
+<blockquote>
+<p>Y</p>
+</blockquote>
+<p>yingtools2 <a href="https://github.com/ying14/yingtools2">Tools and functions for working with clinical and microbiome data</a></p>
+<blockquote>
+<p>Z</p>
+</blockquote>
+<p>zeroSum <a href="https://academic.oup.com/bioinformatics/article/33/2/219/2928229">Reference Point Insensitive Molecular Data Analysis</a><br />
+ZIBBSeqDiscovery <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/sta4.185">A Zero-inflated Beta-binomial Model for Microbiome Data Analysis</a></p>
+<hr />
+<div id="microbiome-data-sets" class="section level3">
+<h3>Microbiome data sets</h3>
+<ol style="list-style-type: decimal">
+<li>HMP16SData <a href="https://bioconductor.org/packages/release/data/experiment/html/HMP16SData.html">Efficient Access to the Human Microbiome Project through Bioconductor</a><br />
+</li>
+<li>HMP2Data <a href="https://bioconductor.org/packages/release/data/experiment/html/HMP2Data.html">16s rRNA sequencing data from the Human Microbiome Project 2</a><br />
+</li>
+<li>microbiomeDataSets <a href="https://bioconductor.org/packages/devel/data/experiment/html/microbiomeDataSets.html">Experiment Hub based microbiome datasets</a><br />
+</li>
+<li>curatedMetagenomicData <a href="https://bioconductor.org/packages/release/data/experiment/html/curatedMetagenomicData.html">Accessible, curated metagenomic data through ExperimentHub</a></li>
+</ol>
+<hr />
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -6,7 +6,14 @@ output: html_document
 
 # List of R tools for microbiome data analysis  
 
-## Change log `r format(Sys.time(), '%d %B, %Y')`   
+## Change log 22 May, 2021     
+
+* Revamped website    
+* Tools    
+    * metaSPARSim added   
+* References for Controls in Microbiome Research  
+    
+## Change log 07 May, 2021     
 
 * Tools    
     * ANCOM-BC added next to ANCOM    

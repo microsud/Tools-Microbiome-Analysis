@@ -11,7 +11,7 @@
 
 
 
-<title>Tools for microbiome anlaysis</title>
+<title>Controls for Microbiome Research</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -296,54 +296,63 @@ $(document).ready(function () {
 
 
 
+<h1 class="title toc-ignore">Controls for Microbiome Research</h1>
 
 </div>
 
 
-<div id="a-list-of-r-environment-based-tools-for-microbiome-data-exploration-statistical-analysis-and-visualization" class="section level2">
-<h2>A list of R environment based tools for microbiome data exploration, statistical analysis and visualization</h2>
-<p>As a beginner, the entire process from sample collection to analysis for sequencing data is a daunting task. More specifically, the downstream processing of raw reads is the most time consuming and mentally draining stage. It is vital to understand the basic concepts in microbial ecology and then to use various tools at disposal to address specific research questions. Thankfully, several young researchers supported by their experienced principal investigators/supervisors are working on creating various tools for analysis and interpretation of microbial community data. A major achievement of the scientific community is the open science initiative which has led to sharing of knowledge worldwide. For microbial community analysis, several tools have been created in R, a free to use (GNU General Public License) programming language(Team, 2000). The power of R lies in its ease of working with individuals lacking programming skills and easy sharing of analysis scripts codes and packages aiding reproducibility. In this post, numerous resources that can be helpful for analysis of microbiome data are listed. This list may not have all the packages as this tool development space is ever growing. Feel free to add those packages or links to web tutorials related to microbiome data. These are mostly for improving statistical analysis and visualization. These tools provide convenient options for data analysis and include several steps where the user has to make decisions. It can be tricky and frustrating in the beginning but patience and perseverance will be fruitful at the end (personal experience).</p>
-<p>Check the top navigation bar for list and resources.</p>
-<hr />
-<p>Help us spread information about tools for microbiome data analytics by sharing it with others too!<br />
-You can cite this resource as:<br />
-Shetty, Sudarshan A., and Leo Lahti. <a href="https://link.springer.com/article/10.1007%2Fs12038-019-9930-2">Microbiome data science. Journal of biosciences 44, no. 5 (2019): 115</a>.<br />
-<a href="https://openresearchlabs.github.io/publications/papers/2019-Shetty-MDS.pdf"><em>Pre-print</em></a></p>
-<hr />
-<div id="do-you-want-to-join-us-and-contribute-to-the-open-source-microbiome-community" class="section level3">
-<h3>Do you want to join us and contribute to the open source microbiome community?</h3>
-<p>We are working on an open source project developing R/Bioc methods, benchmarking data, and educational material for microbiome research based on the <code>SummarizedExperiment</code> class and its derivatives.<br />
-More information please check our website <a href="https://microbiome.github.io/">R/Bioc microbiome ecosystem with SummarizedExperiment</a></p>
-<hr />
-</div>
-<div id="acknowledgments" class="section level3">
-<h3>Acknowledgments</h3>
-<ul>
-<li>The Academy of Finland (Grants 295741; 307127)<br />
+<p>Below are resources useful for microbiome sequencing mostly 16S rRNA gene-based studies.<br />
+<strong>NOTE</strong>: The resources mentioned here are in no way comprehensive and if you know any articles/resources highlight it on the <a href="https://github.com/microsud/Tools-Microbiome-Analysis/issues">GitHub repo</a>.</p>
+<blockquote>
+<p>Contamination</p>
+</blockquote>
+<ol style="list-style-type: decimal">
+<li><a href="https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-014-0087-z">Salter SJ, Cox MJ, Turek EM, Calus ST, Cookson WO, Moffatt MF, Turner P, Parkhill J, Loman NJ, Walker AW. Reagent and laboratory contamination can critically impact sequence-based microbiome analyses. BMC biology. 2014 Dec 1;12(1):87</a>.<br />
 </li>
-<li>The SIAM Gravitation Grant 024.002.002<br />
+<li><a href="https://msystems.asm.org/content/4/4/e00290-19">Karstens L, Asquith M, Davin S, Fair D, Gregory WT, Wolfe AJ, Braun J, McWeeney S. Controlling for contaminants in low-biomass 16S rRNA gene sequencing experiments. MSystems. 2019 Aug 27;4(4)</a>.<br />
 </li>
-<li>UNLOCK project of the Netherlands Organization for Scientific Research (NWO)<br />
+<li><a href="doi:10.1186/s13099-016-0103-7">Glassing A, Dowd SSE, Galandiuk S, Davis B, Chiodini RJ. 2016. Inherent bacterial DNA contamination of extraction and sequencing reagents may affect interpretation of microbiota in low bacterial biomass samples. Gut Pathog 8:24</a>.<br />
 </li>
-<li>University of Turku, Department of Mathematics and Statistics<br />
+<li><a href="doi:10.1371/journal.pone.0110808">Lusk RW. 2014. Diverse and widespread contamination evident in the unmapped depths of high throughput sequencing data. PLoS One 9:e110808</a>.<br />
 </li>
-<li>Molecular Ecology group, Laboratory of Microbiology, Wageningen University, The Netherlands<br />
+<li><a href="doi:10.1186/s40168-015-0083-8">Jervis-Bardy J, Leong LEX, Marri S, Smith RJ, Choo JM, Smith-Vaughan HC, Nosworthy E, Morris PS, O’Leary S, Rogers GB, Marsh RL. 2015. Deriving accurate microbiota profiles from human samples with low bacterial content through post-sequencing processing of Illumina MiSeq data. Microbiome 3:19</a>.<br />
 </li>
-<li>Medische Microbiologie en Infectiepreventie, University Medical Center Groningen, The Netherlands</li>
-</ul>
-<hr />
-</div>
-<div id="updates" class="section level3">
-<h3>Updates</h3>
-<ul>
-<li>Updates that are added <a href="CHANGES.html">See Changes log</a></li>
-</ul>
-<hr />
-<p>Zendo:<br />
-<img src="https://zenodo.org/badge/99698135.svg" alt="DOI" /><a href="https://zenodo.org/badge/latestdoi/99698135"></a></p>
-<p>Site format from <a href="https://github.com/zabore/tutorials">Dr. Emily C. Zabor</a></p>
-</div>
-</div>
+<li><a href="doi:10.1186/s13099-016-0103-7">Glassing A, Dowd SSE, Galandiuk S, Davis B, Chiodini RJ. 2016. Inherent bacterial DNA contamination of extraction and sequencing reagents may affect interpretation of microbiota in low bacterial biomass samples. Gut Pathog 8:24</a>.<br />
+</li>
+<li><a href="doi:10.1186/s13059-014-0564-2">Weiss S, Amir A, Hyde ER, Metcalf JL, Song SJ, Knight R. 2014. Tracking down the sources of experimental contamination in microbiome studies. Genome Biol 15:564</a>.<br />
+</li>
+<li><a href="doi:10.1128/mSystems.00163-18">Caruso V, Song X, Asquith M, Karstens L. 2019. Performance of microbiome sequence inference methods in environments with varying biomass. mSystems 4:e00163-18</a>.<br />
+</li>
+<li><a href="https://doi.org/10.1186/s12866-020-01795-7">Claassen-Weitz, S., Gardner-Lubbe, S., Mwaikono, K.S. et al. Optimizing 16S rRNA gene profile analysis from low biomass nasopharyngeal and induced sputum specimens. BMC Microbiol 20, 113 (2020)</a>.<br />
+</li>
+<li><a href="https://doi.org/10.1038/s41598-019-55568-y">Douglas, C.A., Ivey, K.L., Papanicolas, L.E. et al. DNA extraction approaches substantially influence the assessment of the human breast milk microbiome. Sci Rep 10, 123 (2020)</a>.<br />
+</li>
+<li><a href="https://doi.org/10.1186/s40168-020-00998-4">Moossavi, S., Fehr, K., Khafipour, E. et al. Repeatability and reproducibility assessment in a large-scale population-based microbiota study: case study on human milk microbiota. Microbiome 9, 41 (2021)</a>.</li>
+</ol>
+<blockquote>
+<p>Positive controls</p>
+</blockquote>
+<ol style="list-style-type: decimal">
+<li><a href="doi:10.1128/mSystems.00062-16">Bokulich NA, Rideout JR, Mercurio WG, Shiffer A, Wolfe B, Maurice CF, Dutton RJ, Turnbaugh PJ, Knight R, Caporaso JG. 2016. mockrobiota: a public resource for microbiome bioinformatics benchmarking. mSystems 1(5):e00062-16</a>.<br />
+</li>
+<li><a href="https://doi.org/10.1038/s41596-020-0362-0">Cichocki, N., Hübschmann, T., Schattenberg, F. et al. Bacterial mock communities as standards for reproducible cytometric microbiome analysis. Nat Protoc 15, 2788–2812 (2020)</a>.<br />
+</li>
+<li><a href="https://doi.org/10.1038/sdata.2016.81">Singer, E., Andreopoulos, B., Bowers, R. et al. Next generation sequencing data of a defined microbial mock community. Sci Data 3, 160081 (2016)</a>.<br />
+</li>
+<li><a href="https://doi.org/10.1128/mSystems.00023-18">Yeh Y-C, Needham DM, Sieradzki ET, Fuhrman JA. 2018. Taxon disappearance from microbiome analysis reinforces the value of mock communities as a standard in every sequencing run. mSystems 3:e00023-18</a>.<br />
+</li>
+<li><a href="https://doi.org/10.1186/s12866-016-0738-z">Fouhy, F., Clooney, A.G., Stanton, C. et al. 16S rRNA gene sequencing of mock microbial populations- impact of DNA extraction method, primer choice and sequencing platform. BMC Microbiol 16, 123 (2016)</a>.</li>
+</ol>
+<blockquote>
+<p>Food for thought</p>
+</blockquote>
+<ol style="list-style-type: decimal">
+<li><a href="https://doi.org/10.1128/AEM.02627-17">Pollock J, Glendinning L, Wisedchanwet T, Watson M. 2018. The madness of microbiome: attempting to find consensus “best practice” for 16S microbiome studies. Appl Environ Microbiol 84:e02627-17</a>.<br />
+</li>
+<li><a href="https://doi.org/10.1186/s40168-021-01059-0">Nearing, J.T., Comeau, A.M. &amp; Langille, M.G.I. Identifying biases and their potential solutions in human microbiome studies. Microbiome 9, 113 (2021)</a>.<br />
+</li>
+<li><a href="https://doi.org/10.1093/femsec/fiz045">Bastian V H Hornung, Romy D Zwittink, Ed J Kuijper, Issues and current standards of controls in microbiome research, FEMS Microbiology Ecology, Volume 95, Issue 5, May 2019</a></li>
+</ol>
 
 
 

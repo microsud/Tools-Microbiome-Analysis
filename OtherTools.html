@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Other Tools</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Tools for Microbiome Analysis</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="https://microbiome.github.io/">
+    <span class="fas fa-home fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="MicrobiomeRtools.html">Microbiome R Tools</a>
+</li>
+<li>
+  <a href="OtherTools.html">Other Tools</a>
+</li>
+<li>
+  <a href="ControlsMicrobiome.html">About Controls</a>
+</li>
+<li>
+  <a href="CHANGES.html">Updates</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://scholar.google.nl/citations?hl=en&amp;user=Vahc6LUAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">
+    <span class="ai ai-google-scholar ai-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/microsud">
+    <span class="fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/gutmicrobe">
+    <span class="fab fa-twitter fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="www.linkedin.com/in/sudarshan-shetty-57345822">
+    <span class="fab fa-linkedin fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Other Tools</h1>
+
+</div>
+
+
+<ol style="list-style-type: decimal">
+<li>ggplot2 <a href="https://ggplot2.tidyverse.org/">An implementation of the Grammar of Graphics in R</a>
+<ul>
+<li>Widely used package for data visualization<br />
+</li>
+</ul></li>
+<li>ggvegan <a href="https://github.com/gavinsimpson/ggvegan">ggplot-based versions of the plots produced by the vegan package</a>
+<ul>
+<li>Convert base plots of vegan to ggplot.<br />
+</li>
+</ul></li>
+<li>ggord <a href="https://fawda123.github.io/ggord/">A simple package for creating ordination plots with ggplot2</a>
+<ul>
+<li>Alternative to ggvegan<br />
+</li>
+</ul></li>
+<li>cowplot <a href="https://wilkelab.org/cowplot/">cowplot: Streamlined Plot Theme and Plot Annotations for ggplot2</a>
+<ul>
+<li>Widely used package for combining multiple plots<br />
+</li>
+</ul></li>
+<li>ggridges <a href="https://wilkelab.org/ggridges">Ridgeline plots in ggplot2</a><br />
+</li>
+<li>ggtext <a href="https://wilkelab.org/ggtext/">Improved text rendering support for ggplot2</a>
+<ul>
+<li>More power in controlling annotations in plots (e.g. italicize taxa names in plots)<br />
+</li>
+</ul></li>
+<li>ggpubr <a href="http://www.sthda.com/english/articles/24-ggpubr-publication-ready-plots/">Extension of ggplot2 based data visualization</a>
+<ul>
+<li>Publication ready plots<br />
+</li>
+</ul></li>
+<li>ggraph <a href="https://ggraph.data-imaginist.com">Grammar of Graph Graphics</a>
+<ul>
+<li>Network graphs using ggplot2<br />
+</li>
+</ul></li>
+<li>gganimate <a href="https://gganimate.com">A Grammar of Animated Graphics</a>
+<ul>
+<li>Animate ggplot2 (Useful for presenting time-series dynamics of microbial communities)<br />
+</li>
+</ul></li>
+<li>ggforce <a href="https://ggforce.data-imaginist.com">Accelerating ggplot2</a>
+<ul>
+<li>Zoom specific regions of the plots<br />
+</li>
+</ul></li>
+<li>factoextra <a href="https://rpkgs.datanovia.com/factoextra/index.html">Extract and Visualize the Results of Multivariate Data Analyses</a>
+<ul>
+<li>Powerful package for multivvariate data analysis<br />
+</li>
+</ul></li>
+<li>ggcorrplot <a href="https://rpkgs.datanovia.com/ggcorrplot/">Visualization of a correlation matrix using ggplot2</a><br />
+</li>
+<li>tidyverse <a href="https://www.tidyverse.org/">R packages for data science</a>
+<ul>
+<li>Universe of several useful R packages for data handling, analysis and visualization<br />
+</li>
+</ul></li>
+<li>Extensions of ggplot <a href="https://exts.ggplot2.tidyverse.org/gallery/">Gallary of numerous data visualistion R pacakges</a><br />
+</li>
+<li>ggtree <a href="https://github.com/YuLab-SMU/ggtree">Visualization and annotation of phylogenetic trees (in R)</a><br />
+</li>
+<li>patchwork <a href="https://patchwork.data-imaginist.com">The Composer of ggplots</a>
+<ul>
+<li>Combining multiple plots made easy<br />
+</li>
+</ul></li>
+<li>pheatmap <a href="https://cran.r-project.org/web/packages/pheatmap/pheatmap.pdf">Pretty Heatmaps</a></li>
+</ol>
+<hr />
+<div id="proteomics-resources" class="section level3">
+<h3>Proteomics resources</h3>
+<ol style="list-style-type: decimal">
+<li><sup>*</sup>RforProteomics <a href="https://bioconductor.org/packages/release/data/experiment/vignettes/RforProteomics/inst/doc/RforProteomics.html">Using R for proteomics data analysis</a><br />
+</li>
+<li><sup>*</sup>RforProteomics <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/pmic.201400392">Visualisation of proteomics data using R and Bioconductor</a><br />
+</li>
+<li><sup>*</sup>proteomics <a href="http://master.bioconductor.org/packages/release/workflows/vignettes/proteomics/inst/doc/proteomics.html">proteomics: Mass spectrometry and proteomics data analysis</a><br />
+</li>
+<li><a href="https://microsud.github.io/Bacterial-Proteomics-in-R/tutorial_main_doc.html">Introduction to analysing microbial proteomics data in R</a></li>
+</ol>
+<hr />
+</div>
+<div id="rnaseq-resources" class="section level3">
+<h3>RNAseq resources<sup>*<sup></h3>
+<ol style="list-style-type: decimal">
+<li>RNA-seq analysis in R <a href="https://rstudio-pubs-static.s3.amazonaws.com/462299_a9bc385f89b94b0aa95de0f3b7040b04.html">Workflow by Shulin Cao</a><br />
+</li>
+<li>RNA-seq workflow <a href="https://www.bioconductor.org/packages/devel/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html">RNA-seq workflow: gene-level exploratory analysis and differential expression</a></li>
+</ol>
+<p>*Note: These are not focused towards microbiome data. These are listed as a reference point for beginners. If you have or know of workflows tools specific for microbiome data please let us know and we can add them here!</p>
+<hr />
+</div>
+<div id="useful-resources-are-provided-by" class="section level3">
+<h3>Useful resources are provided by:</h3>
+<ol style="list-style-type: decimal">
+<li><a href="https://f1000research.com/articles/5-1492/v2">Ben J. Callahan and Colleagues: Bioconductor Workflow for Microbiome Data Analysis: from raw reads to community analyses</a>.<br />
+</li>
+<li><a href="http://msystems.asm.org/content/2/1/e00127-16">Comeau AM and Colleagues: Microbiome Helper: a Custom and Streamlined Workflow for Microbiome Research</a><br />
+</li>
+<li>Schloss, P. D: <a href="http://www.riffomonas.org/reproducible_research/">The Riffomonas Reproducible Research Tutorial Series</a><br />
+</li>
+<li><a href="https://mibwurrepo.github.io/Microbial-bioinformatics-introductory-course-Material-2018/introduction.html">Shetty SA, Lahti L., et al: Tutorial from microbiome data analysis spring school 2018, Wageningen University and Research</a><br />
+</li>
+<li><a href="http://web.stanford.edu/class/bios221/book/">Holmes S, Huber W.: Modern statistics for modern biology. Cambridge University Press; 2018 Nov 30.</a><br />
+</li>
+<li><a href="https://yulab-smu.top/MicrobiotaProcessWorkshop/articles/MicrobiotaProcessWorkshop.html">Xu S, Yu G.: Workshop of microbiome dataset analysis using MicrobiotaProcess</a><br />
+</li>
+<li><a href="https://malucalle.github.io/Microbiome-Variable-Selection/">Antoni Susin, Yiwen Wang, Kim-Anh Lê Cao, M.Luz Calle.: Variable selection in microbiome compositional data analysis: tutorial</a></li>
+</ol>
+<p>Note:<br />
+A good practise is to use Rmarkdown for documenting your results and sharing with your collaborators and supervisors. For more information click here <a href="https://www.youtube.com/watch?v=cWJzjHh_3kk&amp;t=337s">RStudio</a> and<br />
+<a href="https://www.youtube.com/watch?v=n3uue28FD0w">RStudio Overview</a></p>
+<hr />
+<p><a href="https://github.com/microsud/Tools-Microbiome-Anlaysis">View this webiste repository on GitHub</a><br />
+<a href="https://twitter.com/gutmicrobe">Follow me on Twitter</a><br />
+<a href="https://scholar.google.nl/citations?hl=en&amp;user=Vahc6LUAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">googlescholar</a><br />
+<a href="http://orcid.org/0000-0001-7280-9915">ORCID ID: 0000-0001-7280-9915</a></p>
+<hr />
+</div>
+<div id="references" class="section level3">
+<h3>References:</h3>
+<ol style="list-style-type: decimal">
+<li>Callahan, B. J., McMurdie, P. J. &amp; Holmes, S. P. (2017). Exact sequence variants should replace operational taxonomic units in marker gene data analysis. bioRxiv, 113597.<br />
+</li>
+<li>Callahan, B. J., McMurdie, P. J., Rosen, M. J., Han, A. W., Johnson, A. J. A. &amp; Holmes, S. P. (2016). DADA2: high-resolution sample inference from Illumina amplicon data. Nature methods 13, 581-583.<br />
+</li>
+<li>Caporaso, J. G., Kuczynski, J., Stombaugh, J., Bittinger, K., Bushman, F. D., Costello, E. K., Fierer, N., Peña, A. G., Goodrich, J. K. &amp; Gordon, J. I. (2010). QIIME allows analysis of high-throughput community sequencing data. Nature methods 7, 335-336.<br />
+</li>
+<li>Schloss, P. D., Westcott, S. L., Ryabin, T., Hall, J. R., Hartmann, M., Hollister, E. B., Lesniewski, R. A., Oakley, B. B., Parks, D. H. &amp; Robinson, C. J. (2009). Introducing mothur: open-source, platform-independent, community-supported software for describing and comparing microbial communities. Applied and environmental microbiology 75, 7537-7541.<br />
+</li>
+<li>Team, R. C. (2000). R language definition. Vienna, Austria: R foundation for statistical computing.</li>
+</ol>
+<hr />
+</div>
+<div id="todo" class="section level3">
+<h3>TODO</h3>
+<p>Any help is welcome</p>
+<ul>
+<li><p>Structure the list according to categories</p>
+<ul>
+<li>General purpose<br />
+</li>
+<li>Visualization<br />
+</li>
+<li>Snapshot/cross-sectional stats<br />
+</li>
+<li>Time series/Longitudinal stats<br />
+</li>
+<li>Integrative -Omics<br />
+</li>
+</ul></li>
+<li><p>Include metagenomics/metabolomics</p></li>
+<li><p>Include more general microbiology oriented R packages/tools</p></li>
+<li><p>and so on …..</p></li>
+</ul>
+<hr />
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
