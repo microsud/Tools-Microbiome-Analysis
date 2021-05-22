@@ -6,7 +6,7 @@ navbar:
     - icon: fa-home fa-lg
       href: https://microbiome.github.io/
     - text: "Microbiome R Tools"
-      href: MicrobiomeRtools.html
+      href: MicrobiomeRTools.html
     - text: "Other Tools"
       href: OtherTools.html
     - text: "About Controls"
