@@ -6,6 +6,10 @@ output: html_document
 
 # List of R tools for microbiome data analysis  
 
+## Change log 04 August, 2021     
+
+* Added Tutorials and Educational Resources    
+    
 ## Change log 22 May, 2021     
 
 * Revamped website    

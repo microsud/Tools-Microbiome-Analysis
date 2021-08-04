@@ -5,13 +5,14 @@ navbar:
   left:
     - icon: fa-home fa-lg
       href: https://microbiome.github.io/
+    - text: "Tutorials Resources"
+      href: TutorialsResources.html
     - text: "Other Tools"
       href: OtherTools.html
     - text: "About Controls"
       href: ControlsMicrobiome.html
     - text: "Updates"
       href: CHANGES.html
-
 
 
   right:

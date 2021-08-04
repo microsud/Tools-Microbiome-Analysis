@@ -1,0 +1,29 @@
+---
+title: "Tutorials and Educational Resources"
+output: html_document
+---
+
+
+
+Below are resources useful for microbiome sequencing mostly 16S rRNA gene-based studies.   
+**NOTE**:  
+1. The resources mentioned here are in no way comprehensive and if you know any articles/resources highlight it on the [GitHub repo](https://github.com/microsud/Tools-Microbiome-Analysis/issues).   
+2. Some may be outdated but these can be re-purposed with some effort if you really need to do some specific analysis.    
+
+*Did you recently publish an article with reproducible code? Then contact us and we can highlight it on this website!*   
+
+1.	Lahti L, Shetty SA, Ernst F (2021)  [Orchestrating Microbiome Analysis](https://microbiome.github.io/OMA/)    
+
+2.	Shetty SA, Lahti L, Hermes Gerben DA, & Smidt H. (2018, September 27). [Microbial bioinformatics introductory course material](https://mibwurrepo.github.io/Microbial-bioinformatics-introductory-course-Material-2018/introduction.html). Zenodo. http://doi.org/10.5281/zenodo.1436630.    
+
+3. Nabiilah Ardini Fauziyyah [Microbiome Analysis using microbiome in R](https://rpubs.com/nabiilahardini/microbiome)   
+
+4. Schmidt, Ruth. [How to give life to your microbiome data](https://towardsdatascience.com/how-to-give-life-to-your-microbiome-data-using-plotly-r-1892281183cf)   
+
+5. Schloss Pat. [Riffomonas Project YouTube Channel](https://www.youtube.com/channel/UCGuktEl5InrcxPfCjmPWxsA)  
+
+6. Bisanz, Jordan E. [Analyzing and Visualizing Microbiome Data in R](https://jbisanz.github.io/MicrobiomeWorkshop2020/rvis/index.html)   
+
+7. Luna, Pamela N. [Microbiome Joint Model Tutorial](https://pamelanluna.github.io/mbjm-tutorial/)   
+
+
