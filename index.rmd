@@ -44,7 +44,8 @@ DADA2 [Divisive Amplicon Denoising Algorithm](https://www.nature.com/nmeth/journ
 DECIPHER [Using DECIPHER v2.0 to Analyze Big Biological Sequence Data in R](http://www2.decipher.codes/index.html)   
 DECIPHER/IIDTAXA [IDTAXA: a novel approach for accurate taxonomic classification of microbiome sequences](doi:10.1186/s40168-018-0521-5)   
 decontam [Simple Statistical Identification and Removal of Contaminant Sequences in Marker-Gene and Metagenomics Data](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-018-0605-2)   
-DESeq2 [Differential expression analysis for sequence count data](https://www.bioconductor.org/packages/devel/bioc/vignettes/phyloseq/inst/doc/phyloseq-mixture-models.html)   
+DESeq2 [Differential expression analysis for sequence count data](https://www.bioconductor.org/packages/devel/bioc/vignettes/phyloseq/inst/doc/phyloseq-mixture-models.html)  
+diffTop [Differential topic analysis](https://pratheepaj.github.io/diffTop/)  
 DivNet [An R package to estimate diversity when taxa in the community cooccur via a ecological network](https://github.com/adw96/DivNet)  
 DMBC [A Dirichlet-Multinomial Bayes Classifier for Disease Diagnosis With Microbial Compositions](https://msphere.asm.org/content/2/6/e00536-17)    
 
