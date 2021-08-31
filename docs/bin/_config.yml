@@ -1,0 +1,30 @@
+theme: jekyll-theme-minimal
+title: "List of R tools for microbiome data analysis"
+
+header_navigation:
+  - title: Main
+    url: README.html
+
+  - title: Changes
+    url: CHANGES.html
+
+
+twitter: 'gutmicrobe'
+github:
+  repository_url: https://github.com/microsud/Tools-Microbiome-Analysis
+
+
+# Admin Settings
+admin_name: 'Sudarshan_Shetty'
+admin_email: 'sudarshanshetty9@gmail.com'
+
+# Site Author
+author:
+  name             : "Sudarshan A. Shetty"
+
+
+# --- Footer social media links --- #
+social-network-links:
+  ORCID: 0000-0001-7280-9915
+  github: microsud
+  twitter: gutmicrobe

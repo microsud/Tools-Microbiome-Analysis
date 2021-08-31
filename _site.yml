@@ -1,5 +1,5 @@
 name: "Sudarshan A. Shetty"
-output_dir: "."
+output_dir: "docs"
 navbar:
   title: "Tools for Microbiome Analysis"
   left:
