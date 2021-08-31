@@ -6,7 +6,7 @@ output: html_document
 
 
 Below are resources useful for microbiome sequencing mostly 16S rRNA gene-based studies.   
-**NOTE**:  
+**NOTE**:    
 1. The resources mentioned here are in no way comprehensive and if you know any articles/resources highlight it on the [GitHub repo](https://github.com/microsud/Tools-Microbiome-Analysis/issues).   
 2. Some may be outdated but these can be re-purposed with some effort if you really need to do some specific analysis.    
 
