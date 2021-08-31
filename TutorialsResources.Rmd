@@ -10,7 +10,7 @@ Below are resources useful for microbiome sequencing mostly 16S rRNA gene-based 
 1. The resources mentioned here are in no way comprehensive and if you know any articles/resources highlight it on the [GitHub repo](https://github.com/microsud/Tools-Microbiome-Analysis/issues).   
 2. Some may be outdated but these can be re-purposed with some effort if you really need to do some specific analysis.    
 
-*Did you recently publish an article with reproducible code? Then contact us and we can highlight it on this website!*   
+*Did you recently publish an article with reproducible code rendered as a website? Then contact us and we can highlight it on this website!*   
 
 1.	Lahti L, Shetty SA, Ernst F (2021)  [Orchestrating Microbiome Analysis](https://microbiome.github.io/OMA/)    
 
