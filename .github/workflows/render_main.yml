@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 0
       - name: Install R packages for CI
         run: |
-          install.packages('rmarkdown')
+          install.packages(c('rmarkdown', 'knitr'))
 
       - name: Render Rmarkdown files
         run: |
