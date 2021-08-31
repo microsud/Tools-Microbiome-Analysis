@@ -6,6 +6,12 @@ output: html_document
 
 # List of R tools for microbiome data analysis  
 
+## Change log 08 August, 2021     
+
+* Tools    
+    * diffTop and microeco added   
+* GitHub actions testing for website rendering  
+
 ## Change log 04 August, 2021     
 
 * Added Tutorials and Educational Resources    

@@ -90,6 +90,7 @@ microbiomeMarker [R package for microbiome biomarker discovery](https://github.c
 MicrobiomeR [MicrobiomeR: An R Package for Simplified and Standardized Microbiome Analysis Workflows](https://microbiomer.vallenderlab.org/)   
 microbiomeutilities [Extending and supporting package based on microbiome and phyloseq R package](https://microsud.github.io/microbiomeutilities/)   
 MicrobiotaProcess [MicrobiotaProcess: an R package for analysis, visualization and biomarker discovery of microbiome](https://github.com/YuLab-SMU/MicrobiotaProcess)   
+microeco [an R package for data mining in microbial community ecology](https://github.com/ChiLiubio/microeco)   
 miLineage [A General Framework for Association Analysis of Microbial Communities on a Taxonomic Tree](https://medschool.vanderbilt.edu/tang-lab/software/miLineage)   
 MINT [Multivariate INTegrative method](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1553-8)   
 mixDIABLO [Data Integration Analysis for Biomarker discovery using Latent variable approaches for ‘Omics studies](http://mixomics.org/mixdiablo/)   
