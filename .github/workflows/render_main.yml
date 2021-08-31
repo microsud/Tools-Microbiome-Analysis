@@ -3,7 +3,7 @@
 on:
   push:
     paths: ['**.Rmd']
-    pull_request:
+  pull_request:
     branches: [main, master]
 name: render-rmarkdown
 
