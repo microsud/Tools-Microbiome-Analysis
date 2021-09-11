@@ -37,6 +37,16 @@ Useful resources for microbiome sequencing especially for 16S rRNA gene-based st
 2. [Nearing, J.T., Comeau, A.M. & Langille, M.G.I. Identifying biases and their potential solutions in human microbiome studies. Microbiome 9, 113 (2021)](https://doi.org/10.1186/s40168-021-01059-0).   
 3. [Bastian V H Hornung, Romy D Zwittink, Ed J Kuijper, Issues and current standards of controls in microbiome research, FEMS Microbiology Ecology, Volume 95, Issue 5, May 2019](https://doi.org/10.1093/femsec/fiz045)   
 
+> Additional  
+
+1. [Weyrich et al., 2019 Laboratory contamination over time during low-biomass sample analysis](https://onlinelibrary.wiley.com/doi/full/10.1111/1755-0998.13011)  
+2. [McLaren et al., 2019 Consistent and correctable bias in metagenomic sequencing experiments](https://elifesciences.org/articles/46923)    
+3. [Karstens et al., 2018 Community profiling of the urinary microbiota: considerations for low-biomass samples](https://www.nature.com/articles/s41585-018-0104-z)  
+4. [Stinson et al., 2018 Identification and removal of contaminating microbial DNA from PCR reagents: impact on low-biomass microbiome analyses](https://sfamjournals.onlinelibrary.wiley.com/doi/full/10.1111/lam.13091)    
+5. [Davis et al., 2018 Simple statistical identification and removal of contaminant sequences in marker-gene and metagenomics data](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-018-0605-2)  
+6. [de Goffau et al., 2018 Recognizing the reagent microbiome](https://www.nature.com/articles/s41564-018-0202-y)  
+7. [Eisenhofer et al., 2018 Contamination in Low Microbial Biomass Microbiome Studies: Issues and Recommendations](https://www.cell.com/action/showPdf?pii=S0966-842X%2818%2930253-1)  
+8. [Kim et al., 2017 Optimizing methods and dodging pitfalls in microbiome research]( https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-017-0267-5)   
 
 
 
