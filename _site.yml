@@ -11,6 +11,8 @@ navbar:
       href: OtherTools.html
     - text: "About Controls"
       href: ControlsMicrobiome.html
+    - text: "Contributors"
+      href: Contributors.html
     - text: "Updates"
       href: CHANGES.html
 
