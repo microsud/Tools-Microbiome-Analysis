@@ -3,9 +3,9 @@
 on:
   push:
     paths: ['**.Rmd']
-    branches: [main, master]
+    branches: [main, master, contributors]
   pull_request:
-    branches: [main, master]
+    branches: [main, master, contributors]
 name: render-rmarkdown
 
 jobs:
