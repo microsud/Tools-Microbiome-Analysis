@@ -10,7 +10,8 @@ output: html_document
 
 * Added Contributors section      
 * Added resources new 8 to 10  
-* Added 'Additional' resources suggested by Svetlana UP to Controls section    
+* Added 'Additional' resources suggested by Svetlana UP to Controls section  
+* Added OTU/ASV debate Controls section   
 
 ## Change log 08 August, 2021     
 

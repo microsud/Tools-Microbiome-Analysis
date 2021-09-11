@@ -36,6 +36,7 @@ Useful resources for microbiome sequencing especially for 16S rRNA gene-based st
 1. [Pollock J, Glendinning L, Wisedchanwet T, Watson M. 2018. The madness of microbiome: attempting to find consensus “best practice” for 16S microbiome studies. Appl Environ Microbiol 84:e02627-17](https://doi.org/10.1128/AEM.02627-17).  
 2. [Nearing, J.T., Comeau, A.M. & Langille, M.G.I. Identifying biases and their potential solutions in human microbiome studies. Microbiome 9, 113 (2021)](https://doi.org/10.1186/s40168-021-01059-0).   
 3. [Bastian V H Hornung, Romy D Zwittink, Ed J Kuijper, Issues and current standards of controls in microbiome research, FEMS Microbiology Ecology, Volume 95, Issue 5, May 2019](https://doi.org/10.1093/femsec/fiz045)   
+4. [Noah Fierer, Jessica Henley, and Matt Gebert 2018. Garbage in, garbage out: Wrestling with contamination in microbial sequencing projects](http://fiererlab.org/2018/08/15/garbage-in-garbage-out-wrestling-with-contamination-in-microbial-sequencing-projects/)   
 
 > Additional  
 
@@ -49,7 +50,11 @@ Useful resources for microbiome sequencing especially for 16S rRNA gene-based st
 8. [Kim et al., 2017 Optimizing methods and dodging pitfalls in microbiome research]( https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-017-0267-5)   
 
 
+> OTU/ASV debate   
 
+1. [Corinne Walsh & Noah Fierer 2020. What’s in a number? Estimating microbial richness using DADA2](http://fiererlab.org/2020/02/17/whats-in-a-number-estimating-microbial-richness-using-dada2/)    
+2. [Theory behind mothur OTU/ASV](https://forum.mothur.org/t/otus-vs-asvs/3506)  
+3. [Noah Fierer, Tess Brewer, & Mallory Choudoir](Lumping versus splitting – is it time for microbial ecologists to abandon OTUs?)   
 
 
 
