@@ -3,15 +3,32 @@ title: "Contributors"
 output: html_document
 ---
 
-This resources is a work of community driven interaction and contribution.  
+This resource is a work of community driven interaction and contribution.  
 
 Contributors:   
-* Sudarshan A. Shetty (Creator, Contributor) [info]()  
-* Leo Lahti (Creator, Contributor) [info]()  
-* Yanxian Li (Contributor) [info]()   
-* Somak Chowdhury (Contributor) [info]()   
-* Simone Zuffa (Contributor) [info]()   
-* Svetlana UP (Contributor) [info]()   
+
+* Sudarshan A. Shetty (Creator, Contributor)  [info](https://microsud.github.io/sudarshanshetty.io/)   
+* Leo Lahti (Creator, Contributor) [info](http://datascience.utu.fi/team/)  
+* Yanxian Li (Contributor)  
+* Somak Chowdhury (Contributor)  
+* Simone Zuffa (Contributor)     
+* Svetlana UP (Contributor) [info](https://github.com/SvetlanaUP)   
 * You ???    
 
 
+How to contribute?  
+
+1. Fork the repository to your GitHub account.  
+2. Implement your addition to the files on the forked repository. 
+(Follow the code style for each section)  
+
+    * Add new microbiome tools `index.Rmd`  
+    * Add general tools `OtherTools.Rmd` 
+    * Add your name and info to `Contributors.Rmd` 
+    * Add Tutorials/Resources to `TutorialsResources.Rmd`  
+  
+3. From your forked repository open a pull request in the master branch i.e. [microsud/Tools-Microbiome-Analysis](https://github.com/microsud/Tools-Microbiome-Analysis)  
+4. We work together and then approve the merged information.   
+
+This way your contributions will be visible in [Project contributors](contributors)  
+  

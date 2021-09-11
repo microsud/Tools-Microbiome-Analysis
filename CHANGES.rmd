@@ -6,6 +6,12 @@ output: html_document
 
 # List of R tools for microbiome data analysis  
 
+## Change log 11 September, 2021     
+
+* Added Contributors section      
+* Added resources new 8 to 10  
+* Added 'Additional' resources suggested by Svetlana UP to Controls section    
+
 ## Change log 08 August, 2021     
 
 * Tools    
