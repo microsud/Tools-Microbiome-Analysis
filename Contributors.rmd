@@ -7,11 +7,11 @@ This resources is a work of community driven interaction and contribution.
 
 Contributors:   
 * Sudarshan A. Shetty (Creator, Contributor) [info]()  
-* Leo Lahti (Creator, Contributor) [info]()
-* Yanxian Li (Contributor) [info]()  
-* Somak Chowdhury (Contributor) [info]() 
-* Simone Zuffa (Contributor) [info]() 
-* Svetlana UP (Contributor) [info]()  
+* Leo Lahti (Creator, Contributor) [info]()  
+* Yanxian Li (Contributor) [info]()   
+* Somak Chowdhury (Contributor) [info]()   
+* Simone Zuffa (Contributor) [info]()   
+* Svetlana UP (Contributor) [info]()   
 * You ???    
 
 
