@@ -24,7 +24,7 @@ output: html_document
 9. ggforce [Accelerating ggplot2](https://ggforce.data-imaginist.com)  
     * Zoom specific regions of the plots   
 10. factoextra [Extract and Visualize the Results of Multivariate Data Analyses](https://rpkgs.datanovia.com/factoextra/index.html)  
-    * Powerful package for multivvariate data analysis  
+    * Powerful package for multivvariate data analysis   
 11. ggcorrplot [Visualization of a correlation matrix using ggplot2](https://rpkgs.datanovia.com/ggcorrplot/)   
 12. tidyverse [R packages for data science](https://www.tidyverse.org/)  
     * Universe of several useful R packages for data handling, analysis and visualization    
@@ -33,6 +33,9 @@ output: html_document
 15. patchwork [The Composer of ggplots](https://patchwork.data-imaginist.com)  
     * Combining multiple plots made easy    
 16. pheatmap [Pretty Heatmaps](https://cran.r-project.org/web/packages/pheatmap/pheatmap.pdf)    
+17. gggenes [Draw gene arrow maps](https://wilkox.org/gggenes/)  
+18. gggenomes [A grammar of graphics for comparative genomics](https://thackl.github.io/gggenomes/)   
+19. ggplot2 extensions [gallery](https://exts.ggplot2.tidyverse.org/gallery/)  
 
 -------------------------------------------------------   
 

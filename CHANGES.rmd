@@ -6,6 +6,19 @@ output: html_document
 
 # List of R tools for microbiome data analysis  
 
+## Change log 13 October, 2021     
+
+* Other Tools   
+    * Added gggenes, gggenomes      
+    * Added ggplot2 gallery    
+* Microbiome Tools    
+    * rANOMALY   
+    * SuRF   
+    * timeOmics   
+    * CMMB   
+    * MiATDS   
+    * RobZS   
+
 ## Change log 11 September, 2021     
 
 * Added Contributors section      
