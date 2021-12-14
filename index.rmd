@@ -64,6 +64,7 @@ igraph [Network Analysis and Visualization in R](http://igraph.org/r/)
 > L    
 
 labdsv [Ordination and Multivariate Analysis for Ecology](https://cran.r-project.org/web/packages/labdsv/labdsv.pdf)  
+LinDA [Linear model for differential abundance analysis](https://github.com/zhouhj1994/LinDA)  
 
 > M   
 
