@@ -16,6 +16,8 @@ output: html_document
     * Rbec   
     * AMR  
     * MicrobiomeProfiler  
+    * Tweedieverse  
+    * MINA  
 * Other Tools
     * TreeHeatmap    
     * Fastverse  

@@ -102,7 +102,9 @@ MTA [Microbial trend analysis (MTA) for common dynamic trend, group comparison a
 MicrobiomeExplor [An R package for the analysis and visualization of microbial communities](https://doi.org/10.1093/bioinformatics/btaa838)   
 MicroBVS [Dirichlet-tree multinomial regression models with Bayesian variable selection - an R package](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03640-0)    
 MicroNiche [An R package for assessing microbial niche breadth and overlap from amplicon sequencing data](https://academic.oup.com/femsec/article-abstract/96/8/fiaa131/5863182?redirectedFrom=fulltext)   
-microViz [An R package for for analysis and visualization of microbiome sequencing data](https://david-barnett.github.io/microViz/)
+microViz [An R package for for analysis and visualization of microbiome sequencing data](https://david-barnett.github.io/microViz/)  
+mina [Microbial community dIversity and Network Analysis with mina](https://github.com/Guan06/mina)   
+
 
 > N    
  
@@ -155,7 +157,8 @@ Tax4Fun [Predicting functional profiles from metagenomic 16S rRNA gene data](htt
 taxize [Taxonomic Information from Around the Web](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3901538/)    
 TreeSummarizedExperiment [An extension class of SummarizedExperiment to allow hierarchical structure on the row or column dimension](https://github.com/fionarhuang/TreeSummarizedExperiment)   
 themetagenomics [Exploring Thematic Structure and Predicted Functionality of 16S rRNA Amplicon Data](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0219235)    
-tidyMicro [A pipeline for microbiome data analysis and visualization using the tidyverse in R](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-03967-2)  
+tidyMicro [A pipeline for microbiome data analysis and visualization using the tidyverse in R](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-03967-2)   
+Tweedieverse [Differential analysis of omics data based on the Tweedie distribution](https://github.com/himelmallick/Tweedieverse)   
 
 > V   
 
