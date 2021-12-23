@@ -35,7 +35,9 @@ output: html_document
 16. pheatmap [Pretty Heatmaps](https://cran.r-project.org/web/packages/pheatmap/pheatmap.pdf)    
 17. gggenes [Draw gene arrow maps](https://wilkox.org/gggenes/)  
 18. gggenomes [A grammar of graphics for comparative genomics](https://thackl.github.io/gggenomes/)   
-19. ggplot2 extensions [gallery](https://exts.ggplot2.tidyverse.org/gallery/)  
+19. ggplot2 extensions [gallery](https://exts.ggplot2.tidyverse.org/gallery/)   
+20. TreeHeatmap [A package to plot heatmaps at different levels of a tree](https://github.com/fionarhuang/TreeHeatmap)  
+21. Fastverse [The fastverse is a suite of complementary high-performance packages for statistical computing and data manipulation in R](https://sebkrantz.github.io/fastverse/)   
 
 -------------------------------------------------------   
 

@@ -30,3 +30,12 @@ Below are resources useful for microbiome sequencing specifically 16S rRNA gene-
 9. Svetlana UP. [Microbiome-etc-Podcasts](https://github.com/SvetlanaUP/Microbiome-etc-Podcasts)  
 
 10. Svetlana UP. [Microbiome-conferences-etc](https://github.com/SvetlanaUP/Microbiome-conferences-c)    
+
+11. Hannah Freund. [Amplicon Analysis Workflow](https://hlfreund.github.io/workflows.github.io/amplicon_workflow.html)    
+
+12. Tully, B. J. et al. [The Bioinformatics Virtual Coordination Network: An Open-Source and Interactive Learning Environment. Frontiers in Education (2021).](https://www.frontiersin.org/articles/10.3389/feduc.2021.711618/full)   
+
+
+
+
+

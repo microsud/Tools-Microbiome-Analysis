@@ -6,6 +6,20 @@ output: html_document
 
 # List of R tools for microbiome data analysis  
 
+## Change log 23 December, 2021     
+
+* Tutorials and Educational Resources     
+    * Amplicon Analysis Workflow      
+    * Bioinformatics Virtual Coordination Network    
+* Microbiome Tools    
+    * MicrobiomeStat   
+    * Rbec   
+    * AMR  
+    * MicrobiomeProfiler  
+* Other Tools
+    * TreeHeatmap    
+    * Fastverse  
+    
 ## Change log 13 October, 2021     
 
 * Other Tools   
