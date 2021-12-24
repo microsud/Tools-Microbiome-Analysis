@@ -6,11 +6,11 @@ output: html_document
 
 # List of R tools for microbiome data analysis  
 
-## Change log 23 December, 2021     
+## Change log 24 December, 2021     
 
 * Tutorials and Educational Resources     
-    * Amplicon Analysis Workflow      
-    * Bioinformatics Virtual Coordination Network    
+    * Hannah Freund. Amplicon Analysis Workflow       
+    * Tully, B. J. et al. BVCN     
 * Microbiome Tools    
     * MicrobiomeStat   
     * Rbec   
