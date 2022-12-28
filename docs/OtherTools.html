@@ -13,7 +13,7 @@
 
 <title>Other Tools</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
@@ -59,6 +59,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="styles.css" type="text/css" />
 
 
@@ -83,6 +84,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -140,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -235,7 +243,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -306,149 +314,239 @@ $(document).ready(function () {
 
 
 <ol style="list-style-type: decimal">
-<li>ggplot2 <a href="https://ggplot2.tidyverse.org/">An implementation of the Grammar of Graphics in R</a>
+<li>ggplot2 <a href="https://ggplot2.tidyverse.org/">An implementation
+of the Grammar of Graphics in R</a>
 <ul>
 <li>Widely used package for data visualization<br />
 </li>
 </ul></li>
-<li>ggvegan <a href="https://github.com/gavinsimpson/ggvegan">ggplot-based versions of the plots produced by the vegan package</a>
+<li>ggvegan <a
+href="https://github.com/gavinsimpson/ggvegan">ggplot-based versions of
+the plots produced by the vegan package</a>
 <ul>
 <li>Convert base plots of vegan to ggplot.<br />
 </li>
 </ul></li>
-<li>ggord <a href="https://fawda123.github.io/ggord/">A simple package for creating ordination plots with ggplot2</a>
+<li>ggord <a href="https://fawda123.github.io/ggord/">A simple package
+for creating ordination plots with ggplot2</a>
 <ul>
 <li>Alternative to ggvegan<br />
 </li>
 </ul></li>
-<li>cowplot <a href="https://wilkelab.org/cowplot/">cowplot: Streamlined Plot Theme and Plot Annotations for ggplot2</a>
+<li>cowplot <a href="https://wilkelab.org/cowplot/">cowplot: Streamlined
+Plot Theme and Plot Annotations for ggplot2</a>
 <ul>
 <li>Widely used package for combining multiple plots<br />
 </li>
 </ul></li>
-<li>ggridges <a href="https://wilkelab.org/ggridges">Ridgeline plots in ggplot2</a><br />
+<li>ggridges <a href="https://wilkelab.org/ggridges">Ridgeline plots in
+ggplot2</a><br />
 </li>
-<li>ggtext <a href="https://wilkelab.org/ggtext/">Improved text rendering support for ggplot2</a>
+<li>ggtext <a href="https://wilkelab.org/ggtext/">Improved text
+rendering support for ggplot2</a>
 <ul>
-<li>More power in controlling annotations in plots (e.g. italicize taxa names in plots)<br />
+<li>More power in controlling annotations in plots (e.g. italicize taxa
+names in plots)<br />
 </li>
 </ul></li>
-<li>ggpubr <a href="http://www.sthda.com/english/articles/24-ggpubr-publication-ready-plots/">Extension of ggplot2 based data visualization</a>
+<li>ggpubr <a
+href="http://www.sthda.com/english/articles/24-ggpubr-publication-ready-plots/">Extension
+of ggplot2 based data visualization</a>
 <ul>
 <li>Publication ready plots<br />
 </li>
 </ul></li>
-<li>ggraph <a href="https://ggraph.data-imaginist.com">Grammar of Graph Graphics</a>
+<li>ggraph <a href="https://ggraph.data-imaginist.com">Grammar of Graph
+Graphics</a>
 <ul>
 <li>Network graphs using ggplot2<br />
 </li>
 </ul></li>
-<li>gganimate <a href="https://gganimate.com">A Grammar of Animated Graphics</a>
+<li>gganimate <a href="https://gganimate.com">A Grammar of Animated
+Graphics</a>
 <ul>
-<li>Animate ggplot2 (Useful for presenting time-series dynamics of microbial communities)<br />
+<li>Animate ggplot2 (Useful for presenting time-series dynamics of
+microbial communities)<br />
 </li>
 </ul></li>
-<li>ggforce <a href="https://ggforce.data-imaginist.com">Accelerating ggplot2</a>
+<li>ggforce <a href="https://ggforce.data-imaginist.com">Accelerating
+ggplot2</a>
 <ul>
 <li>Zoom specific regions of the plots<br />
 </li>
 </ul></li>
-<li>factoextra <a href="https://rpkgs.datanovia.com/factoextra/index.html">Extract and Visualize the Results of Multivariate Data Analyses</a>
+<li>factoextra <a
+href="https://rpkgs.datanovia.com/factoextra/index.html">Extract and
+Visualize the Results of Multivariate Data Analyses</a>
 <ul>
 <li>Powerful package for multivvariate data analysis<br />
 </li>
 </ul></li>
-<li>ggcorrplot <a href="https://rpkgs.datanovia.com/ggcorrplot/">Visualization of a correlation matrix using ggplot2</a><br />
+<li>ggcorrplot <a
+href="https://rpkgs.datanovia.com/ggcorrplot/">Visualization of a
+correlation matrix using ggplot2</a><br />
 </li>
-<li>tidyverse <a href="https://www.tidyverse.org/">R packages for data science</a>
+<li>tidyverse <a href="https://www.tidyverse.org/">R packages for data
+science</a>
 <ul>
-<li>Universe of several useful R packages for data handling, analysis and visualization<br />
+<li>Universe of several useful R packages for data handling, analysis
+and visualization<br />
 </li>
 </ul></li>
-<li>Extensions of ggplot <a href="https://exts.ggplot2.tidyverse.org/gallery/">Gallary of numerous data visualistion R pacakges</a><br />
+<li>Extensions of ggplot <a
+href="https://exts.ggplot2.tidyverse.org/gallery/">Gallary of numerous
+data visualistion R pacakges</a><br />
 </li>
-<li>ggtree <a href="https://github.com/YuLab-SMU/ggtree">Visualization and annotation of phylogenetic trees (in R)</a><br />
+<li>ggtree <a href="https://github.com/YuLab-SMU/ggtree">Visualization
+and annotation of phylogenetic trees (in R)</a><br />
 </li>
-<li>patchwork <a href="https://patchwork.data-imaginist.com">The Composer of ggplots</a>
+<li>patchwork <a href="https://patchwork.data-imaginist.com">The
+Composer of ggplots</a>
 <ul>
 <li>Combining multiple plots made easy<br />
 </li>
 </ul></li>
-<li>pheatmap <a href="https://cran.r-project.org/web/packages/pheatmap/pheatmap.pdf">Pretty Heatmaps</a><br />
+<li>pheatmap <a
+href="https://cran.r-project.org/web/packages/pheatmap/pheatmap.pdf">Pretty
+Heatmaps</a><br />
 </li>
-<li>gggenes <a href="https://wilkox.org/gggenes/">Draw gene arrow maps</a><br />
+<li>gggenes <a href="https://wilkox.org/gggenes/">Draw gene arrow
+maps</a><br />
 </li>
-<li>gggenomes <a href="https://thackl.github.io/gggenomes/">A grammar of graphics for comparative genomics</a><br />
+<li>gggenomes <a href="https://thackl.github.io/gggenomes/">A grammar of
+graphics for comparative genomics</a><br />
 </li>
-<li>ggplot2 extensions <a href="https://exts.ggplot2.tidyverse.org/gallery/">gallery</a><br />
+<li>ggplot2 extensions <a
+href="https://exts.ggplot2.tidyverse.org/gallery/">gallery</a><br />
 </li>
-<li>TreeHeatmap <a href="https://github.com/fionarhuang/TreeHeatmap">A package to plot heatmaps at different levels of a tree</a><br />
+<li>TreeHeatmap <a href="https://github.com/fionarhuang/TreeHeatmap">A
+package to plot heatmaps at different levels of a tree</a><br />
 </li>
-<li>Fastverse <a href="https://sebkrantz.github.io/fastverse/">The fastverse is a suite of complementary high-performance packages for statistical computing and data manipulation in R</a></li>
+<li>Fastverse <a href="https://sebkrantz.github.io/fastverse/">The
+fastverse is a suite of complementary high-performance packages for
+statistical computing and data manipulation in R</a><br />
+</li>
+<li>DataExplorer <a
+href="https://boxuancui.github.io/DataExplorer/">Automated data
+exploration process for analytic tasks and predictive modeling</a></li>
 </ol>
 <hr />
 <div id="proteomics-resources" class="section level3">
 <h3>Proteomics resources</h3>
 <ol style="list-style-type: decimal">
-<li><sup>*</sup>RforProteomics <a href="https://bioconductor.org/packages/release/data/experiment/vignettes/RforProteomics/inst/doc/RforProteomics.html">Using R for proteomics data analysis</a><br />
+<li><sup>*</sup>RforProteomics <a
+href="https://bioconductor.org/packages/release/data/experiment/vignettes/RforProteomics/inst/doc/RforProteomics.html">Using
+R for proteomics data analysis</a><br />
 </li>
-<li><sup>*</sup>RforProteomics <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/pmic.201400392">Visualisation of proteomics data using R and Bioconductor</a><br />
+<li><sup>*</sup>RforProteomics <a
+href="https://onlinelibrary.wiley.com/doi/full/10.1002/pmic.201400392">Visualisation
+of proteomics data using R and Bioconductor</a><br />
 </li>
-<li><sup>*</sup>proteomics <a href="http://master.bioconductor.org/packages/release/workflows/vignettes/proteomics/inst/doc/proteomics.html">proteomics: Mass spectrometry and proteomics data analysis</a><br />
+<li><sup>*</sup>proteomics <a
+href="http://master.bioconductor.org/packages/release/workflows/vignettes/proteomics/inst/doc/proteomics.html">proteomics:
+Mass spectrometry and proteomics data analysis</a><br />
 </li>
-<li><a href="https://microsud.github.io/Bacterial-Proteomics-in-R/tutorial_main_doc.html">Introduction to analysing microbial proteomics data in R</a></li>
+<li><a
+href="https://microsud.github.io/Bacterial-Proteomics-in-R/tutorial_main_doc.html">Introduction
+to analysing microbial proteomics data in R</a></li>
 </ol>
 <hr />
 </div>
 <div id="rnaseq-resources" class="section level3">
 <h3>RNAseq resources<sup>*<sup></h3>
 <ol style="list-style-type: decimal">
-<li>RNA-seq analysis in R <a href="https://rstudio-pubs-static.s3.amazonaws.com/462299_a9bc385f89b94b0aa95de0f3b7040b04.html">Workflow by Shulin Cao</a><br />
+<li>RNA-seq analysis in R <a
+href="https://rstudio-pubs-static.s3.amazonaws.com/462299_a9bc385f89b94b0aa95de0f3b7040b04.html">Workflow
+by Shulin Cao</a><br />
 </li>
-<li>RNA-seq workflow <a href="https://www.bioconductor.org/packages/devel/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html">RNA-seq workflow: gene-level exploratory analysis and differential expression</a></li>
+<li>RNA-seq workflow <a
+href="https://www.bioconductor.org/packages/devel/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html">RNA-seq
+workflow: gene-level exploratory analysis and differential
+expression</a></li>
 </ol>
-<p>*Note: These are not focused towards microbiome data. These are listed as a reference point for beginners. If you have or know of workflows tools specific for microbiome data please let us know and we can add them here!</p>
+<p>*Note: These are not focused towards microbiome data. These are
+listed as a reference point for beginners. If you have or know of
+workflows tools specific for microbiome data please let us know and we
+can add them here!</p>
 <hr />
 </div>
 <div id="useful-resources-are-provided-by" class="section level3">
 <h3>Useful resources are provided by:</h3>
 <ol style="list-style-type: decimal">
-<li><a href="https://f1000research.com/articles/5-1492/v2">Ben J. Callahan and Colleagues: Bioconductor Workflow for Microbiome Data Analysis: from raw reads to community analyses</a>.<br />
+<li><a href="https://f1000research.com/articles/5-1492/v2">Ben J.
+Callahan and Colleagues: Bioconductor Workflow for Microbiome Data
+Analysis: from raw reads to community analyses</a>.<br />
 </li>
-<li><a href="http://msystems.asm.org/content/2/1/e00127-16">Comeau AM and Colleagues: Microbiome Helper: a Custom and Streamlined Workflow for Microbiome Research</a><br />
+<li><a href="http://msystems.asm.org/content/2/1/e00127-16">Comeau AM
+and Colleagues: Microbiome Helper: a Custom and Streamlined Workflow for
+Microbiome Research</a><br />
 </li>
-<li>Schloss, P. D: <a href="http://www.riffomonas.org/reproducible_research/">The Riffomonas Reproducible Research Tutorial Series</a><br />
+<li>Schloss, P. D: <a
+href="http://www.riffomonas.org/reproducible_research/">The Riffomonas
+Reproducible Research Tutorial Series</a><br />
 </li>
-<li><a href="https://mibwurrepo.github.io/Microbial-bioinformatics-introductory-course-Material-2018/introduction.html">Shetty SA, Lahti L., et al: Tutorial from microbiome data analysis spring school 2018, Wageningen University and Research</a><br />
+<li><a
+href="https://mibwurrepo.github.io/Microbial-bioinformatics-introductory-course-Material-2018/introduction.html">Shetty
+SA, Lahti L., et al: Tutorial from microbiome data analysis spring
+school 2018, Wageningen University and Research</a><br />
 </li>
-<li><a href="http://web.stanford.edu/class/bios221/book/">Holmes S, Huber W.: Modern statistics for modern biology. Cambridge University Press; 2018 Nov 30.</a><br />
+<li><a href="http://web.stanford.edu/class/bios221/book/">Holmes S,
+Huber W.: Modern statistics for modern biology. Cambridge University
+Press; 2018 Nov 30.</a><br />
 </li>
-<li><a href="https://yulab-smu.top/MicrobiotaProcessWorkshop/articles/MicrobiotaProcessWorkshop.html">Xu S, Yu G.: Workshop of microbiome dataset analysis using MicrobiotaProcess</a><br />
+<li><a
+href="https://yulab-smu.top/MicrobiotaProcessWorkshop/articles/MicrobiotaProcessWorkshop.html">Xu
+S, Yu G.: Workshop of microbiome dataset analysis using
+MicrobiotaProcess</a><br />
 </li>
-<li><a href="https://malucalle.github.io/Microbiome-Variable-Selection/">Antoni Susin, Yiwen Wang, Kim-Anh Lê Cao, M.Luz Calle.: Variable selection in microbiome compositional data analysis: tutorial</a></li>
+<li><a
+href="https://malucalle.github.io/Microbiome-Variable-Selection/">Antoni
+Susin, Yiwen Wang, Kim-Anh Lê Cao, M.Luz Calle.: Variable selection in
+microbiome compositional data analysis: tutorial</a></li>
 </ol>
 <p>Note:<br />
-A good practise is to use Rmarkdown for documenting your results and sharing with your collaborators and supervisors. For more information click here <a href="https://www.youtube.com/watch?v=cWJzjHh_3kk&amp;t=337s">RStudio</a> and<br />
-<a href="https://www.youtube.com/watch?v=n3uue28FD0w">RStudio Overview</a></p>
+A good practise is to use Rmarkdown for documenting your results and
+sharing with your collaborators and supervisors. For more information
+click here <a
+href="https://www.youtube.com/watch?v=cWJzjHh_3kk&amp;t=337s">RStudio</a>
+and<br />
+<a href="https://www.youtube.com/watch?v=n3uue28FD0w">RStudio
+Overview</a></p>
 <hr />
-<p><a href="https://github.com/microsud/Tools-Microbiome-Anlaysis">View this webiste repository on GitHub</a><br />
+<p><a href="https://github.com/microsud/Tools-Microbiome-Anlaysis">View
+this webiste repository on GitHub</a><br />
 <a href="https://twitter.com/gutmicrobe">Follow me on Twitter</a><br />
-<a href="https://scholar.google.nl/citations?hl=en&amp;user=Vahc6LUAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">googlescholar</a><br />
-<a href="http://orcid.org/0000-0001-7280-9915">ORCID ID: 0000-0001-7280-9915</a></p>
+<a
+href="https://scholar.google.nl/citations?hl=en&amp;user=Vahc6LUAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">googlescholar</a><br />
+<a href="http://orcid.org/0000-0001-7280-9915">ORCID ID:
+0000-0001-7280-9915</a></p>
 <hr />
 </div>
 <div id="references" class="section level3">
 <h3>References:</h3>
 <ol style="list-style-type: decimal">
-<li>Callahan, B. J., McMurdie, P. J. &amp; Holmes, S. P. (2017). Exact sequence variants should replace operational taxonomic units in marker gene data analysis. bioRxiv, 113597.<br />
+<li>Callahan, B. J., McMurdie, P. J. &amp; Holmes, S. P. (2017). Exact
+sequence variants should replace operational taxonomic units in marker
+gene data analysis. bioRxiv, 113597.<br />
 </li>
-<li>Callahan, B. J., McMurdie, P. J., Rosen, M. J., Han, A. W., Johnson, A. J. A. &amp; Holmes, S. P. (2016). DADA2: high-resolution sample inference from Illumina amplicon data. Nature methods 13, 581-583.<br />
+<li>Callahan, B. J., McMurdie, P. J., Rosen, M. J., Han, A. W., Johnson,
+A. J. A. &amp; Holmes, S. P. (2016). DADA2: high-resolution sample
+inference from Illumina amplicon data. Nature methods 13, 581-583.<br />
 </li>
-<li>Caporaso, J. G., Kuczynski, J., Stombaugh, J., Bittinger, K., Bushman, F. D., Costello, E. K., Fierer, N., Peña, A. G., Goodrich, J. K. &amp; Gordon, J. I. (2010). QIIME allows analysis of high-throughput community sequencing data. Nature methods 7, 335-336.<br />
+<li>Caporaso, J. G., Kuczynski, J., Stombaugh, J., Bittinger, K.,
+Bushman, F. D., Costello, E. K., Fierer, N., Peña, A. G., Goodrich, J.
+K. &amp; Gordon, J. I. (2010). QIIME allows analysis of high-throughput
+community sequencing data. Nature methods 7, 335-336.<br />
 </li>
-<li>Schloss, P. D., Westcott, S. L., Ryabin, T., Hall, J. R., Hartmann, M., Hollister, E. B., Lesniewski, R. A., Oakley, B. B., Parks, D. H. &amp; Robinson, C. J. (2009). Introducing mothur: open-source, platform-independent, community-supported software for describing and comparing microbial communities. Applied and environmental microbiology 75, 7537-7541.<br />
+<li>Schloss, P. D., Westcott, S. L., Ryabin, T., Hall, J. R., Hartmann,
+M., Hollister, E. B., Lesniewski, R. A., Oakley, B. B., Parks, D. H.
+&amp; Robinson, C. J. (2009). Introducing mothur: open-source,
+platform-independent, community-supported software for describing and
+comparing microbial communities. Applied and environmental microbiology
+75, 7537-7541.<br />
 </li>
-<li>Team, R. C. (2000). R language definition. Vienna, Austria: R foundation for statistical computing.</li>
+<li>Team, R. C. (2000). R language definition. Vienna, Austria: R
+foundation for statistical computing.</li>
 </ol>
 <hr />
 </div>
@@ -470,7 +568,8 @@ A good practise is to use Rmarkdown for documenting your results and sharing wit
 </li>
 </ul></li>
 <li><p>Include metagenomics/metabolomics</p></li>
-<li><p>Include more general microbiology oriented R packages/tools</p></li>
+<li><p>Include more general microbiology oriented R
+packages/tools</p></li>
 <li><p>and so on …..</p></li>
 </ul>
 <hr />

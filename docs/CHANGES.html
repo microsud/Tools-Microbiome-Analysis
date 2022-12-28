@@ -13,7 +13,7 @@
 
 <title>Change log</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
@@ -59,6 +59,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="styles.css" type="text/css" />
 
 
@@ -83,6 +84,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -140,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -235,7 +243,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -305,8 +313,76 @@ $(document).ready(function () {
 </div>
 
 
-<div id="list-of-r-tools-for-microbiome-data-analysis" class="section level1">
+<div id="list-of-r-tools-for-microbiome-data-analysis"
+class="section level1">
 <h1>List of R tools for microbiome data analysis</h1>
+<div id="change-log-28-december-2022" class="section level2">
+<h2>Change log 28 December, 2022</h2>
+<ul>
+<li>Microbiome Tools
+<ul>
+<li>adaANCOM<br />
+</li>
+<li>benchdamic<br />
+</li>
+<li>C3NA<br />
+</li>
+<li>microshades<br />
+</li>
+<li>GMEmbeddings<br />
+</li>
+<li>prokounter<br />
+</li>
+<li>LOCOM<br />
+</li>
+<li>endoR<br />
+</li>
+<li>specificity</li>
+<li>OmicsLonDA</li>
+<li>LDM<br />
+</li>
+<li>POST<br />
+</li>
+<li>phyloMDA<br />
+</li>
+<li>MiDAT<br />
+</li>
+<li>BiomeHorizon<br />
+</li>
+<li>dysbiosisR<br />
+</li>
+<li>MiRKAT-MC<br />
+</li>
+<li>EasyMicroPlot<br />
+</li>
+<li>MIMOSA2<br />
+</li>
+<li>MZINBVA<br />
+</li>
+<li>timeOmics<br />
+</li>
+<li>CoDaCoRe<br />
+</li>
+<li>cmmb<br />
+</li>
+<li>MiATDS<br />
+</li>
+<li>RobZS<br />
+</li>
+<li>Tax4Fun2<br />
+</li>
+<li>EzMAP<br />
+</li>
+<li>iNMF<br />
+</li>
+<li>microRMS</li>
+</ul></li>
+<li>Other Tools
+<ul>
+<li>DataExplorer</li>
+</ul></li>
+</ul>
+</div>
 <div id="change-log-24-december-2021" class="section level2">
 <h2>Change log 24 December, 2021</h2>
 <ul>
@@ -373,7 +449,8 @@ $(document).ready(function () {
 </li>
 <li>Added resources new 8 to 10<br />
 </li>
-<li>Added ‘Additional’ resources suggested by Svetlana UP to Controls section<br />
+<li>Added ‘Additional’ resources suggested by Svetlana UP to Controls
+section<br />
 </li>
 <li>Added OTU/ASV debate Controls section</li>
 </ul>
@@ -415,11 +492,16 @@ $(document).ready(function () {
 <ul>
 <li>ANCOM-BC added next to ANCOM<br />
 </li>
-<li>ALDEx2 <a href="https://bioconductor.org/packages/release/bioc/html/ALDEx2.html">Analysis Of Differential Abundance Taking Sample Variation Into Account</a><br />
+<li>ALDEx2 <a
+href="https://bioconductor.org/packages/release/bioc/html/ALDEx2.html">Analysis
+Of Differential Abundance Taking Sample Variation Into Account</a><br />
 </li>
-<li>CoDaSeq <a href="https://github.com/ggloor/CoDaSeq">Functions for compositional analysis of high throughput sequencing</a><br />
+<li>CoDaSeq <a href="https://github.com/ggloor/CoDaSeq">Functions for
+compositional analysis of high throughput sequencing</a><br />
 </li>
-<li>DivNet <a href="https://github.com/adw96/DivNet">An R package to estimate diversity when taxa in the community cooccur via a ecological network</a></li>
+<li>DivNet <a href="https://github.com/adw96/DivNet">An R package to
+estimate diversity when taxa in the community cooccur via a ecological
+network</a></li>
 </ul></li>
 </ul>
 </div>
@@ -428,32 +510,65 @@ $(document).ready(function () {
 <ul>
 <li>Tools
 <ul>
-<li>MicrobiomeExplor <a href="https://doi.org/10.1093/bioinformatics/btaa838">An R package for the analysis and visualization of microbial communities</a><br />
+<li>MicrobiomeExplor <a
+href="https://doi.org/10.1093/bioinformatics/btaa838">An R package for
+the analysis and visualization of microbial communities</a><br />
 </li>
-<li>MicroBVS <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03640-0">Dirichlet-tree multinomial regression models with Bayesian variable selection - an R package</a><br />
+<li>MicroBVS <a
+href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03640-0">Dirichlet-tree
+multinomial regression models with Bayesian variable selection - an R
+package</a><br />
 </li>
-<li>MicroNiche <a href="https://academic.oup.com/femsec/article-abstract/96/8/fiaa131/5863182?redirectedFrom=fulltext">An R package for assessing microbial niche breadth and overlap from amplicon sequencing data</a><br />
+<li>MicroNiche <a
+href="https://academic.oup.com/femsec/article-abstract/96/8/fiaa131/5863182?redirectedFrom=fulltext">An
+R package for assessing microbial niche breadth and overlap from
+amplicon sequencing data</a><br />
 </li>
-<li>NMIT <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5696116/#!po=75.0000">Microbial Interdependence Association Test–a Non-parametric Microbial Interdependence Test</a><br />
+<li>NMIT <a
+href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5696116/#!po=75.0000">Microbial
+Interdependence Association Test–a Non-parametric Microbial
+Interdependence Test</a><br />
 </li>
-<li>NetCoMi <a href="https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbaa290/6017455">Network construction and comparison for microbiome data in R</a></li>
-<li>NBZIMM <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03803-z">Negative binomial and zero-inflated mixed models, with application to microbiome/metagenomics data analysis</a><br />
+<li>NetCoMi <a
+href="https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbaa290/6017455">Network
+construction and comparison for microbiome data in R</a></li>
+<li>NBZIMM <a
+href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03803-z">Negative
+binomial and zero-inflated mixed models, with application to
+microbiome/metagenomics data analysis</a><br />
 </li>
-<li>selbal <a href="https://msystems.asm.org/content/3/4/e00053-18">Balances: a New Perspective for Microbiome Analysis</a><br />
+<li>selbal <a
+href="https://msystems.asm.org/content/3/4/e00053-18">Balances: a New
+Perspective for Microbiome Analysis</a><br />
 </li>
-<li>tidyMicro <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-03967-2">A pipeline for microbiome data analysis and visualization using the tidyverse in R</a></li>
+<li>tidyMicro <a
+href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-03967-2">A
+pipeline for microbiome data analysis and visualization using the
+tidyverse in R</a></li>
 </ul></li>
 <li>Microbiome data sets
 <ul>
-<li>HMP16SData <a href="https://bioconductor.org/packages/release/data/experiment/html/HMP16SData.html">Efficient Access to the Human Microbiome Project through Bioconductor</a><br />
+<li>HMP16SData <a
+href="https://bioconductor.org/packages/release/data/experiment/html/HMP16SData.html">Efficient
+Access to the Human Microbiome Project through Bioconductor</a><br />
 </li>
-<li>HMP2Data <a href="https://bioconductor.org/packages/release/data/experiment/html/HMP2Data.html">16s rRNA sequencing data from the Human Microbiome Project 2</a> *microbiomeDataSets <a href="https://bioconductor.org/packages/devel/data/experiment/html/microbiomeDataSets.html">Experiment Hub based microbiome datasets</a><br />
+<li>HMP2Data <a
+href="https://bioconductor.org/packages/release/data/experiment/html/HMP2Data.html">16s
+rRNA sequencing data from the Human Microbiome Project 2</a>
+*microbiomeDataSets <a
+href="https://bioconductor.org/packages/devel/data/experiment/html/microbiomeDataSets.html">Experiment
+Hub based microbiome datasets</a><br />
 </li>
-<li>curatedMetagenomicData <a href="https://bioconductor.org/packages/release/data/experiment/html/curatedMetagenomicData.html">Accessible, curated metagenomic data through ExperimentHub</a></li>
+<li>curatedMetagenomicData <a
+href="https://bioconductor.org/packages/release/data/experiment/html/curatedMetagenomicData.html">Accessible,
+curated metagenomic data through ExperimentHub</a></li>
 </ul></li>
 <li>Other tools
 <ul>
-<li><a href="https://malucalle.github.io/Microbiome-Variable-Selection/">Antoni Susin, Yiwen Wang, Kim-Anh Lê Cao, M.Luz Calle.: Variable selection in microbiome compositional data analysis: tutorial</a></li>
+<li><a
+href="https://malucalle.github.io/Microbiome-Variable-Selection/">Antoni
+Susin, Yiwen Wang, Kim-Anh Lê Cao, M.Luz Calle.: Variable selection in
+microbiome compositional data analysis: tutorial</a></li>
 </ul></li>
 <li>Reformatted the code for website<br />
 </li>
@@ -461,9 +576,13 @@ $(document).ready(function () {
 </li>
 <li>Added Acknowledgments</li>
 </ul>
-<p>Shetty, Sudarshan A., and Leo Lahti. <a href="https://link.springer.com/article/10.1007%2Fs12038-019-9930-2">Microbiome data science. Journal of biosciences 44, no. 5 (2019): 115</a>.<br />
-<a href="https://openresearchlabs.github.io/publications/papers/2019-Shetty-MDS.pdf"><em>Pre-print</em></a><br />
-Zendo: <a href="https://zenodo.org/badge/latestdoi/99698135"><img src="https://zenodo.org/badge/99698135.svg" alt="DOI" /></a></p>
+<p>Shetty, Sudarshan A., and Leo Lahti. <a
+href="https://link.springer.com/article/10.1007%2Fs12038-019-9930-2">Microbiome
+data science. Journal of biosciences 44, no. 5 (2019): 115</a>.<br />
+<a
+href="https://openresearchlabs.github.io/publications/papers/2019-Shetty-MDS.pdf"><em>Pre-print</em></a><br />
+Zendo: <a href="https://zenodo.org/badge/latestdoi/99698135"><img
+src="https://zenodo.org/badge/99698135.svg" alt="DOI" /></a></p>
 </div>
 </div>
 

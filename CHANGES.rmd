@@ -6,6 +6,42 @@ output: html_document
 
 # List of R tools for microbiome data analysis  
 
+## Change log 28 December, 2022     
+
+* Microbiome Tools    
+    * adaANCOM  
+    * benchdamic   
+    * C3NA  
+    * microshades  
+    * GMEmbeddings  
+    * prokounter    
+    * LOCOM  
+    * endoR  
+    * specificity 
+    * OmicsLonDA 
+    * LDM  
+    * POST  
+    * phyloMDA  
+    * MiDAT  
+    * BiomeHorizon  
+    * dysbiosisR  
+    * MiRKAT-MC  
+    * EasyMicroPlot  
+    * MIMOSA2  
+    * MZINBVA  
+    * timeOmics  
+    * CoDaCoRe  
+    * cmmb  
+    * MiATDS  
+    * RobZS  
+    * Tax4Fun2  
+    * EzMAP  
+    * iNMF  
+    * microRMS  
+    
+* Other Tools
+    * DataExplorer      
+
 ## Change log 24 December, 2021     
 
 * Tutorials and Educational Resources     

@@ -13,7 +13,7 @@
 
 <title>Controls for Microbiome Research</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
@@ -59,6 +59,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="styles.css" type="text/css" />
 
 
@@ -83,6 +84,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -140,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -235,7 +243,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -305,89 +313,184 @@ $(document).ready(function () {
 </div>
 
 
-<p>Useful resources for microbiome sequencing especially for 16S rRNA gene-based studies.<br />
-<strong>NOTE</strong>: The resources mentioned here are in no way comprehensive and if you know any articles/resources please highlight it on the <a href="https://github.com/microsud/Tools-Microbiome-Analysis/issues">GitHub repo</a>.</p>
+<p>Useful resources for microbiome sequencing especially for 16S rRNA
+gene-based studies.<br />
+<strong>NOTE</strong>: The resources mentioned here are in no way
+comprehensive and if you know any articles/resources please highlight it
+on the <a
+href="https://github.com/microsud/Tools-Microbiome-Analysis/issues">GitHub
+repo</a>.</p>
 <blockquote>
 <p>Contamination</p>
 </blockquote>
 <ol style="list-style-type: decimal">
-<li><a href="https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-014-0087-z">Salter SJ, Cox MJ, Turek EM, Calus ST, Cookson WO, Moffatt MF, Turner P, Parkhill J, Loman NJ, Walker AW. Reagent and laboratory contamination can critically impact sequence-based microbiome analyses. BMC biology. 2014 Dec 1;12(1):87</a>.<br />
+<li><a
+href="https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-014-0087-z">Salter
+SJ, Cox MJ, Turek EM, Calus ST, Cookson WO, Moffatt MF, Turner P,
+Parkhill J, Loman NJ, Walker AW. Reagent and laboratory contamination
+can critically impact sequence-based microbiome analyses. BMC biology.
+2014 Dec 1;12(1):87</a>.<br />
 </li>
-<li><a href="https://msystems.asm.org/content/4/4/e00290-19">Karstens L, Asquith M, Davin S, Fair D, Gregory WT, Wolfe AJ, Braun J, McWeeney S. Controlling for contaminants in low-biomass 16S rRNA gene sequencing experiments. MSystems. 2019 Aug 27;4(4)</a>.<br />
+<li><a href="https://msystems.asm.org/content/4/4/e00290-19">Karstens L,
+Asquith M, Davin S, Fair D, Gregory WT, Wolfe AJ, Braun J, McWeeney S.
+Controlling for contaminants in low-biomass 16S rRNA gene sequencing
+experiments. MSystems. 2019 Aug 27;4(4)</a>.<br />
 </li>
-<li><a href="doi:10.1186/s13099-016-0103-7">Glassing A, Dowd SSE, Galandiuk S, Davis B, Chiodini RJ. 2016. Inherent bacterial DNA contamination of extraction and sequencing reagents may affect interpretation of microbiota in low bacterial biomass samples. Gut Pathog 8:24</a>.<br />
+<li><a href="doi:10.1186/s13099-016-0103-7">Glassing A, Dowd SSE,
+Galandiuk S, Davis B, Chiodini RJ. 2016. Inherent bacterial DNA
+contamination of extraction and sequencing reagents may affect
+interpretation of microbiota in low bacterial biomass samples. Gut
+Pathog 8:24</a>.<br />
 </li>
-<li><a href="doi:10.1371/journal.pone.0110808">Lusk RW. 2014. Diverse and widespread contamination evident in the unmapped depths of high throughput sequencing data. PLoS One 9:e110808</a>.<br />
+<li><a href="doi:10.1371/journal.pone.0110808">Lusk RW. 2014. Diverse
+and widespread contamination evident in the unmapped depths of high
+throughput sequencing data. PLoS One 9:e110808</a>.<br />
 </li>
-<li><a href="doi:10.1186/s40168-015-0083-8">Jervis-Bardy J, Leong LEX, Marri S, Smith RJ, Choo JM, Smith-Vaughan HC, Nosworthy E, Morris PS, O’Leary S, Rogers GB, Marsh RL. 2015. Deriving accurate microbiota profiles from human samples with low bacterial content through post-sequencing processing of Illumina MiSeq data. Microbiome 3:19</a>.<br />
+<li><a href="doi:10.1186/s40168-015-0083-8">Jervis-Bardy J, Leong LEX,
+Marri S, Smith RJ, Choo JM, Smith-Vaughan HC, Nosworthy E, Morris PS,
+O’Leary S, Rogers GB, Marsh RL. 2015. Deriving accurate microbiota
+profiles from human samples with low bacterial content through
+post-sequencing processing of Illumina MiSeq data. Microbiome
+3:19</a>.<br />
 </li>
-<li><a href="doi:10.1186/s13099-016-0103-7">Glassing A, Dowd SSE, Galandiuk S, Davis B, Chiodini RJ. 2016. Inherent bacterial DNA contamination of extraction and sequencing reagents may affect interpretation of microbiota in low bacterial biomass samples. Gut Pathog 8:24</a>.<br />
+<li><a href="doi:10.1186/s13099-016-0103-7">Glassing A, Dowd SSE,
+Galandiuk S, Davis B, Chiodini RJ. 2016. Inherent bacterial DNA
+contamination of extraction and sequencing reagents may affect
+interpretation of microbiota in low bacterial biomass samples. Gut
+Pathog 8:24</a>.<br />
 </li>
-<li><a href="doi:10.1186/s13059-014-0564-2">Weiss S, Amir A, Hyde ER, Metcalf JL, Song SJ, Knight R. 2014. Tracking down the sources of experimental contamination in microbiome studies. Genome Biol 15:564</a>.<br />
+<li><a href="doi:10.1186/s13059-014-0564-2">Weiss S, Amir A, Hyde ER,
+Metcalf JL, Song SJ, Knight R. 2014. Tracking down the sources of
+experimental contamination in microbiome studies. Genome Biol
+15:564</a>.<br />
 </li>
-<li><a href="doi:10.1128/mSystems.00163-18">Caruso V, Song X, Asquith M, Karstens L. 2019. Performance of microbiome sequence inference methods in environments with varying biomass. mSystems 4:e00163-18</a>.<br />
+<li><a href="doi:10.1128/mSystems.00163-18">Caruso V, Song X, Asquith M,
+Karstens L. 2019. Performance of microbiome sequence inference methods
+in environments with varying biomass. mSystems 4:e00163-18</a>.<br />
 </li>
-<li><a href="https://doi.org/10.1186/s12866-020-01795-7">Claassen-Weitz, S., Gardner-Lubbe, S., Mwaikono, K.S. et al. Optimizing 16S rRNA gene profile analysis from low biomass nasopharyngeal and induced sputum specimens. BMC Microbiol 20, 113 (2020)</a>.<br />
+<li><a href="https://doi.org/10.1186/s12866-020-01795-7">Claassen-Weitz,
+S., Gardner-Lubbe, S., Mwaikono, K.S. et al. Optimizing 16S rRNA gene
+profile analysis from low biomass nasopharyngeal and induced sputum
+specimens. BMC Microbiol 20, 113 (2020)</a>.<br />
 </li>
-<li><a href="https://doi.org/10.1038/s41598-019-55568-y">Douglas, C.A., Ivey, K.L., Papanicolas, L.E. et al. DNA extraction approaches substantially influence the assessment of the human breast milk microbiome. Sci Rep 10, 123 (2020)</a>.<br />
+<li><a href="https://doi.org/10.1038/s41598-019-55568-y">Douglas, C.A.,
+Ivey, K.L., Papanicolas, L.E. et al. DNA extraction approaches
+substantially influence the assessment of the human breast milk
+microbiome. Sci Rep 10, 123 (2020)</a>.<br />
 </li>
-<li><a href="https://doi.org/10.1186/s40168-020-00998-4">Moossavi, S., Fehr, K., Khafipour, E. et al. Repeatability and reproducibility assessment in a large-scale population-based microbiota study: case study on human milk microbiota. Microbiome 9, 41 (2021)</a>.</li>
+<li><a href="https://doi.org/10.1186/s40168-020-00998-4">Moossavi, S.,
+Fehr, K., Khafipour, E. et al. Repeatability and reproducibility
+assessment in a large-scale population-based microbiota study: case
+study on human milk microbiota. Microbiome 9, 41 (2021)</a>.</li>
 </ol>
 <blockquote>
 <p>Positive controls</p>
 </blockquote>
 <ol style="list-style-type: decimal">
-<li><a href="doi:10.1128/mSystems.00062-16">Bokulich NA, Rideout JR, Mercurio WG, Shiffer A, Wolfe B, Maurice CF, Dutton RJ, Turnbaugh PJ, Knight R, Caporaso JG. 2016. mockrobiota: a public resource for microbiome bioinformatics benchmarking. mSystems 1(5):e00062-16</a>.<br />
+<li><a href="doi:10.1128/mSystems.00062-16">Bokulich NA, Rideout JR,
+Mercurio WG, Shiffer A, Wolfe B, Maurice CF, Dutton RJ, Turnbaugh PJ,
+Knight R, Caporaso JG. 2016. mockrobiota: a public resource for
+microbiome bioinformatics benchmarking. mSystems
+1(5):e00062-16</a>.<br />
 </li>
-<li><a href="https://doi.org/10.1038/s41596-020-0362-0">Cichocki, N., Hübschmann, T., Schattenberg, F. et al. Bacterial mock communities as standards for reproducible cytometric microbiome analysis. Nat Protoc 15, 2788–2812 (2020)</a>.<br />
+<li><a href="https://doi.org/10.1038/s41596-020-0362-0">Cichocki, N.,
+Hübschmann, T., Schattenberg, F. et al. Bacterial mock communities as
+standards for reproducible cytometric microbiome analysis. Nat Protoc
+15, 2788–2812 (2020)</a>.<br />
 </li>
-<li><a href="https://doi.org/10.1038/sdata.2016.81">Singer, E., Andreopoulos, B., Bowers, R. et al. Next generation sequencing data of a defined microbial mock community. Sci Data 3, 160081 (2016)</a>.<br />
+<li><a href="https://doi.org/10.1038/sdata.2016.81">Singer, E.,
+Andreopoulos, B., Bowers, R. et al. Next generation sequencing data of a
+defined microbial mock community. Sci Data 3, 160081 (2016)</a>.<br />
 </li>
-<li><a href="https://doi.org/10.1128/mSystems.00023-18">Yeh Y-C, Needham DM, Sieradzki ET, Fuhrman JA. 2018. Taxon disappearance from microbiome analysis reinforces the value of mock communities as a standard in every sequencing run. mSystems 3:e00023-18</a>.<br />
+<li><a href="https://doi.org/10.1128/mSystems.00023-18">Yeh Y-C, Needham
+DM, Sieradzki ET, Fuhrman JA. 2018. Taxon disappearance from microbiome
+analysis reinforces the value of mock communities as a standard in every
+sequencing run. mSystems 3:e00023-18</a>.<br />
 </li>
-<li><a href="https://doi.org/10.1186/s12866-016-0738-z">Fouhy, F., Clooney, A.G., Stanton, C. et al. 16S rRNA gene sequencing of mock microbial populations- impact of DNA extraction method, primer choice and sequencing platform. BMC Microbiol 16, 123 (2016)</a>.</li>
+<li><a href="https://doi.org/10.1186/s12866-016-0738-z">Fouhy, F.,
+Clooney, A.G., Stanton, C. et al. 16S rRNA gene sequencing of mock
+microbial populations- impact of DNA extraction method, primer choice
+and sequencing platform. BMC Microbiol 16, 123 (2016)</a>.</li>
 </ol>
 <blockquote>
 <p>Food for thought</p>
 </blockquote>
 <ol style="list-style-type: decimal">
-<li><a href="https://doi.org/10.1128/AEM.02627-17">Pollock J, Glendinning L, Wisedchanwet T, Watson M. 2018. The madness of microbiome: attempting to find consensus “best practice” for 16S microbiome studies. Appl Environ Microbiol 84:e02627-17</a>.<br />
+<li><a href="https://doi.org/10.1128/AEM.02627-17">Pollock J,
+Glendinning L, Wisedchanwet T, Watson M. 2018. The madness of
+microbiome: attempting to find consensus “best practice” for 16S
+microbiome studies. Appl Environ Microbiol 84:e02627-17</a>.<br />
 </li>
-<li><a href="https://doi.org/10.1186/s40168-021-01059-0">Nearing, J.T., Comeau, A.M. &amp; Langille, M.G.I. Identifying biases and their potential solutions in human microbiome studies. Microbiome 9, 113 (2021)</a>.<br />
+<li><a href="https://doi.org/10.1186/s40168-021-01059-0">Nearing, J.T.,
+Comeau, A.M. &amp; Langille, M.G.I. Identifying biases and their
+potential solutions in human microbiome studies. Microbiome 9, 113
+(2021)</a>.<br />
 </li>
-<li><a href="https://doi.org/10.1093/femsec/fiz045">Bastian V H Hornung, Romy D Zwittink, Ed J Kuijper, Issues and current standards of controls in microbiome research, FEMS Microbiology Ecology, Volume 95, Issue 5, May 2019</a><br />
+<li><a href="https://doi.org/10.1093/femsec/fiz045">Bastian V H Hornung,
+Romy D Zwittink, Ed J Kuijper, Issues and current standards of controls
+in microbiome research, FEMS Microbiology Ecology, Volume 95, Issue 5,
+May 2019</a><br />
 </li>
-<li><a href="http://fiererlab.org/2018/08/15/garbage-in-garbage-out-wrestling-with-contamination-in-microbial-sequencing-projects/">Noah Fierer, Jessica Henley, and Matt Gebert 2018. Garbage in, garbage out: Wrestling with contamination in microbial sequencing projects</a></li>
+<li><a
+href="http://fiererlab.org/2018/08/15/garbage-in-garbage-out-wrestling-with-contamination-in-microbial-sequencing-projects/">Noah
+Fierer, Jessica Henley, and Matt Gebert 2018. Garbage in, garbage out:
+Wrestling with contamination in microbial sequencing projects</a></li>
 </ol>
 <blockquote>
 <p>Additional</p>
 </blockquote>
 <ol style="list-style-type: decimal">
-<li><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/1755-0998.13011">Weyrich et al., 2019 Laboratory contamination over time during low-biomass sample analysis</a><br />
+<li><a
+href="https://onlinelibrary.wiley.com/doi/full/10.1111/1755-0998.13011">Weyrich
+et al., 2019 Laboratory contamination over time during low-biomass
+sample analysis</a><br />
 </li>
-<li><a href="https://elifesciences.org/articles/46923">McLaren et al., 2019 Consistent and correctable bias in metagenomic sequencing experiments</a><br />
+<li><a href="https://elifesciences.org/articles/46923">McLaren et al.,
+2019 Consistent and correctable bias in metagenomic sequencing
+experiments</a><br />
 </li>
-<li><a href="https://www.nature.com/articles/s41585-018-0104-z">Karstens et al., 2018 Community profiling of the urinary microbiota: considerations for low-biomass samples</a><br />
+<li><a href="https://www.nature.com/articles/s41585-018-0104-z">Karstens
+et al., 2018 Community profiling of the urinary microbiota:
+considerations for low-biomass samples</a><br />
 </li>
-<li><a href="https://sfamjournals.onlinelibrary.wiley.com/doi/full/10.1111/lam.13091">Stinson et al., 2018 Identification and removal of contaminating microbial DNA from PCR reagents: impact on low-biomass microbiome analyses</a><br />
+<li><a
+href="https://sfamjournals.onlinelibrary.wiley.com/doi/full/10.1111/lam.13091">Stinson
+et al., 2018 Identification and removal of contaminating microbial DNA
+from PCR reagents: impact on low-biomass microbiome analyses</a><br />
 </li>
-<li><a href="https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-018-0605-2">Davis et al., 2018 Simple statistical identification and removal of contaminant sequences in marker-gene and metagenomics data</a><br />
+<li><a
+href="https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-018-0605-2">Davis
+et al., 2018 Simple statistical identification and removal of
+contaminant sequences in marker-gene and metagenomics data</a><br />
 </li>
-<li><a href="https://www.nature.com/articles/s41564-018-0202-y">de Goffau et al., 2018 Recognizing the reagent microbiome</a><br />
+<li><a href="https://www.nature.com/articles/s41564-018-0202-y">de
+Goffau et al., 2018 Recognizing the reagent microbiome</a><br />
 </li>
-<li><a href="https://www.cell.com/action/showPdf?pii=S0966-842X%2818%2930253-1">Eisenhofer et al., 2018 Contamination in Low Microbial Biomass Microbiome Studies: Issues and Recommendations</a><br />
+<li><a
+href="https://www.cell.com/action/showPdf?pii=S0966-842X%2818%2930253-1">Eisenhofer
+et al., 2018 Contamination in Low Microbial Biomass Microbiome Studies:
+Issues and Recommendations</a><br />
 </li>
-<li><a href="https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-017-0267-5">Kim et al., 2017 Optimizing methods and dodging pitfalls in microbiome research</a></li>
+<li><a
+href="https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-017-0267-5">Kim
+et al., 2017 Optimizing methods and dodging pitfalls in microbiome
+research</a></li>
 </ol>
 <blockquote>
 <p>OTU/ASV debate</p>
 </blockquote>
 <ol style="list-style-type: decimal">
-<li><a href="http://fiererlab.org/2020/02/17/whats-in-a-number-estimating-microbial-richness-using-dada2/">Corinne Walsh &amp; Noah Fierer 2020. What’s in a number? Estimating microbial richness using DADA2</a><br />
+<li><a
+href="http://fiererlab.org/2020/02/17/whats-in-a-number-estimating-microbial-richness-using-dada2/">Corinne
+Walsh &amp; Noah Fierer 2020. What’s in a number? Estimating microbial
+richness using DADA2</a><br />
 </li>
-<li><a href="https://forum.mothur.org/t/otus-vs-asvs/3506">Theory behind mothur OTU/ASV</a><br />
+<li><a href="https://forum.mothur.org/t/otus-vs-asvs/3506">Theory behind
+mothur OTU/ASV</a><br />
 </li>
-<li><a href="Lumping%20versus%20splitting%20–%20is%20it%20time%20for%20microbial%20ecologists%20to%20abandon%20OTUs?">Noah Fierer, Tess Brewer, &amp; Mallory Choudoir</a></li>
+<li><a
+href="Lumping%20versus%20splitting%20–%20is%20it%20time%20for%20microbial%20ecologists%20to%20abandon%20OTUs?">Noah
+Fierer, Tess Brewer, &amp; Mallory Choudoir</a></li>
 </ol>
 
 

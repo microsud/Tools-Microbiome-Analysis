@@ -38,6 +38,7 @@ output: html_document
 19. ggplot2 extensions [gallery](https://exts.ggplot2.tidyverse.org/gallery/)   
 20. TreeHeatmap [A package to plot heatmaps at different levels of a tree](https://github.com/fionarhuang/TreeHeatmap)  
 21. Fastverse [The fastverse is a suite of complementary high-performance packages for statistical computing and data manipulation in R](https://sebkrantz.github.io/fastverse/)   
+22. DataExplorer [Automated data exploration process for analytic tasks and predictive modeling](https://boxuancui.github.io/DataExplorer/)   
 
 -------------------------------------------------------   
 
