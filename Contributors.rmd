@@ -13,7 +13,7 @@ Contributors:
 * Somak Chowdhury (Contributor)  
 * Simone Zuffa (Contributor)     
 * Svetlana UP (Contributor) [info](https://github.com/SvetlanaUP)   
-* You ???    
+* Giacomo Antonello (Contributor) [info](https://github.com/g-antonello)
 
 
 How to contribute?  
