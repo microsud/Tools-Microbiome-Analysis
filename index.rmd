@@ -64,6 +64,10 @@ endoR [Interpreting tree ensemble machine learning models with endoR](https://jo
 EasyMicroPlot [An Efficient and Convenient R Package in Microbiome Downstream Analysis and Visualization for Clinical Study](https://doi.org/10.3389/fgene.2021.803627)   
 EzMAP [Easy Microbiome Analysis Platform](https://doi.org/10.1186/s12859-021-04106-7)   
 
+> F
+
+FuncDiv [Contributional diversity of joint taxa-function data](https://github.com/gavinmdouglas/FuncDiv)
+
 > G     
 
 GLMMMiRKAT [A distance-based kernel association test based on the generalized linear mixed model](https://github.com/hk1785/GLMM-MiRKAT)   
