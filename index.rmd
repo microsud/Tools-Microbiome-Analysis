@@ -94,6 +94,7 @@ massMap [A Two-Stage Microbial Association Mapping Framework With Advanced FDR C
 mbtools [Collection of R tools to analyze microbiome data](https://gibbons-lab.github.io/mbtools)   
 MDiNE [MDiNE: a model to estimate differential co-occurrence networks in microbiome studies](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz824/5614428)   
 MDPbiome [MDPbiome: microbiome engineering through prescriptive perturbations](https://academic.oup.com/bioinformatics/article/34/17/i838/5093255)    
+mEQO [Ensemble Quotient Optimization for microbiome](https://github.com/Xiaoyu2425/mEQO)   
 MedTest [A Distance-Based Approach for Testing the Mediation Effect of the Human Microbiome](https://academic.oup.com/bioinformatics/article/34/11/1875/4810437)    
 MegaR [An Interactive R Package for Metagenomic Sample Classification and Disease Prediction using Microbiota and Machine Learning](https://github.com/BioHPC/MegaR) 
 MelonnPan [Model-based Genomically Informed High-dimensional Predictor of Microbial Community Metabolic Profiles](https://github.com/biobakery/melonnpan)  
