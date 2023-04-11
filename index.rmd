@@ -72,6 +72,7 @@ FuncDiv [Contributional diversity of joint taxa-function data](https://github.co
 
 GLMMMiRKAT [A distance-based kernel association test based on the generalized linear mixed model](https://github.com/hk1785/GLMM-MiRKAT)   
 GMEmbeddings [An R Package to Apply Embedding Techniques to Microbiome Data](https://doi.org/10.3389/fbinf.2022.828703)   
+ggpicrust2 [integrates pathway annotations and 10 DA methods](https://github.com/cafferychen777/ggpicrust2)  
 
 > I   
 
